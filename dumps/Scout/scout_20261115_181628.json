@@ -1,0 +1,256 @@
+{
+  "tool": "PS4 Linux Scout",
+  "collection_date": "2026-11-15T18:16:27.587296+00:00",
+  "console_ip": "192.0.2.10",
+  "results": {
+    "protocol_version": "1.3",
+    "payload_branding": "ps4debug-NG by Pharaoh2k v1.3.4",
+    "capability_level": "1.2",
+    "firmware": "14.02",
+    "platform_id": 4,
+    "kernel_base": "0xffffffffc7114000",
+    "process_count": 60,
+    "processes": [
+      {
+        "name": "SceSpkService",
+        "pid": 63
+      },
+      {
+        "name": "orbis-jsc-compiler.self",
+        "pid": 59
+      },
+      {
+        "name": "SecureWebProcess.self",
+        "pid": 58
+      },
+      {
+        "name": "SecureUIProcess.self",
+        "pid": 57
+      },
+      {
+        "name": "SceVencProxy.elf",
+        "pid": 56
+      },
+      {
+        "name": "SceVdecProxy.elf",
+        "pid": 55
+      },
+      {
+        "name": "fs_cleaner.elf",
+        "pid": 54
+      },
+      {
+        "name": "SceVoiceAndAgent",
+        "pid": 53
+      },
+      {
+        "name": "SceMusicCoreServer",
+        "pid": 52
+      },
+      {
+        "name": "webrtc_daemon.self",
+        "pid": 51
+      },
+      {
+        "name": "SceSocialScreenMgr",
+        "pid": 50
+      },
+      {
+        "name": "SceSpZeroConf",
+        "pid": 49
+      },
+      {
+        "name": "SceCloudClientDaemon",
+        "pid": 48
+      },
+      {
+        "name": "SceRemotePlay",
+        "pid": 47
+      },
+      {
+        "name": "SceVideoCoreServer",
+        "pid": 46
+      },
+      {
+        "name": "ScePartyDaemon",
+        "pid": 45
+      },
+      {
+        "name": "SceGameLiveStreaming",
+        "pid": 44
+      },
+      {
+        "name": "SceAvCapture",
+        "pid": 43
+      },
+      {
+        "name": "SceShellUI",
+        "pid": 42
+      },
+      {
+        "name": "SceShellCore",
+        "pid": 41
+      },
+      {
+        "name": "GnmCompositor.elf",
+        "pid": 40
+      },
+      {
+        "name": "orbis_audiod.elf",
+        "pid": 39
+      },
+      {
+        "name": "SceSysCore.elf",
+        "pid": 38
+      },
+      {
+        "name": "SceSysAvControl.elf",
+        "pid": 36
+      },
+      {
+        "name": "usb",
+        "pid": 35
+      },
+      {
+        "name": "SceSwd",
+        "pid": 34
+      },
+      {
+        "name": "SceVnlru",
+        "pid": 33
+      },
+      {
+        "name": "SceSyncer",
+        "pid": 32
+      },
+      {
+        "name": "SceBufdaemon2",
+        "pid": 31
+      },
+      {
+        "name": "SceBufdaemon1",
+        "pid": 30
+      },
+      {
+        "name": "SceBufdaemon0",
+        "pid": 29
+      },
+      {
+        "name": "SceVmdaemon",
+        "pid": 28
+      },
+      {
+        "name": "ScePagedaemonX",
+        "pid": 27
+      },
+      {
+        "name": "ScePagedaemonX",
+        "pid": 26
+      },
+      {
+        "name": "SceBtDriver",
+        "pid": 25
+      },
+      {
+        "name": "SceTrpwCtrl",
+        "pid": 24
+      },
+      {
+        "name": "SceTrpwReq",
+        "pid": 23
+      },
+      {
+        "name": "SceTrpwIntr",
+        "pid": 22
+      },
+      {
+        "name": "SceSbram",
+        "pid": 21
+      },
+      {
+        "name": "SceDaAtcev",
+        "pid": 20
+      },
+      {
+        "name": "SceDaThrd",
+        "pid": 19
+      },
+      {
+        "name": "SceIccThermal",
+        "pid": 18
+      },
+      {
+        "name": "SceMd0",
+        "pid": 17
+      },
+      {
+        "name": "SceIccnvs",
+        "pid": 16
+      },
+      {
+        "name": "SceXptThrd",
+        "pid": 15
+      },
+      {
+        "name": "SceGbeMskCtrl",
+        "pid": 9
+      },
+      {
+        "name": "SceSflash",
+        "pid": 8
+      },
+      {
+        "name": "SceIccNotification",
+        "pid": 7
+      },
+      {
+        "name": "SceHdmiEvent",
+        "pid": 6
+      },
+      {
+        "name": "SceCameraSdma",
+        "pid": 5
+      },
+      {
+        "name": "SceCameraDriverMain",
+        "pid": 4
+      },
+      {
+        "name": "SceHidMain",
+        "pid": 3
+      },
+      {
+        "name": "SceHidAuth",
+        "pid": 2
+      },
+      {
+        "name": "SceYarrow",
+        "pid": 14
+      },
+      {
+        "name": "geom",
+        "pid": 13
+      },
+      {
+        "name": "intr",
+        "pid": 12
+      },
+      {
+        "name": "idle",
+        "pid": 11
+      },
+      {
+        "name": "mini-syscore.elf",
+        "pid": 1
+      },
+      {
+        "name": "SceAudit",
+        "pid": 10
+      },
+      {
+        "name": "kernel",
+        "pid": 0
+      }
+    ]
+  }
+}

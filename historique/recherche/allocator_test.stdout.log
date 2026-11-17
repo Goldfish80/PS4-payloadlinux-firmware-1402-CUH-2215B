@@ -1,0 +1,1 @@
+PASS: failed allocation terminates; physical-map failure cleans original VA; correct VA/size freed; unknown free rejected; capacity and reuse verified

@@ -1,0 +1,14 @@
+{
+  "preflight.elf": {
+    "size": 14320,
+    "sha256": "65f92bbf541613305635da054cb5dd682c82827eda09192cdd5bbaed8ff2b754"
+  },
+  "linux-2048mb.elf": {
+    "size": 37144,
+    "sha256": "5dcb3d2909b1647bc3a343e1a9ee09a4391125bd52758099410eeb97af8c7832"
+  },
+  "linux-2048mb.bin": {
+    "size": 30152,
+    "sha256": "1e42c27c5259c02a5b19230b998c09b1be9ed77b989a2301b6ee6bfc30697987"
+  }
+}

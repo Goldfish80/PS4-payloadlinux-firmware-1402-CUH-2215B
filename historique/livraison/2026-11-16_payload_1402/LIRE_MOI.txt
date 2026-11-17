@@ -1,0 +1,5 @@
+Payloads Linux PS4 firmware 14.02 / Belize2.
+
+Fichier prioritaire : linux-1402-belize2-checked.elf (GoldHEN BinLoader). Le .bin contient le même build pour un lanceur compatible. Vérifier MANIFEST.json avant emploi.
+
+Cette compilation ajoute une vérification du saut d’arrêt, mais n’a pas encore été envoyée/exécutée sur la console.

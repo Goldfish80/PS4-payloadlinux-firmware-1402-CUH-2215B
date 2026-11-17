@@ -1,0 +1,3 @@
+/tmp/ccf4LAgM.s: Assembler messages:
+linux_thunk.S:100: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:100: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler

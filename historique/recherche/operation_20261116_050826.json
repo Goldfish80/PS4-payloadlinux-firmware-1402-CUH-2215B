@@ -1,0 +1,26 @@
+{
+  "action": "check",
+  "started": "2026-11-16T05:08:26.248262+00:00",
+  "ip": "192.0.2.10",
+  "compatibility": {
+    "firmware": 1402,
+    "kernel_base": "0xffffffffc7114000",
+    "southbridge": "Belize2 A0",
+    "subid": "0x40100",
+    "guards": 24,
+    "dmap_base": "0xffffabbb00000000",
+    "syscall_153": "nosys",
+    "timestamp": "2026-11-16T05:09:15.694588+00:00"
+  },
+  "preflight": {
+    "target": {
+      "name": "fs_cleaner.elf",
+      "pid": 54,
+      "libkernel_base": "0x808db8000"
+    },
+    "log": "PS4_1402_PREFLIGHT_V1\nUID 0x0000000000000000\nCPUID_SIGNATURE 0x0000000000710fc0\nCPU_BRAND DG1701SNF87IG                                  \nUSER_SUBID 0x0000000000040100\nSELF_FIRMWARE 0x000000000000057a\nKEXEC_SYSCALL_RETURN 0x0000000000000000\nBASE 0xffffffffc7114000\nGUARD_RESULT 0x0000000000000000\nFILE /data/linux/boot/bzImage\nSIZE 0x00000000013c2400 CRC32 0x000000007fccbf20\nFILE /data/linux/boot/initramfs.cpio.gz\nSIZE 0x0000000000c03186 CRC32 0x000000007b56d686\nFILE /data/linux/boot/bootargs.txt\nSIZE 0x00000000000000cb CRC32 0x00000000dde39c97\nPREFLIGHT_OK\n",
+    "timestamp": "2026-11-16T05:09:37.786810+00:00"
+  },
+  "status": "done",
+  "finished": "2026-11-16T05:09:37.787173+00:00"
+}

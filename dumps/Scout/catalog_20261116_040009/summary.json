@@ -1,0 +1,73 @@
+{
+  "source": "/project/PS4/Linux/Scout/reports/kernel_20261115_full.elf",
+  "sha256": "bfe5b4efae4f025674dc6346eb327bd4b69edb42dbb15895177a6ea51d2ded39",
+  "dump_base": "0xffffffffc7114000",
+  "preferred_base_assumed": "0xffffffff82200000",
+  "entry_rva": "0x6a410",
+  "strings": 18507,
+  "relocations": 45038,
+  "relocation_types": {
+    "8": 45038
+  },
+  "string_references": 13202,
+  "unique_code_pointer_candidates": 21926,
+  "matching_relocated_slots": 43846,
+  "segments": [
+    {
+      "type": 6,
+      "flags": 4,
+      "offset": 64,
+      "va": 18446744072754380864,
+      "filesz": 336,
+      "memsz": 336,
+      "align": 8
+    },
+    {
+      "type": 3,
+      "flags": 4,
+      "offset": 400,
+      "va": 18446744072754381200,
+      "filesz": 7,
+      "memsz": 7,
+      "align": 1
+    },
+    {
+      "type": 1,
+      "flags": 5,
+      "offset": 0,
+      "va": 18446744072754380800,
+      "filesz": 13625760,
+      "memsz": 13625760,
+      "align": 2097152
+    },
+    {
+      "type": 1627389968,
+      "flags": 4,
+      "offset": 13627392,
+      "va": 18446744072772202496,
+      "filesz": 134336,
+      "memsz": 2097152,
+      "align": 2097152
+    },
+    {
+      "type": 1,
+      "flags": 6,
+      "offset": 13762560,
+      "va": 18446744072776531968,
+      "filesz": 6317712,
+      "memsz": 20007664,
+      "align": 2097152
+    },
+    {
+      "type": 2,
+      "flags": 6,
+      "offset": 13625488,
+      "va": 18446744072768006288,
+      "filesz": 272,
+      "memsz": 272,
+      "align": 8
+    }
+  ],
+  "network_status": "Local TCP probes rejected: PermissionError EPERM; console state unknown",
+  "live_verified": false
+}

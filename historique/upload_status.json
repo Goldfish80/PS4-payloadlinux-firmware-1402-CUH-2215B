@@ -1,0 +1,34 @@
+{
+  "RAPPORT_COMPLET.md": {
+    "remote": "/data/linux/portage-linux/RAPPORT_COMPLET.md",
+    "size": 10833,
+    "expected_size": 10833,
+    "size_matches": true
+  },
+  "collection.json": {
+    "remote": "/data/linux/portage-linux/collection.json",
+    "size": 12833,
+    "expected_size": 12833,
+    "size_matches": true
+  },
+  "offsets_1402.tsv": {
+    "remote": "/data/linux/portage-linux/offsets_1402.tsv",
+    "size": 5169,
+    "expected_size": 5169,
+    "size_matches": true
+  },
+  "besoins_kexec.tsv": {
+    "remote": "/data/linux/portage-linux/besoins_kexec.tsv",
+    "size": 2914,
+    "expected_size": 2914,
+    "size_matches": true
+  },
+  "SHA256SUMS.json": {
+    "remote": "/data/linux/portage-linux/SHA256SUMS.json",
+    "size": 3628,
+    "expected_size": 3628,
+    "size_matches": true
+  },
+  "report_readback_sha256": "8444d3cb60aa6be929d02be19c668df202a6467d98edc22cda5561a34e655ceb",
+  "report_readback_matches": true
+}

@@ -1,0 +1,211 @@
+nqueued : OptionMenuContainer : id_sound_screen
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : OptionMenu : id_sound_screen : OptionMenuScene
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.00msec] : OptionMenuContainer : id_sound_screen : OptionMenuContainerScene
+#LOGIN MGR# Receive Event : SCE_MBUS_EVENT_DEVICE_STATUS_UPDATED [DeviceId:0x50300]
+#LOGIN MGR# Battery status changed.
+Battery status : 0
+Battery level : 35
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [id_sound_screen : SettingPage] -> [settings_root : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [settings_root : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: id_sound_screen : SettingPage
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : id_sound_screen : SettingPage
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : WizardStack : SettingPageWizardStack
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [settings_root : SettingPage] -> [id_update_check : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [id_update_check : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : id_update_check : SettingPage
+[SceUpdateService] UpdateCheckDoCheckSystemBeta:1679:UpdateCheckDoCheckSystemBeta returns 0x8041013d
+[SceUpdateService] UpdateCheckDoCheckSystemBeta:1679:UpdateCheckDoCheckSystemBeta returns 0x8041013d
+[UpdateChecker] sceHttpGetStatusCode() status code failed : 404
+[SceShellUI] W/PSM.UI : ** NOTICE: LoadSync : Parent_NormalStack : FrameModalScene
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [id_update_check : SettingPage] -> [Parent_NormalStack : FrameModalScene]
+[SceShellUI] I/PSM.UI :      Scene [Parent_NormalStack : FrameModalScene] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [Parent_NormalStack : FrameModalScene] -> [settings_root : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [settings_root : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: Parent_NormalStack : FrameModalScene
+[SceShellUI] I/PSM.UI : **** Ignored unload request because of unload is already enqueued : Parent_NormalStack
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : Parent_NormalStack : FrameModalScene
+[SceShellUI] I/PSM.UI : ** Unload enqueue: id_update_check : SettingPage
+[SceShellUI] I/PSM.UI : ** Unload enqueue: WizardStack : SettingPageWizardStack
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : id_update_check : SettingPage
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.03msec] : WizardStack : SettingPageWizardStack
+[SceShellCore] VM Stats: RSS 587.0, kernel 270.0, wire count 349.9, swap out 45.8, page table CPU 2733/6144 GPU 435/2048
+[SceShellCore] FMEM   4.5/   4.5 NPXS20977 SceSysAvControl.elf
+[SceShellCore] FMEM  10.7/  74.3 NPXS20991 SceSysCore.elf
+[SceShellCore] FMEM   9.2/  54.3 NPXS20973 orbis_audiod.elf
+[SceShellCore] FMEM   3.2/  11.2 NPXS20976 GnmCompositor.elf
+[SceShellCore] FMEM  35.5/1080.8 NPXS20000 SceShellCore
+[SceShellCore] FMEM   3.2/   9.5 NPXS21003 SceAvCapture
+[SceShellCore] FMEM   6.3/  24.5 NPXS21000 SceGameLiveStreaming
+[SceShellCore] FMEM  10.6/  60.5 NPXS21002 ScePartyDaemon
+[SceShellCore] FMEM   3.3/  25.4 NPXS21004 SceVideoCoreServer
+[SceShellCore] FMEM   6.3/  49.2 NPXS21010 SceCloudClientDaemon
+[SceShellCore] FMEM   3.2/  11.1 NPXS21016 SceSpZeroConf
+[SceShellCore] FMEM   4.8/ 156.0 NPXS21002 webrtc_daemon.self
+[SceShellCore] FMEM   5.5/  14.4 NPXS21020 SceVoiceAndAgent
+[SceShellCore] FMEM  34.1/  44.3 NPXS20967 fs_cleaner.elf
+[SceShellCore] FMEM   1.9/  10.2 NPXS20974 SceVdecProxy.elf
+[SceShellCore] FMEM   1.8/  10.3 NPXS20975 SceVencProxy.elf
+[SceShellCore] FMEM 341.2/ 885.4 NPXS20001 SceShellUI
+[SceShellCore] FMEM  10.8/  51.3 NPXS21006 SceRemotePlay
+[SceShellCore] FMEM   7.4/  18.1 NPXS21019 SceSocialScreenMgr
+[SceShellCore] FMEM   5.5/   9.8 NPXS21007 SceMusicCoreServer
+[SceShellCore] FMEM  26.0/ 267.9 NPXS20001 SecureUIProcess.self
+[SceShellCore] FMEM  32.5/ 526.2 NPXS20001 SecureWebProcess.self
+[SceShellCore] FMEM  10.8/ 358.8 NPXS20001 orbis-jsc-compiler.self
+[SceShellCore] FMEM   8.8/  49.4 RPIN00001 eboot.bin
+[SceShellCore] Libc Heap Status: free 27%, in-use 4468.3 KB, trend +0.0 KB/min, peak 4968.1 KB, when 69171 [sec]
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [settings_root : SettingPage] -> [power_management : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [power_management : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : power_management : SettingPage
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [power_management : SettingPage] -> [auto_standby : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [auto_standby : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : auto_standby : SettingPage
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [auto_standby : SettingPage] -> [OptionMenu : auto_standby : OptionMenuScene]
+[SceShellUI] I/PSM.UI :      Scene [OptionMenu : auto_standby : OptionMenuScene] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : OptionMenuContainer : auto_standby : OptionMenuContainerScene
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : OptionMenu : auto_standby : OptionMenuScene
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [OptionMenu : auto_standby : OptionMenuScene] -> [auto_standby : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [auto_standby : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: OptionMenu : auto_standby : OptionMenuScene
+[SceShellUI] I/PSM.UI : ** Unload enqueue: OptionMenuContainer : auto_standby : OptionMenuContainerScene
+[SceShellUI] I/PSM.UI : **** Ignored unload request because of unload is already enqueued : OptionMenuContainer : auto_standby
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : OptionMenu : auto_standby : OptionMenuScene
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.00msec] : OptionMenuContainer : auto_standby : OptionMenuContainerScene
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [auto_standby : SettingPage] -> [power_management : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [power_management : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: auto_standby : SettingPage
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : auto_standby : SettingPage
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [power_management : SettingPage] -> [set_conditions_standby_mode : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [set_conditions_standby_mode : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : set_conditions_standby_mode : SettingPage
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [set_conditions_standby_mode : SettingPage] -> [power_management : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [power_management : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: set_conditions_standby_mode : SettingPage
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : set_conditions_standby_mode : SettingPage
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [power_management : SettingPage] -> [set_conditions_standby_mode : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [set_conditions_standby_mode : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : set_conditions_standby_mode : SettingPage
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [set_conditions_standby_mode : SettingPage] -> [power_management : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [power_management : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: set_conditions_standby_mode : SettingPage
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : set_conditions_standby_mode : SettingPage
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [power_management : SettingPage] -> [settings_root : SettingPage]
+[SceShellUI] I/PSM.UI :      Scene [settings_root : SettingPage] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: power_management : SettingPage
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : power_management : SettingPage
+[SceShellUI] I/PSM.UI : ** Unload enqueue: SettingsPlugin : SettingsApplication
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [settings_root : SettingPage] -> [SystemArea : SystemAreaScene]
+[SceShellUI] I/PSM.UI :      Scene [SystemArea : SystemAreaScene] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : ** Unload enqueue: SettingsBGScene : Scene
+[SceShellUI] I/PSM.UI : ** Unload enqueue: settings_root : SettingPage
+[SceShellUI] I/PSM.UI : ** Unload enqueue: NormalStack : SettingPageNormalStack
+[SceShellUI] I/PSM.UI : ** Unload enqueue: Noname : FrameScene
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.02msec] : Noname : FrameScene
+[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: SettingsBGScene to QueueTop.
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.03msec] : SettingsBGScene : Scene
+[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: settings_root to QueueTop.
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : settings_root : SettingPage
+[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: NormalStack to QueueTop.
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.06msec] : NormalStack : SettingPageNormalStack
+[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: Noname to QueueTop.
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.08msec] : Noname : FrameScene
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.00msec] : Noname : FrameScene
+[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.05msec] : SettingsPlugin : SettingsApplication
+[SceShellCore] Libc Heap Status: free 27%, in-use 4466.5 KB, trend -1.8 KB/min, peak 4968.1 KB, when 69202 [sec]
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [SystemArea : SystemAreaScene] -> [ContentAreaScene : ContentAreaScene]
+[SceShellUI] I/PSM.UI :      Scene [ContentAreaScene : ContentAreaScene] : Alive
+SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [ContentAreaScene : ContentAreaScene] -> [AppScreen : ApplicationScreenScene]
+[SceShellUI] I/PSM.UI :      Scene [AppScreen : ApplicationScreenScene] : Alive
+SetDeviceIndexBehavior: mode=MergeAllConnectedDevice, param=null
+[Theme/I] : ActiveUserChanged : From : [BLUE(userId = 16a9f530)]
+[Theme/I] : ActiveUserChanged : To   : [ANONYMOUS(userId = ffffffff)]
+[Theme/I] : Apply [ANONYMOUS] : [Option:101000]: with not preloaded user
+[SL] AppFocusChanged [NPXS20001] -> [RPIN00001]
+Task 0000002a : option 00010000
+Task 0000002a : 0000069215336873 [type=1,subtype=6,slot=00] : started
+#LOGIN MGR# Receive Event : SCE_MBUS_EVENT_DEVICE_STATUS_UPDATED [DeviceId:0x50300]
+#LOGIN MGR# Battery status changed.
+Battery status : 0
+Battery level : 45
+[ScePatchChecker] (*) check (title_id='CUSA00556', app_version='01.00', check_option=8): status=0, trigger=0 userId=0 return 0x8041013d
+[ScePatchChecker] check (title_id='CUSA00556', app_version='01.00', check_option=8): status=0, dl_status=0, trigger=0 userId=0 return 0x8041013d
+[BGFT] ERROR: [103] scePatchCheckerIntCheckPatch() failed (0x8041013d)
+[BGFT] task(0000002a) prepare started
+[SceShellCore] Libc Heap Status: free 26%, in-use 4478.9 KB, trend +10.7 KB/min, peak 4968.1 KB, when 69233 [sec]
+#LOGIN MGR# Receive Event : SCE_MBUS_EVENT_DEVICE_STATUS_UPDATED [DeviceId:0x50300]
+#LOGIN MGR# Battery status changed.
+Battery status : 0
+Battery level : 35
+[SL][13:09:14:952][Thread 0x00018848][INFO][TRACE][ALWAYS][MAIN STREAM][BEGIN][Heap]sanity OK, free 1650816 (27%), in-use 4575104 (73%), peak 5087296 (82%), when 82630 [sec]
+[SL][13:09:15:245][Thread 0x00018848][INFO][TRACE][ALWAYS][MAIN STREAM][END  ][Heap]sanity OK, free 1649952 (27%), in-use 4575968 (73%), peak 5087296 (82%), when 82630 [sec]
+[BGFT] task(0000002a) prepare ended
+[BGFT] task(0000002a) tx started (65536/47171305472)
+[BGFT] task(0000002a) prepromote ready (CUSA00556, /user/bgft/task/0000002a/app.pkg)
+begin AppPrePromotePkgExt(/user/bgft/task/0000002a/app.pkg)
+end AppPrePromotePkgExt(/user/bgft/task/0000002a/app.pkg)=0x00000000
+[BGFT] task(0000002a) tx started (11534336/47171305472)
+[SceShellUI] W/PSM.UI : UIImage.Create(): Failed to create Image from '/user/appmeta/UDAT99999/icon0.png'
+[SceShellUI] W/PSM.UI : UIImage.Create(): Failed to create Image from '/user/appmeta/UDAT99999/icon0.png'
+[SceShellCore] Libc Heap Status: free 27%, in-use 4468.6 KB, trend +2.4 KB/min, peak 4968.1 KB, when 69264 [sec]
+[SceShellCore] VM Stats: RSS 587.4, kernel 270.0, wire count 346.8, swap out 45.7, page table CPU 2733/6144 GPU 435/2048
+[SceShellCore] FMEM   4.5/   4.5 NPXS20977 SceSysAvControl.elf
+[SceShellCore] FMEM  10.7/  74.3 NPXS20991 SceSysCore.elf
+[SceShellCore] FMEM   9.2/  54.3 NPXS20973 orbis_audiod.elf
+[SceShellCore] FMEM   3.2/  11.2 NPXS20976 GnmCompositor.elf
+[SceShellCore] FMEM  35.5/1080.8 NPXS20000 SceShellCore
+[SceShellCore] FMEM   3.2/   9.5 NPXS21003 SceAvCapture
+[SceShellCore] FMEM   6.3/  24.5 NPXS21000 SceGameLiveStreaming
+[SceShellCore] FMEM  10.7/  60.5 NPXS21002 ScePartyDaemon
+[SceShellCore] FMEM   3.3/  25.4 NPXS21004 SceVideoCoreServer
+[SceShellCore] FMEM   6.3/  49.2 NPXS21010 SceCloudClientDaemon
+[SceShellCore] FMEM   3.2/  11.1 NPXS21016 SceSpZeroConf
+[SceShellCore] FMEM   4.8/ 156.0 NPXS21002 webrtc_daemon.self
+[SceShellCore] FMEM   5.5/  14.4 NPXS21020 SceVoiceAndAgent
+[SceShellCore] FMEM  34.1/  44.3 NPXS20967 fs_cleaner.elf
+[SceShellCore] FMEM   1.9/  10.2 NPXS20974 SceVdecProxy.elf
+[SceShellCore] FMEM   1.8/  10.3 NPXS20975 SceVencProxy.elf
+[SceShellCore] FMEM 341.4/ 885.5 NPXS20001 SceShellUI
+[SceShellCore] FMEM  10.8/  51.3 NPXS21006 SceRemotePlay
+[SceShellCore] FMEM   7.4/  18.1 NPXS21019 SceSocialScreenMgr
+[SceShellCore] FMEM   5.5/   9.8 NPXS21007 SceMusicCoreServer
+[SceShellCore] FMEM  26.0/ 267.9 NPXS20001 SecureUIProcess.self
+[SceShellCore] FMEM  32.5/ 526.2 NPXS20001 SecureWebProcess.self
+[SceShellCore] FMEM  10.8/ 358.8 NPXS20001 orbis-jsc-compiler.self
+[SceShellCore] FMEM   8.9/  49.4 RPIN00001 eboot.bin
+[SceShellCore] Libc Heap Status: free 26%, in-use 4485.5 KB, trend +6.7 KB/min, peak 4968.1 KB, when 69295 [sec]
+[SceHidConfigService] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={42001} isFirstTime={0}
+[SceHidConfigService] PERIODIC_CHECK_INTERVAL_SEC={420}
+[SceHidConfigService] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={42001} isFirstTime={0}
+[SceHidConfigService] PERIODIC_CHECK_INTERVAL_SEC={420}

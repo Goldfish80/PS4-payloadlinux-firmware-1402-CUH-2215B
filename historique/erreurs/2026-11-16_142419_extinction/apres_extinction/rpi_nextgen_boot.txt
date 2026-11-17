@@ -1,0 +1,18 @@
+RPI NextGen v0.0.11 boot
+t=   0.000s start
+t=   0.002s video
+t=   0.090s user-service
+t=   0.090s netmon
+t=   0.090s appinst
+t=   0.090s bgft-serviceint-backend
+t=   0.090s serviceint-backend-before-init
+t=   0.090s serviceint-backend-init-ret-00000000
+t=   0.090s net-stack
+t=   0.090s bgft-serviceint-backend-ready
+t=   0.090s taskman
+t=   0.090s net-up
+t=   0.090s run
+t=   0.964s serviceint-register-base
+t=   0.964s serviceint-register-ret-80990015
+t=   3.627s serviceint-register-base
+t=   3.629s serviceint-register-ret-00000000

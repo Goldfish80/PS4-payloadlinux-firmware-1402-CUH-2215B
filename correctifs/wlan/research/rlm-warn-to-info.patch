@@ -1,0 +1,18 @@
+This minimal source-side cleanup is for a future kernel rebuild. It keeps the
+successful BW160 channel normalization and lowers its routine diagnostics from
+WARN to INFO. With the driver's default RLM mask 0x03 (ERROR + WARN), these
+messages then stay quiet unless INFO logging is explicitly enabled.
+
+Not applied to the running kernel. The active fix uses /proc/net/wlan/dbg_level
+and the systemd unit documented in ../diagnostics/2026-11-17-filter-fix.txt.
+
+Source: https://github.com/striker91n/ps4-linux-7.3/blob/main/drivers/net/wireless/mediatek/mt76x8/drv_wlan/MT6632/wlan/mgmt/rlm.c
+
+--- a/drivers/net/wireless/mediatek/mt76x8/drv_wlan/MT6632/wlan/mgmt/rlm.c
++++ b/drivers/net/wireless/mediatek/mt76x8/drv_wlan/MT6632/wlan/mgmt/rlm.c
+@@
+-			DBGLOG(RLM, WARN, "S1=%d, S2=%d\n", *pucVhtChannelFrequencyS1, *pucVhtChannelFrequencyS2);
++			DBGLOG(RLM, INFO, "S1=%d, S2=%d\n", *pucVhtChannelFrequencyS1, *pucVhtChannelFrequencyS2);
+@@
+-				DBGLOG(RLM, WARN, "[BW160][new spec] S1 change to %d\n", *pucVhtChannelFrequencyS1);
++				DBGLOG(RLM, INFO, "[BW160][new spec] S1 change to %d\n", *pucVhtChannelFrequencyS1);

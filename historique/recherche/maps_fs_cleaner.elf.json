@@ -1,0 +1,142 @@
+[
+  {
+    "name": "",
+    "start": 0,
+    "end": 0,
+    "offset": 0,
+    "prot": 0
+  },
+  {
+    "name": "executable",
+    "start": 1620770816,
+    "end": 1620787200,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "executable",
+    "start": 1620787200,
+    "end": 1620803584,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "executable",
+    "start": 1620803584,
+    "end": 1620819968,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "(NoName)fs_cleaner.elf",
+    "start": 34073165824,
+    "end": 34073182208,
+    "offset": 0,
+    "prot": 0
+  },
+  {
+    "name": "main stack",
+    "start": 34073182208,
+    "end": 34075279360,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "(NoName)SceSysCore.elf",
+    "start": 34075279360,
+    "end": 34075295744,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libkernel_sys.sprx",
+    "start": 34508341248,
+    "end": 34508685312,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libkernel_sys.sprx",
+    "start": 34508685312,
+    "end": 34508701696,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libkernel_sys.sprx",
+    "start": 34508701696,
+    "end": 34508931072,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35169288192,
+    "end": 35170549760,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35170549760,
+    "end": 35170582528,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35170582528,
+    "end": 35170615296,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35170615296,
+    "end": 35170697216,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35291660288,
+    "end": 35291709440,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35291709440,
+    "end": 35291725824,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35291725824,
+    "end": 35291758592,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35291758592,
+    "end": 35291774976,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "SceLibcInternalHeap",
+    "start": 36523556864,
+    "end": 36524605440,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "SceKernelPrimaryTcbTls",
+    "start": 36524605440,
+    "end": 36524621824,
+    "offset": 1048576,
+    "prot": 3
+  }
+]

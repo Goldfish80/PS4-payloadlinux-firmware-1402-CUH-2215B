@@ -1,0 +1,20 @@
+all: lib.a
+
+clean:
+	rm -f lib.a *.o
+
+dl.o: dl.c
+	gcc -c -isystem ../freebsd-headers -nostdinc -fno-stack-protector dl.c -o dl.o -fPIE -ffreestanding
+
+crt.o: crt.asm
+	yasm -f elf64 crt.asm
+
+syscalls.o: syscalls.asm
+	yasm -f elf64 syscalls.asm
+
+.PHONY: regenerate-syscalls
+regenerate-syscalls:
+	python3 syscalls.py > syscalls.asm
+
+lib.a: crt.o dl.o syscalls.o
+	ld -r crt.o dl.o syscalls.o -o lib.a

@@ -1,0 +1,411 @@
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3845.2 KB, trend +65.7 KB/min, peak 4311.0 KB, when 333 [sec]
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3855.7 KB, trend +33.8 KB/min, peak 4311.0 KB, when 364 [sec]
+<118>[SceShellCore] VM Stats: RSS 1050.9, kernel 267.5, wire count 327.8, swap out 0.0, page table CPU 2861/6144 GPU 367/2048
+<118>[SceShellCore] FMEM   1.3/   4.5 NPXS20977 SceSysAvControl.elf
+<118>[SceShellCore] FMEM  10.7/  74.3 NPXS20991 SceSysCore.elf
+<118>[SceShellCore] FMEM   9.4/  54.3 NPXS20973 orbis_audiod.elf
+<118>[SceShellCore] FMEM   3.2/  11.2 NPXS20976 GnmCompositor.elf
+<118>[SceShellCore] FMEM  27.6/ 342.8 NPXS20000 SceShellCore
+<118>[SceShellCore] FMEM 365.3/ 888.3 NPXS20001 SceShellUI
+<118>[SceShellCore] FMEM   3.5/   8.3 NPXS21003 SceAvCapture
+<118>[SceShellCore] FMEM   8.2/  24.5 NPXS21000 SceGameLiveStreaming
+<118>[SceShellCore] FMEM  13.8/  43.5 NPXS21002 ScePartyDaemon
+<118>[SceShellCore] FMEM   4.3/  25.4 NPXS21004 SceVideoCoreServer
+<118>[SceShellCore] FMEM   9.8/  51.3 NPXS21006 SceRemotePlay
+<118>[SceShellCore] FMEM   7.1/  53.2 NPXS21010 SceCloudClientDaemon
+<118>[SceShellCore] FMEM   3.3/  10.8 NPXS21016 SceSpZeroConf
+<118>[SceShellCore] FMEM   6.4/  18.1 NPXS21019 SceSocialScreenMgr
+<118>[SceShellCore] FMEM   7.9/ 156.0 NPXS21002 webrtc_daemon.self
+<118>[SceShellCore] FMEM   4.4/   9.8 NPXS21007 SceMusicCoreServer
+<118>[SceShellCore] FMEM   6.5/  14.4 NPXS21020 SceVoiceAndAgent
+<118>[SceShellCore] FMEM   2.1/   5.1 NPXS20967 fs_cleaner.elf
+<118>[SceShellCore] FMEM   2.1/  10.2 NPXS20974 SceVdecProxy.elf
+<118>[SceShellCore] FMEM   2.1/  10.3 NPXS20975 SceVencProxy.elf
+<118>[SceShellCore] FMEM  40.2/ 276.3 NPXS20001 SecureUIProcess.self
+<118>[SceShellCore] FMEM  79.5/ 564.5 NPXS20001 SecureWebProcess.self
+<118>[SceShellCore] FMEM  29.5/ 358.8 NPXS20001 orbis-jsc-compiler.self
+<118>[SceShellCore] FMEM  88.9/ 182.1 NPXS20001 SceNKUIProcess
+<118>[SceShellCore] FMEM  65.1/ 240.9 NPXS20001 SceNKNetworkProcess
+<118>[SceShellCore] FMEM 248.8/ 553.7 NPXS20001 SceNKWebProcess
+<118>[SceShellUI] I/PSM.UI : UI system timer elapsed 00:06:00
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3857.4 KB, trend +11.0 KB/min, peak 4311.0 KB, when 395 [sec]
+<118>[SceHidConfigService] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={421} isFirstTime={1}
+<118>[SceHidConfigService] start DownloadFile
+<118>[SceHidConfigService] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={421} isFirstTime={1}
+<118>[SceHidConfigService] start DownloadFile
+<118>[SceHidConfigService] DownloadFile : [RevokeList]
+<118>[SceHidConfigService] ifModifiedSince={Fri, 09 Mar 2018 03:55:47 +0000}
+<118>[SceHidConfigService] SERVER_URL={http://ps4-system.sec.np.dl.playstation.net/ps4-system/hid_config/np/v00/hid_config.env}
+<118>[SceHidConfigService] VerifySignature : size: total(610), signature(256), message(354) [byte]
+<118>[SceHidConfigService] VerifySignature : pass
+<118>[SceHidConfigService] DownloadFile : [UsbPower]
+<118>[SceHidConfigService] ifModifiedSince={Mon, 01 Mar 2021 07:07:09 +0000}
+<118>[SceHidConfigService] SERVER_URL={http://ps4-system.sec.np.dl.playstation.net/ps4-system/hidusbpower/np/v00/hidusbpower.env}
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\http_client.cpp(132) Get: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\http_client.cpp(132) Get: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(241) DownloadFile: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(314) Run: HCS_CONTINUE::0x8041013d
+<118>[SceHidConfigService] PERIODIC_CHECK_INTERVAL_SEC={420}
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(241) DownloadFile: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(314) Run: HCS_CONTINUE::0x8041013d
+<118>[SceHidConfigService] PERIODIC_CHECK_INTERVAL_SEC={420}
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3860.8 KB, trend +4.7 KB/min, peak 4311.0 KB, when 426 [sec]
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3860.3 KB, trend +4.7 KB/min, peak 4311.0 KB, when 459 [sec]
+<118>[SceWorkaroundCtl] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={466} isFirstTime={1}
+<118>[SceWorkaroundCtl] start DownloadFile
+<118>[SceWorkaroundCtl] ifModifiedSince={Thu, 10 Dec 2020 08:29:25 +0000}
+<118>[SceWorkaroundCtl] W:\Build\J02700523\vsh\shell\shell_core\workaround_ctl\http_client.cpp(132) Get: WC_ISOK::0x8041013d
+<118>[SceWorkaroundCtl] W:\Build\J02700523\vsh\shell\shell_core\workaround_ctl\workaround_ctl_manager.cpp(288) DownloadFile: WC_ISOK::0x8041013d
+<118>[SceWorkaroundCtl] W:\Build\J02700523\vsh\shell\shell_core\workaround_ctl\workaround_ctl_manager.cpp(451) Run: WC_CONTINUE::0x8041013d
+<118>[SceWorkaroundCtl] PERIODIC_CHECK_INTERVAL_SEC={420}
+<118>[SceSystemStateMgr] No user input for 420 seconds
+<118>#LOGIN MGR# Receive Event : SCE_MBUS_EVENT_DEVICE_STATUS_UPDATED [DeviceId:0x30300]
+<118>[SceShellCore] Libc Heap Status: free 36%, in-use 3860.8 KB, trend +0.6 KB/min, peak 4311.0 KB, when 490 [sec]
+<118>[SceShellCore] Libc Heap Status: free 36%, in-use 3864.9 KB, trend +3.2 KB/min, peak 4311.0 KB, when 521 [sec]
+<118>[SceNetEv] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} contentId={8}, serviceName={netev}
+<118>[SceNetEv] start DownloadFile, contentId={8}, serviceName={netev}
+<118>[SceNetEv] ifModifiedSince={Tue, 02 Mar 2021 16:11:59 +0000}
+<118>[SceNetEv] W:\Build\J02700523\vsh\shell\shell_core\netev\netev_http_client.cpp(132) Get: NETEV_ISOK::0x8041013d
+<118>[SceNetEv] W:\Build\J02700523\vsh\shell\shell_core\netev\netev_manager.cpp(345) DownloadFile: NETEV_ISOK::0x8041013d
+<118>[SceNetEv] W:\Build\J02700523\vsh\shell\shell_core\netev\netev_manager.cpp(493) Run: NETEV_CONTINUE::0x8041013d
+<118>[SceNetEv] PERIODIC_CHECK_INTERVAL_SEC={480}
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3807.8 KB, trend -57.6 KB/min, peak 4311.0 KB, when 552 [sec]
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3807.8 KB, trend +0.1 KB/min, peak 4311.0 KB, when 603 [sec]
+<118>[SL][14:38:20:648][Thread 0x00018846][INFO][TRACE][ALWAYS][MAIN STREAM][BEGIN][Heap]sanity OK, free 2326720 (37%), in-use 3899200 (63%), peak 4414432 (71%), when 619 [sec]
+<118>[SL][14:38:20:852][Thread 0x00018846][INFO][TRACE][ALWAYS][MAIN STREAM][END  ][Heap]sanity OK, free 2325856 (37%), in-use 3900064 (63%), peak 4414432 (71%), when 620 [sec]
+<118>[SceRnpsAppMgr] PERIODIC_CHECK_INTERVAL_SEC={600}
+<118>[SceRnpsAppMgr] CheckAllRnpsApps : trigger = 0, num_apps = 2
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_http.cpp(409) Request: RNPSAM_ISOK::0x8041013d
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_updater.cpp(720) Download: RNPSAM_ISOK::0x8041013d
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_http.cpp(409) Request: RNPSAM_ISOK::0x8041013d
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_updater.cpp(720) Download: RNPSAM_ISOK::0x8041013d
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_http.cpp(409) Request: RNPSAM_ISOK::0x8041013d
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_updater.cpp(720) Download: RNPSAM_ISOK::0x8041013d
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_updater.cpp(661) DownloadAndInstall: RNPSAM_ISOK::0x8041013d
+<118>[SceRnpsAppMgr] W:\Build\J02700523\vsh\shell\shell_core\rnps_app_mgr\rnps_app_mgr_updater.cpp(1506) CheckAllRnpsApps: RNPSAM_ISOK::0x8041013d
+<118>[SceShellUI] I/PSM.UI : UI system timer elapsed 00:11:00
+<118>[NpPush] Disconnected. (code=8041013d)
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3808.1 KB, trend +0.3 KB/min, peak 4311.0 KB, when 697 [sec]
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3816.8 KB, trend +8.9 KB/min, peak 4311.0 KB, when 832 [sec]
+<118>[SceHidConfigService] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={841} isFirstTime={1}
+<118>[SceHidConfigService] start DownloadFile
+<118>[SceHidConfigService] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={841} isFirstTime={1}
+<118>[SceHidConfigService] start DownloadFile
+<118>[SceHidConfigService] DownloadFile : [RevokeList]
+<118>[SceHidConfigService] ifModifiedSince={Fri, 09 Mar 2018 03:55:47 +0000}
+<118>[SceHidConfigService] SERVER_URL={http://ps4-system.sec.np.dl.playstation.net/ps4-system/hid_config/np/v00/hid_config.env}
+<118>[SceHidConfigService] VerifySignature : size: total(610), signature(256), message(354) [byte]
+<118>[SceHidConfigService] VerifySignature : pass
+<118>[SceHidConfigService] DownloadFile : [UsbPower]
+<118>[SceHidConfigService] ifModifiedSince={Mon, 01 Mar 2021 07:07:09 +0000}
+<118>[SceHidConfigService] SERVER_URL={http://ps4-system.sec.np.dl.playstation.net/ps4-system/hidusbpower/np/v00/hidusbpower.env}
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\http_client.cpp(132) Get: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(241) DownloadFile: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(314) Run: HCS_CONTINUE::0x8041013d
+<118>[SceHidConfigService] PERIODIC_CHECK_INTERVAL_SEC={420}
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\http_client.cpp(132) Get: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(241) DownloadFile: HCS_ISOK::0x8041013d
+<118>[SceHidConfigService] W:\Build\J02700523\vsh\shell\shell_core\hid_config_service\hid_config_service_manager.cpp(314) Run: HCS_CONTINUE::0x8041013d
+<118>[SceHidConfigService] PERIODIC_CHECK_INTERVAL_SEC={420}
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3846.8 KB, trend +39.4 KB/min, peak 4311.0 KB, when 863 [sec]
+<118>[SceWorkaroundCtl] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} elapsed={886} isFirstTime={1}
+<118>[SceWorkaroundCtl] start DownloadFile
+<118>[SceWorkaroundCtl] ifModifiedSince={Thu, 10 Dec 2020 08:29:25 +0000}
+<118>[SceWorkaroundCtl] W:\Build\J02700523\vsh\shell\shell_core\workaround_ctl\http_client.cpp(132) Get: WC_ISOK::0x8041013d
+<118>[SceWorkaroundCtl] W:\Build\J02700523\vsh\shell\shell_core\workaround_ctl\workaround_ctl_manager.cpp(288) DownloadFile: WC_ISOK::0x8041013d
+<118>[SceWorkaroundCtl] W:\Build\J02700523\vsh\shell\shell_core\workaround_ctl\workaround_ctl_manager.cpp(451) Run: WC_CONTINUE::0x8041013d
+<118>[SceWorkaroundCtl] PERIODIC_CHECK_INTERVAL_SEC={420}
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3854.2 KB, trend +33.3 KB/min, peak 4311.0 KB, when 894 [sec]
+<118>[SL][14:43:20:273][Thread 0x00018846][INFO][TRACE][ALWAYS][MAIN STREAM][BEGIN][Heap]sanity OK, free 2275680 (37%), in-use 3950240 (63%), peak 4414432 (71%), when 919 [sec]
+<118>[SL][14:43:20:522][Thread 0x00018846][INFO][TRACE][ALWAYS][MAIN STREAM][END  ][Heap]sanity OK, free 2274816 (37%), in-use 3951104 (63%), peak 4444928 (71%), when 919 [sec]
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3857.7 KB, trend +8.3 KB/min, peak 4340.8 KB, when 925 [sec]
+<118>[SceSystemStateMgr] No user input for 900 seconds
+<118>[SceShellCore] Libc Heap Status: free 36%, in-use 3862.2 KB, trend +4.8 KB/min, peak 4340.8 KB, when 956 [sec]
+<118>[SceShellUI] I/PSM.UI : UI system timer elapsed 00:16:00
+<118>[SceShellCore] Libc Heap Status: free 36%, in-use 3861.7 KB, trend +2.8 KB/min, peak 4340.8 KB, when 989 [sec]
+<118>[SceShellCore] Libc Heap Status: free 36%, in-use 3862.2 KB, trend -1.9 KB/min, peak 4340.8 KB, when 1020 [sec]
+<118>[SceNetEv] PERIODIC_DOWNLOAD_INTERVAL_SEC={86400} contentId={8}, serviceName={netev}
+<118>[SceNetEv] start DownloadFile, contentId={8}, serviceName={netev}
+<118>[SceNetEv] ifModifiedSince={Tue, 02 Mar 2021 16:11:59 +0000}
+<118>[SceNetEv] W:\Build\J02700523\vsh\shell\shell_core\netev\netev_http_client.cpp(132) Get: NETEV_ISOK::0x8041013d
+<118>[SceNetEv] W:\Build\J02700523\vsh\shell\shell_core\netev\netev_manager.cpp(345) DownloadFile: NETEV_ISOK::0x8041013d
+<118>[SceNetEv] W:\Build\J02700523\vsh\shell\shell_core\netev\netev_manager.cpp(493) Run: NETEV_CONTINUE::0x8041013d
+<118>[SceNetEv] PERIODIC_CHECK_INTERVAL_SEC={480}
+<118>[SceShellCore] Libc Heap Status: free 36%, in-use 3866.1 KB, trend -1.1 KB/min, peak 4340.8 KB, when 1051 [sec]
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3808.3 KB, trend -58.5 KB/min, peak 4340.8 KB, when 1082 [sec]
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [ContentAreaScene : ContentAreaScene] -> [SystemArea : SystemAreaScene]
+<118>[SceShellUI] I/PSM.UI :      Scene [SystemArea : SystemAreaScene] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[1.46msec/4widgets] : SystemAreaNotification : SystemAreaPluginNotification
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: SystemAreaNotification : SystemAreaPluginNotification
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.30msec] : SystemAreaNotification : SystemAreaPluginNotification
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: BrowserMain : MainScene
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: SettingsScene : SettingScene
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: BookmarkScene : BookmarkView
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: BookmarkEditScene : BookmarkEditView
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: HistoryScene : HistoryView
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: WebViewDialog : WebViewDialogScene
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: WebBrowserScene : WebBrowserScene
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: WebBrowserPlugin : WebBrowserPlugin
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [SystemArea : SystemAreaScene] -> []
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[SceShellUI] W/PSM.UI : SystemSound called when there is no FocusActiveScene !
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.44msec] : BrowserMain : MainScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.03msec] : SettingsScene : SettingScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.04msec] : BookmarkScene : BookmarkView
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.04msec] : BookmarkEditScene : BookmarkEditView
+<118>
+<118>
+<118>~~~~~~~~~~ 	int CreateWithSystemPermission() type=FILE, path='/user/home/16a9f530/webbrowser/window_left.txt', permission=00700
+<118>
+<118>
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.03msec] : HistoryScene : HistoryView
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.25msec] : WebViewDialog : WebViewDialogScene
+<118>[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: WebBrowserScene to QueueTop.
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: WebBrowserScene : WebBrowserScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[4.96msec] : WebBrowserScene : WebBrowserScene
+<118>[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: WebBrowserScene to QueueTop.
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.04msec] : WebBrowserScene : WebBrowserScene
+<118>
+<118>
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.08msec] : WebBrowserScene : WebBrowserScene
+<118>~~~~~~~~~~ 	int CreateWithSystemPermission() type=FILE, path='/user/home/16a9f530/webbrowser/window_right.txt', permission=00700
+<118>
+<118>
+<118>
+<118>
+<118>~~~~~~~~~~ 	int CreateWithSystemPermission() type=FILE, path='/user/home/16a9f530/webbrowser/endhistory.txt', permission=00700
+<118>
+<118>
+<118>[Syscore App] EVFILT_PROC NOTE_EXIT received : pid=0x3f
+<118>[Syscore App] process delete event : pid=0x3f
+<118>[AppMgr Trace]: pid=0x3f, deleted.
+<118>[Syscore App] Syscore Event Queue Push : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[AppMgr] checkAppTerminated pid=0x2b is still alive in 0x60000201
+<118>[Syscore App]  ExpandCpuSetMode : enable
+<118>[Syscore App] Syscore Event Queue Pop : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[SceLncService] unmount(/mnt/sandbox/NPXS20001_000/sce_sbx/004/dev) failed. 0x80020010
+<118>[SceLncService] W:\Build\J02700523\vsh\shell\shell_core\lnc_service\lnc_mount_root.cpp(677) processUnmount: LNC_ISOK::0x80020010
+<118>[SceLncService] W:\Build\J02700523\vsh\shell\shell_core\lnc_service\lnc_mount_root.cpp(717) operator(): LNC_RTRACE::0x80020010
+<118>[SceLncService] rmdir(/mnt/sandbox/NPXS20001_000/sce_sbx/004) failed. 0x80020042
+<118>
+<118>
+<118>~~~~~~~~~~ 	int CreateWithSystemPermission() type=FILE, path='/user/home/16a9f530/webbrowser/setting.txt', permission=00700
+<118>
+<118>
+<118>[SceShellUI] I/PSM.UI : [WebSecurity] Dispose start
+<118>[Syscore App] EVFILT_PROC NOTE_EXIT received : pid=0x3e
+<118>[Syscore App] process delete event : pid=0x3e
+<118>[AppMgr Trace]: pid=0x3e, deleted.
+<118>[Syscore App] Syscore Event Queue Push : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[AppMgr] checkAppTerminated pid=0x2b is still alive in 0x60000201
+<118>[Syscore App]  ExpandCpuSetMode : enable
+<118>[Syscore App] Syscore Event Queue Pop : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[Syscore App] EVFILT_PROC NOTE_EXIT received : pid=0x3d
+<118>[Syscore App] process delete event : pid=0x3d
+<118>[AppMgr Trace]: pid=0x3d, deleted.
+<118>[Syscore App] Syscore Event Queue Push : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[AppMgr] checkAppTerminated pid=0x2b is still alive in 0x60000201
+<118>[Syscore App]  ExpandCpuSetMode : enable
+<118>[Syscore App] Syscore Event Queue Pop : SCE_SYSCORE_EVENT_ON_PROCESS_UNLOADED
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.35msec] : WebBrowserPlugin : WebBrowserPlugin
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : SettingsPlugin : SettingsApplication
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : Noname : FrameScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : NormalStack : SettingPageNormalStack
+<118>sceRemoteplayInitialize: 0x80fc0003
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : SettingsBGScene : Scene
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [] -> [settings_root : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [settings_root : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : settings_root : SettingPage
+<118>[ProfileCacheManager] JobUpdate.Run(0x16A9F530, Normal)
+<118>[ProfileCacheManager] JobUpdate.Finish(0x16A9F530)
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [settings_root : SettingPage] -> [console_settings : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [console_settings : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : console_settings : SettingPage
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [console_settings : SettingPage] -> [console_info : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [console_info : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : console_info : SettingPage
+<118>[SceSystemStateMgr] Sending CEC OneTouchPlay command to HDMI device
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [console_info : SettingPage] -> [ContentAreaScene : ContentAreaScene]
+<118>[SceShellUI] I/PSM.UI :      Scene [ContentAreaScene : ContentAreaScene] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellCore] Libc Heap Status: free 37%, in-use 3800.1 KB, trend -67.9 KB/min, peak 4340.8 KB, when 1113 [sec]
+<118>[SceSystemStateMgr] Sending CEC OneTouchPlay command to HDMI device
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [ContentAreaScene : ContentAreaScene] -> [console_info : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [console_info : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [console_info : SettingPage] -> [console_settings : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [console_settings : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: console_info : SettingPage
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.07msec] : console_info : SettingPage
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>#LOGIN MGR# : \event_thread.cpp(129) : Run : Event Received : SCE_LOGIN_MGR_EVENT_RESUME_EVENT_WATCH
+<118>#LOGIN MGR# [RunDisableWaitData]
+<118>#LOGIN MGR# [DequeueDisableWaitData] deviceId : 0xffffffffffffffff / size : 0 
+<118>#LOGIN MGR# [RunDisableWaitData] ret : -2135556087 / deviceId : 0xffffffffffffffff 
+<118>[DATA TRANSFER][PRINT] 55 Stop()
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>#LOGIN MGR# : \event_thread.cpp(129) : Run : Event Received : SCE_LOGIN_MGR_EVENT_RESUME_EVENT_WATCH
+<118>#LOGIN MGR# [RunDisableWaitData]
+<118>#LOGIN MGR# [DequeueDisableWaitData] deviceId : 0xffffffffffffffff / size : 0 
+<118>#LOGIN MGR# [RunDisableWaitData] ret : -2135556087 / deviceId : 0xffffffffffffffff 
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [console_settings : SettingPage] -> [settings_root : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [settings_root : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: console_settings : SettingPage
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : console_settings : SettingPage
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: SettingsPlugin : SettingsApplication
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [settings_root : SettingPage] -> [ContentAreaScene : ContentAreaScene]
+<118>[SceShellUI] I/PSM.UI :      Scene [ContentAreaScene : ContentAreaScene] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: SettingsBGScene : Scene
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: settings_root : SettingPage
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: NormalStack : SettingPageNormalStack
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: Noname : FrameScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.02msec] : Noname : FrameScene
+<118>[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: SettingsBGScene to QueueTop.
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.00msec] : SettingsBGScene : Scene
+<118>[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: settings_root to QueueTop.
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : settings_root : SettingPage
+<118>[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: NormalStack to QueueTop.
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.06msec] : NormalStack : SettingPageNormalStack
+<118>[SceShellUI] I/PSM.UI : **** SceneQueue Reordered : rule 1-A: Noname to QueueTop.
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.07msec] : Noname : FrameScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.00msec] : Noname : FrameScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.05msec] : SettingsPlugin : SettingsApplication
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [ContentAreaScene : ContentAreaScene] -> [SystemArea : SystemAreaScene]
+<118>[SceShellUI] I/PSM.UI :      Scene [SystemArea : SystemAreaScene] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: SystemAreaNotification : SystemAreaPluginNotification
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[1.08msec/4widgets] : SystemAreaNotification : SystemAreaPluginNotification
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.06msec] : SystemAreaNotification : SystemAreaPluginNotification
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [SystemArea : SystemAreaScene] -> []
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[SceShellUI] W/PSM.UI : SystemSound called when there is no FocusActiveScene !
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : SettingsPlugin : SettingsApplication
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : Noname : FrameScene
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : NormalStack : SettingPageNormalStack
+<118>sceRemoteplayInitialize: 0x80fc0003
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : SettingsBGScene : Scene
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [] -> [id_goldhen_menu : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [id_goldhen_menu : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : id_goldhen_menu : SettingPage
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [id_goldhen_menu : SettingPage] -> [id_goldhen_debug_settings : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [id_goldhen_debug_settings : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : id_goldhen_debug_settings : SettingPage
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [id_goldhen_debug_settings : SettingPage] -> [id_goldhen_menu : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [id_goldhen_menu : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : ** Unload enqueue: id_goldhen_debug_settings : SettingPage
+<118>[SceShellUI] I/PSM.UI : SceneQ : Unloaded[0.01msec] : id_goldhen_debug_settings : SettingPage
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [id_goldhen_menu : SettingPage] -> [id_goldhen_utils : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [id_goldhen_utils : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : id_goldhen_utils : SettingPage
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [id_goldhen_utils : SettingPage] -> [id_goldhen_utils_payloader : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [id_goldhen_utils_payloader : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.00msec] Layout[0.00msec/0widgets] : id_goldhen_utils_payloader : SettingPage
+<118>[SceShellUI] I/PSM.UI : OnFocusActiveSceneChanged [id_goldhen_utils_payloader : SettingPage] -> [id_goldhen_utils_payloader_launchpad : SettingPage]
+<118>[SceShellUI] I/PSM.UI :      Scene [id_goldhen_utils_payloader_launchpad : SettingPage] : Alive
+<118>SetDeviceIndexBehavior: mode=SpecificUser, param=0x16a9f530
+<118>[Theme/I] : Apply [BLUE] : [Option:111111]: with preloaded user
+<118>[SceShellUI] I/PSM.UI : SceneQ : Loaded[0.01msec] Layout[0.00msec/0widgets] : id_goldhen_utils_payloader_launchpad : SettingPage
+<118>[SceShellCore] Libc Heap Status: free 38%, in-use 3799.6 KB, trend -8.8 KB/min, peak 4340.8 KB, when 1144 [sec]
+kernel_init()
+Kernel base = ffffffff88874000
+Direct map base = ffff833c00000000
+Testing global variable access (write protection)...
+OK.
+Kernel interface initialized
+Installing sys_kexec to system call #153
+kexec_init() successful
+
+sys_kexec invoked
+========================================
+PS4 Linux Payloads AIO
+FW 14.02 (1402)
+VRAM 2048 MB
+Southbridge: Belize2
+========================================
+sys_kexec(0x2007a4000, 20718592, 0x201b68000, 12595590, "panic=0 clocksource=tsc tsc=reliable consoleblank=0 net.ifnames=0 radeon.dpm=0 amdgpu.dpm=0 drm.debug=0x4 log_buf_len=4M console=ttyS0,115200n8 console=tty0 video=HDMI-A-1:1920x1080@60D ignore_loglevel ps4_rescue loglevel=7 netconsole=6665@192.0.2.10/,6666@192.0.2.10/ac:81:12:af:3c:8d")
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_pfp.bin 
+Copying PFP firmware
+NOP handler at 0xff0
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_me.bin 
+Copying ME firmware
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_ce.bin 
+Copying CE firmware
+NOP handler at 0x7f0
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_mec.bin 
+Copying MEC firmware
+NOP handler at 0xff0
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_mec2.bin 
+Copying MEC2 firmware
+NOP handler at 0xff0
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_rlc.bin 
+Copying RLC firmware
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_sdma.bin 
+Copying SDMA firmware
+firmware_extract: Extract lib/firmware/amdgpu/liverpool_sdma1.bin 
+Copying SDMA1 firmware
+
+kexec parameters:
+    Kernel image size:   20718592 bytes
+    Initramfs size:      12690326 bytes (12595590 from user)
+    Kernel command line: panic=0 clocksource=tsc tsc=reliable consoleblank=0 net.ifnames=0 radeon.dpm=0 amdgpu.dpm=0 drm.debug=0x4 log_buf_len=4M console=ttyS0,115200n8 console=tty0 video=HDMI-A-1:1920x1080@60D ignore_loglevel ps4_rescue loglevel=7 netconsole=6665@192.0.2.10/,6666@192.0.2.10/ac:81:12:af:3c:8d
+    Kernel image buffer: 0xffffff807f94c000
+    Initramfs buffer:    0xffffff8080d14000
+Page relocation plan: 2040 pages, 2040 moves; kernel 5ffc000, initrd 20000000
+kernel_hook_install(0xffffff807f59917b, 0xffffffff88cbca10)
+  Using 64bit absolute jump
+Shutdown hook readback: PASS, site 0xffffffffffffffff, destination 0xffffffffffffffff
+******************************************************
+kexec successfully armed. Please shut down the system.
+******************************************************
+
+<118>[SceShellCore] VM Stats: RSS 664.4, kernel 292.9, wire count 351.2, swap out 0.0, page table CPU 2368/6144 GPU 367/2048
+<118>[SceShellCore] FMEM   1.3/   4.5 NPXS20977 SceSysAvControl.elf
+<118>[SceShellCore] FMEM  10.7/  74.3 NPXS20991 SceSysCore.elf
+<118>[SceShellCore] FMEM   9.4/  54.3 NPXS20973 orbis_audiod.elf
+<118>[SceShellCore] FMEM   3.2/  11.2 NPXS20976 GnmCompositor.elf
+<118>[SceShellCore] FMEM  27.6/ 342.8 NPXS20000 SceShellCore
+<118>[SceShellCore] FMEM 349.5/ 871.9 NPXS20001 SceShellUI
+<118>[SceShellCore] FMEM   3.5/   8.3 NPXS21003 SceAvCapture
+<118>[SceShellCore] FMEM   8.2/  24.5 NPXS21000 SceGameLiveStreaming
+<118>[SceShellCore] FMEM  45.6/  77.9 NPXS21002 ScePartyDaemon
+<118>[SceShellCore] FMEM   4.3/  25.4 NPXS21004 SceVideoCoreServer
+<118>[SceShellCore] FMEM   9.8/  51.3 NPXS21006 SceRemotePlay
+<118>[SceShellCore] FMEM   7.2/  53.2 NPXS21010 SceCloudClientDaemon
+<118>[SceShellCore] FMEM   3.3/  10.8 NPXS21016 SceSpZeroConf
+<118>[SceShellCore] FMEM   6.4/  18.1 NPXS21019 SceSocialScreenMgr
+<118>[SceShellCore] FMEM   7.9/ 156.0 NPXS21002 webrtc_daemon.self
+<118>[SceShellCore] FMEM   4.4/   9.8 NPXS21007 SceMusicCoreServer
+<118>[SceShellCore] FMEM   6.5/  14.4 NPXS21020 SceVoiceAndAgent
+<118>[SceShellCore] FMEM   2.1/   5.1 NPXS20967 fs_cleaner.elf
+<118>[SceShellCore] FMEM   2.1/  10.2 NPXS20974 SceVdecProxy.elf
+<118>[SceShellCore] FMEM   2.1/  10.3 NPXS20975 SceVencProxy.elf
+<118>[SceShellCore] FMEM  40.2/ 276.3 NPXS20001 SecureUIProcess.self
+<118>[SceShellCore] FMEM  79.5/ 564.5 NPXS20001 SecureWebProcess.self
+<118>[SceShellCore] FMEM  29.5/ 358.8 NPXS20001 orbis-jsc-compiler.self

@@ -1,0 +1,463 @@
+{
+  "tool": "PS4 Linux Scout v0.2",
+  "date": "2026-11-15T18:22:34.782961+00:00",
+  "ip": "192.0.2.10",
+  "processes": [
+    {
+      "pid": 67,
+      "name": "SceCdlgApp",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS22010",
+      "contentid": ""
+    },
+    {
+      "pid": 66,
+      "name": "eboot.bin",
+      "path": "/app0/eboot.bin",
+      "titleid": "UDAT99999",
+      "contentid": "IV0002-UDAT99999_00-DTESTBTT00000000"
+    },
+    {
+      "pid": 65,
+      "name": "ScePfs",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 64,
+      "name": "ScePfs",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 63,
+      "name": "SceSpkService",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 59,
+      "name": "orbis-jsc-compiler.self",
+      "path": "/qdLLmNm3Pn/common/lib/orbis-jsc-compiler.self",
+      "titleid": "NPXS20001",
+      "contentid": ""
+    },
+    {
+      "pid": 58,
+      "name": "SecureWebProcess.self",
+      "path": "/qdLLmNm3Pn/common/lib/SecureWebProcess.self",
+      "titleid": "NPXS20001",
+      "contentid": ""
+    },
+    {
+      "pid": 57,
+      "name": "SecureUIProcess.self",
+      "path": "/qdLLmNm3Pn/common/lib/SecureUIProcess.self",
+      "titleid": "NPXS20001",
+      "contentid": ""
+    },
+    {
+      "pid": 56,
+      "name": "SceVencProxy.elf",
+      "path": "/system/sys/SceVencProxy.elf",
+      "titleid": "NPXS20975",
+      "contentid": ""
+    },
+    {
+      "pid": 55,
+      "name": "SceVdecProxy.elf",
+      "path": "/system/sys/SceVdecProxy.elf",
+      "titleid": "NPXS20974",
+      "contentid": ""
+    },
+    {
+      "pid": 54,
+      "name": "fs_cleaner.elf",
+      "path": "/system/sys/fs_cleaner.elf",
+      "titleid": "NPXS20967",
+      "contentid": ""
+    },
+    {
+      "pid": 53,
+      "name": "SceVoiceAndAgent",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21020",
+      "contentid": ""
+    },
+    {
+      "pid": 52,
+      "name": "SceMusicCoreServer",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21007",
+      "contentid": ""
+    },
+    {
+      "pid": 51,
+      "name": "webrtc_daemon.self",
+      "path": "/app0/webrtc_daemon.self",
+      "titleid": "NPXS21002",
+      "contentid": ""
+    },
+    {
+      "pid": 50,
+      "name": "SceSocialScreenMgr",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21019",
+      "contentid": ""
+    },
+    {
+      "pid": 49,
+      "name": "SceSpZeroConf",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21016",
+      "contentid": ""
+    },
+    {
+      "pid": 48,
+      "name": "SceCloudClientDaemon",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21010",
+      "contentid": ""
+    },
+    {
+      "pid": 47,
+      "name": "SceRemotePlay",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21006",
+      "contentid": ""
+    },
+    {
+      "pid": 46,
+      "name": "SceVideoCoreServer",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21004",
+      "contentid": ""
+    },
+    {
+      "pid": 45,
+      "name": "ScePartyDaemon",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21002",
+      "contentid": ""
+    },
+    {
+      "pid": 44,
+      "name": "SceGameLiveStreaming",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21000",
+      "contentid": ""
+    },
+    {
+      "pid": 43,
+      "name": "SceAvCapture",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS21003",
+      "contentid": ""
+    },
+    {
+      "pid": 42,
+      "name": "SceShellUI",
+      "path": "/app0/eboot.bin",
+      "titleid": "NPXS20001",
+      "contentid": ""
+    },
+    {
+      "pid": 41,
+      "name": "SceShellCore",
+      "path": "/system/vsh/SceShellCore.elf",
+      "titleid": "NPXS20000",
+      "contentid": ""
+    },
+    {
+      "pid": 40,
+      "name": "GnmCompositor.elf",
+      "path": "/system/sys/GnmCompositor.elf",
+      "titleid": "NPXS20976",
+      "contentid": ""
+    },
+    {
+      "pid": 39,
+      "name": "orbis_audiod.elf",
+      "path": "/system/sys/orbis_audiod.elf",
+      "titleid": "NPXS20973",
+      "contentid": ""
+    },
+    {
+      "pid": 38,
+      "name": "SceSysCore.elf",
+      "path": "/system/sys/SceSysCore.elf",
+      "titleid": "NPXS20991",
+      "contentid": ""
+    },
+    {
+      "pid": 36,
+      "name": "SceSysAvControl.elf",
+      "path": "/SceSysAvControl.elf",
+      "titleid": "NPXS20977",
+      "contentid": ""
+    },
+    {
+      "pid": 35,
+      "name": "usb",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 34,
+      "name": "SceSwd",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 33,
+      "name": "SceVnlru",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 32,
+      "name": "SceSyncer",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 31,
+      "name": "SceBufdaemon2",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 30,
+      "name": "SceBufdaemon1",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 29,
+      "name": "SceBufdaemon0",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 28,
+      "name": "SceVmdaemon",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 27,
+      "name": "ScePagedaemonX",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 26,
+      "name": "ScePagedaemonX",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 25,
+      "name": "SceBtDriver",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 24,
+      "name": "SceTrpwCtrl",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 23,
+      "name": "SceTrpwReq",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 22,
+      "name": "SceTrpwIntr",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 21,
+      "name": "SceSbram",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 20,
+      "name": "SceDaAtcev",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 19,
+      "name": "SceDaThrd",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 18,
+      "name": "SceIccThermal",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 17,
+      "name": "SceMd0",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 16,
+      "name": "SceIccnvs",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 15,
+      "name": "SceXptThrd",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 9,
+      "name": "SceGbeMskCtrl",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 8,
+      "name": "SceSflash",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 7,
+      "name": "SceIccNotification",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 6,
+      "name": "SceHdmiEvent",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 5,
+      "name": "SceCameraSdma",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 4,
+      "name": "SceCameraDriverMain",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 3,
+      "name": "SceHidMain",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 2,
+      "name": "SceHidAuth",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 14,
+      "name": "SceYarrow",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 13,
+      "name": "geom",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 12,
+      "name": "intr",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 11,
+      "name": "idle",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 1,
+      "name": "mini-syscore.elf",
+      "path": "/mini-syscore.elf",
+      "titleid": "NPXS20969",
+      "contentid": ""
+    },
+    {
+      "pid": 10,
+      "name": "SceAudit",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    },
+    {
+      "pid": 0,
+      "name": "kernel",
+      "path": "",
+      "titleid": "",
+      "contentid": ""
+    }
+  ],
+  "system_maps": {
+    "SceShellUI": {
+      "error": "timed out"
+    },
+    "SceShellCore": {
+      "error": "timed out"
+    }
+  }
+}

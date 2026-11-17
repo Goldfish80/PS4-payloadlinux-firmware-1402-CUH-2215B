@@ -1,0 +1,78 @@
+{
+  "local_apic_address": "0xfee00000",
+  "entries": [
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008000001000000",
+      "processor_id": 0,
+      "apic_id": 0,
+      "flags": 1
+    },
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008010101000000",
+      "processor_id": 1,
+      "apic_id": 1,
+      "flags": 1
+    },
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008020201000000",
+      "processor_id": 2,
+      "apic_id": 2,
+      "flags": 1
+    },
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008030301000000",
+      "processor_id": 3,
+      "apic_id": 3,
+      "flags": 1
+    },
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008040401000000",
+      "processor_id": 4,
+      "apic_id": 4,
+      "flags": 1
+    },
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008050501000000",
+      "processor_id": 5,
+      "apic_id": 5,
+      "flags": 1
+    },
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008060601000000",
+      "processor_id": 6,
+      "apic_id": 6,
+      "flags": 1
+    },
+    {
+      "type": 0,
+      "size": 8,
+      "bytes": "0008070701000000",
+      "processor_id": 7,
+      "apic_id": 7,
+      "flags": 1
+    }
+  ],
+  "enabled_local_apics": 8,
+  "pcie_ecam": [
+    {
+      "base": "0xf8000000",
+      "segment": 0,
+      "bus_first": 0,
+      "bus_last": 63
+    }
+  ]
+}

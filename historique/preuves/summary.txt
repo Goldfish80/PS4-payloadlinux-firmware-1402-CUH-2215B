@@ -1,0 +1,47 @@
+========== SCE AUDIT / LECTURE SEULE ==========
+Taille: 20080272 SHA256: bfe5b4efae4f025674dc6346eb327bd4b69edb42dbb15895177a6ea51d2ded39
+Base dump: 0xffffffffc7114000 base link: 0xffffffff82200000 slide: 0x44f14000 entry RVA: 0x6a410
+STRTAB lien=0xffffffff82d3c000 live_dump=0xffffffffc7c50000 fichier=0xb3c000 taille=0x4ae9a nonzero=0/306842
+        premiers octets: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+SYMTAB lien=0xffffffff82d86ea0 live_dump=0xffffffffc7c9aea0 fichier=0xb86ea0 taille=0x5c760 nonzero=0/378720
+        premiers octets: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+RELA   lien=0xffffffff82de3600 live_dump=0xffffffffc7cf7600 fichier=0xbe3600 taille=0x107e50 nonzero=762739/1080912
+        premiers octets: c8 01 72 83 ff ff ff ff 08 00 00 00 00 00 00 00 30 10 20 82 ff ff ff ff 80 43 d2 83 ff ff ff ff 08 00 00 00 00 00 00 00 c0 01 72 83 ff ff ff ff 80 6d d0 83 ff ff ff ff 08 00 00 00 00 00 00 00
+HASH   lien=0xffffffff82eeb450 live_dump=0xffffffffc7dff450 fichier=0xceb450 taille=0x1343c nonzero=31246/78908
+        premiers octets: 69 0f 00 00 a4 3d 00 00 99 0e 00 00 06 25 00 00 92 0a 00 00 4e 1a 00 00 57 04 00 00 e6 00 00 00 d6 08 00 00 15 00 00 00 97 16 00 00 50 0e 00 00 f9 12 00 00 68 0b 00 00 eb 03 00 00 a4 07 00 00
+Réseau désactivé (PS4_SKIP_NETWORK=1)
+========== ANALYSE DES TABLES =========
+Sources sélectionnées: {'STRTAB': 'dump', 'SYMTAB': 'dump', 'HASH': 'dump', 'RELA': 'dump'}
+STRTAB chaînes imprimables >=5: 0
+SYMTAB enregistrements= 15780 nonzero= 0 st_name valide= 15780 hors STRTAB= 0 noms= 0 fonctions définies= 0 candidats= 0
+  symbole brut 0 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 1 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 2 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 3 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 4 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 5 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 6 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 7 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 8 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 9 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 10 0x0 0x0 0 000000000000000000000000000000000000000000000000
+  symbole brut 11 0x0 0x0 0 000000000000000000000000000000000000000000000000
+HASH taille= 0x1343c entrees_8_octets= 9863 reste= 4 octets_fin= 00000000
+HASH premiers uint32: (3945, 15780)
+HASH premiers 64 octets: 69 0f 00 00 a4 3d 00 00 99 0e 00 00 06 25 00 00 92 0a 00 00 4e 1a 00 00 57 04 00 00 e6 00 00 00 d6 08 00 00 15 00 00 00 97 16 00 00 50 0e 00 00 f9 12 00 00 68 0b 00 00 eb 03 00 00 a4 07 00 00
+RELA entrées= 45038 nonzero= 45038 types= [(8, 45038)]
+  RELA ('0xffffffff837201c8', '0x8', '0xffffffff82201030')
+  RELA ('0xffffffff83d24380', '0x8', '0xffffffff837201c0')
+  RELA ('0xffffffff83d06d80', '0x8', '0xffffffff822013ec')
+  RELA ('0xffffffff83d06d88', '0x8', '0xffffffff829708c0')
+  RELA ('0xffffffff83d06da0', '0x8', '0xffffffff82201438')
+  RELA ('0xffffffff83d06da8', '0x8', '0xffffffff829708e2')
+  RELA ('0xffffffff837201d8', '0x8', '0xffffffff843a1458')
+  RELA ('0xffffffff83720200', '0x8', '0xffffffff8297090e')
+  RELA ('0xffffffff83720208', '0x8', '0xffffffff825faf60')
+  RELA ('0xffffffff83720210', '0x8', '0xffffffff82970919')
+  RELA ('0xffffffff83720220', '0x8', '0xffffffff8297091b')
+  RELA ('0xffffffff83d04360', '0x8', '0xffffffff837201d8')
+CONCLUSION: aucun offset de fonction NOMMEE vérifié.
+Prochaine piste: analyse statique du noyau avec Ghidra et signatures.
+========== FIN ==========

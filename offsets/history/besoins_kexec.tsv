@@ -1,0 +1,34 @@
+name	rva_1400	rva_1402_source	status
+printf	0x2E07C0	0x2e0b20	source 14.02 et lecture live; voir collection.json pour niveau de preuve
+snprintf	0x2E0AC0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+copyin	0x2BDA40		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+copyout	0x2BD950		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+copyinstr	0x2BDEF0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+kmem_alloc_contig	0x24D780		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+kmem_free	0x466710		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+pmap_extract	0x573D0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+pmap_protect	0x58570		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+sched_pin	0x2319B0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+sched_unpin	0x2319D0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+smp_rendezvous	0x1AD880		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+smp_no_rendevous_barrier	0x1AD690		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+icc_query_nowait	0x448630		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+kernel_map	0x22d1d50	0x22d1d50	source 14.02 et lecture live; voir collection.json pour niveau de preuve
+sysent	0x1102b70	0x1102b70	source 14.02 et lecture live; voir collection.json pour niveau de preuve
+kernel_pmap_store	0x1b2c3a0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+Starsha_UcodeInfo	0x0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+gpu_devid_is_9924	0x4AD0A0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+gc_get_fw_info	0x4BBA50		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+pml4pml4i	0x1b2c390		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+dmpml4i	0x1b2c394		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+dmpdpi	0x1b2c398		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+eap_hdd_key	0x26c4cf0		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+edid	0x275e148		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+wlanbt	0x479550		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+kern_reboot	0x3A2850	0x3a2bc0	source 14.02 et lecture live; voir collection.json pour niveau de preuve
+set_gpu_freq	0x4BA590		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+set_pstate	0x4BC960		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+update_vddnp	0x4BAB30		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+set_cu_power_gate	0x4BAF40		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+pstate_before_shutdown	0x3A2E40		MANQUANT 14.02; reference 14.00 non transposable sans preuve
+set_nclk_mem_spd	0x4373F0		MANQUANT 14.02; reference 14.00 non transposable sans preuve

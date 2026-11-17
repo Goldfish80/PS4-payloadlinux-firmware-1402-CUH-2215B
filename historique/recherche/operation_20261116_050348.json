@@ -1,0 +1,21 @@
+{
+  "action": "build",
+  "started": "2026-11-16T05:03:48.690581+00:00",
+  "ip": "192.0.2.10",
+  "build": {
+    "preflight.elf": {
+      "size": 14280,
+      "sha256": "391a2b9560556ab3a517a724b0e459d481c4f514d1f50fd28a790eded0f879c8"
+    },
+    "linux-2048mb.elf": {
+      "size": 37104,
+      "sha256": "e57439be071f85cfbf1274e9791e51e27b009af563ce1ca879ecb616c8b3f069"
+    },
+    "linux-2048mb.bin": {
+      "size": 30152,
+      "sha256": "dc8be03d318a0dba5ae080b3fa87fd867c2462a8fb93dff8520a4f38a239b1e1"
+    }
+  },
+  "status": "done",
+  "finished": "2026-11-16T05:03:49.292401+00:00"
+}

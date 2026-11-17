@@ -1,0 +1,29 @@
+dump_bytes	file_offset	guard_matches_dump	guard_matches_live	live_address	live_bytes	live_matches_dump	name	provenance	rva	semantic_validation
+0f01f86548892425	0x1c0	True	True	0xffffffffc71141c0	0f01f86548892425	True	Xfast_syscall	ps4debug-NG init_1402sdk (nom attribue par source)	0x1c0	non demontree par signature seule
+554889e5534883ec	0x2e0b20	True	True	0xffffffffc73f4b20	554889e5534883ec	True	printf	ps4debug-NG init_1402sdk (nom attribue par source)	0x2e0b20	non demontree par signature seule
+554889e541574156	0x9520	True	True	0xffffffffc711d520	554889e541574156	True	malloc	ps4debug-NG init_1402sdk (nom attribue par source)	0x9520	non demontree par signature seule
+554889e541574156	0x96e0	True	True	0xffffffffc711d6e0	554889e541574156	True	free	ps4debug-NG init_1402sdk (nom attribue par source)	0x96e0	non demontree par signature seule
+554889e54989fa49	0x2bdb50	True	True	0xffffffffc73d1b50	554889e54989fa49	True	memcpy	ps4debug-NG init_1402sdk (nom attribue par source)	0x2bdb50	non demontree par signature seule
+554889e553504889	0x1fa900	True	True	0xffffffffc730e900	554889e553504889	True	memset	ps4debug-NG init_1402sdk (nom attribue par source)	0x1fa900	non demontree par signature seule
+554889e54885d274	0x3950f0	True	True	0xffffffffc74a90f0	554889e54885d274	True	memcmp	ps4debug-NG init_1402sdk (nom attribue par source)	0x3950f0	non demontree par signature seule
+554889e541574156	0x466920	True	True	0xffffffffc757a920	554889e541574156	True	kmem_alloc	ps4debug-NG init_1402sdk (nom attribue par source)	0x466920	non demontree par signature seule
+554889e5488d47ff	0x36b910	True	True	0xffffffffc747f910	554889e5488d47ff	True	strlen	ps4debug-NG init_1402sdk (nom attribue par source)	0x36b910	non demontree par signature seule
+554889e541574156	0x4c6c0	True	True	0xffffffffc71606c0	554889e541574156	True	create_thread	ps4debug-NG init_1402sdk (nom attribue par source)	0x4c6c0	non demontree par signature seule
+554889e541574156	0x3a2bc0	True	True	0xffffffffc74b6bc0	554889e541574156	True	kern_reboot	ps4debug-NG init_1402sdk (nom attribue par source)	0x3a2bc0	non demontree par signature seule
+554889e541574156	0x2f84c0	True	True	0xffffffffc740c4c0	554889e541574156	True	vm_map_lookup_entry	ps4debug-NG init_1402sdk (nom attribue par source)	0x2f84c0	non demontree par signature seule
+554889e541574156	0x2fa980	True	True	0xffffffffc740e980	554889e541574156	True	vm_map_delete	ps4debug-NG init_1402sdk (nom attribue par source)	0x2fa980	non demontree par signature seule
+554889e541574156	0x2fcce0	True	True	0xffffffffc7410ce0	554889e541574156	True	vm_map_protect	ps4debug-NG init_1402sdk (nom attribue par source)	0x2fcce0	non demontree par signature seule
+554889e541574156	0x2faf40	True	True	0xffffffffc740ef40	554889e541574156	True	vm_map_findspace	ps4debug-NG init_1402sdk (nom attribue par source)	0x2faf40	non demontree par signature seule
+554889e541574156	0x2f9080	True	True	0xffffffffc740d080	554889e541574156	True	vm_map_insert	ps4debug-NG init_1402sdk (nom attribue par source)	0x2f9080	non demontree par signature seule
+554889e541574156	0x366d80	True	True	0xffffffffc747ad80	554889e541574156	True	proc_rwmem	ps4debug-NG init_1402sdk (nom attribue par source)	0x366d80	non demontree par signature seule
+000a2a0828030000	0x1247f90			0xffffffffc8b5bf90	000a2a0828030000	True	disable_console_output	ps4debug-NG init_1402sdk (nom attribue par source)	0x1a47f90	non demontree par signature seule
+c06fb5c8ffffffff	0xd20d00			0xffffffffc8634d00	c06fb5c8ffffffff	True	M_TEMP	ps4debug-NG init_1402sdk (nom attribue par source)	0x1520d00	non demontree par signature seule
+				0xffffffffc93e5d50	00000014bbabffff	False	kernel_map	ps4debug-NG init_1402sdk (nom attribue par source)	0x22d1d50	non demontree par signature seule
+1001b7c8ffffffff	0xd1fa18			0xffffffffc8233a18	1001b7c8ffffffff	True	prison0	ps4debug-NG init_1402sdk (nom attribue par source)	0x111fa18	non demontree par signature seule
+				0xffffffffc924ae90	e801ba16bbabffff	False	rootvnode	ps4debug-NG init_1402sdk (nom attribue par source)	0x2136e90	non demontree par signature seule
+				0xffffffffc8c3c538	684b0457bbabffff	False	allproc	ps4debug-NG init_1402sdk (nom attribue par source)	0x1b28538	non demontree par signature seule
+0000000000000000	0xd02b70			0xffffffffc8216b70	0000000000000000	True	sysents	ps4debug-NG init_1402sdk (nom attribue par source)	0x1102b70	non demontree par signature seule
+554889e580bf1a01	0x2f7e80	True	True	0xffffffffc740be80	554889e580bf1a01	True	vm_map_lock_read	ps4debug-NG init_1402sdk guard; wrapper ABI specifique	0x2f7e80	non demontree par signature seule
+554889e541565380	0x2f7ed0	True	True	0xffffffffc740bed0	554889e541565380	True	vm_map_unlock_read	ps4debug-NG init_1402sdk guard; wrapper ABI specifique	0x2f7ed0	non demontree par signature seule
+554889e5535080bf	0x2f7d30	True	True	0xffffffffc740bd30	554889e5535080bf	True	vm_map_lock	ps4debug-NG init_1402sdk guard; wrapper ABI specifique	0x2f7d30	non demontree par signature seule
+554889e541565380	0x2f7da0	True	True	0xffffffffc740bda0	554889e541565380	True	vm_map_unlock	ps4debug-NG init_1402sdk guard; wrapper ABI specifique	0x2f7da0	non demontree par signature seule

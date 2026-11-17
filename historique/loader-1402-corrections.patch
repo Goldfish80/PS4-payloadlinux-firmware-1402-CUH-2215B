@@ -1,0 +1,612 @@
+diff --git a/lib/Makefile b/lib/Makefile
+index 493daca..b782197 100644
+--- a/lib/Makefile
++++ b/lib/Makefile
+@@ -1,7 +1,7 @@
+ all: lib.a
+ 
+ clean:
+-	rm -f lib.a *.o syscalls.asm
++	rm -f lib.a *.o
+ 
+ dl.o: dl.c
+ 	gcc -c -isystem ../freebsd-headers -nostdinc -fno-stack-protector dl.c -o dl.o -fPIE -ffreestanding
+@@ -12,7 +12,8 @@ crt.o: crt.asm
+ syscalls.o: syscalls.asm
+ 	yasm -f elf64 syscalls.asm
+ 
+-syscalls.asm: syscalls.py
++.PHONY: regenerate-syscalls
++regenerate-syscalls:
+ 	python3 syscalls.py > syscalls.asm
+ 
+ lib.a: crt.o dl.o syscalls.o
+diff --git a/lib/syscalls.asm b/lib/syscalls.asm
+index bc2bbf5..dfd0a73 100644
+--- a/lib/syscalls.asm
++++ b/lib/syscalls.asm
+@@ -4384,4 +4384,4 @@ ret
+ 
+ section .bss
+ global errno
+-errno resw 1
++errno resd 1
+diff --git a/lib/syscalls.py b/lib/syscalls.py
+index 8fb4839..e305b07 100644
+--- a/lib/syscalls.py
++++ b/lib/syscalls.py
+@@ -64,4 +64,4 @@ print()
+ 
+ print('section .bss')
+ print('global errno')
+-print('errno resw 1')
++print('errno resd 1')
+diff --git a/linux/Makefile b/linux/Makefile
+index 5dd751e..172f47a 100644
+--- a/linux/Makefile
++++ b/linux/Makefile
+@@ -11,8 +11,7 @@
+ 
+ SIZES_MB = 32 64 128 256 512 1024 2048 2560 3072 4096
+ 
+-FIRMWARES = 505 672 700 750 800 850 900 903 960 \
+-            1000 1050 1100 1102 1150 1200 1250 1300 1302 1350 1352 1400 1402
++FIRMWARES = 1402
+ 
+ FW_DEFINE_505  = PS4_5_05
+ FW_DEFINE_672  = PS4_6_72
+@@ -47,7 +46,7 @@ CC      = gcc
+ CFLAGS  = -isystem ../freebsd-headers \
+           -nostdinc -nostdlib \
+           -fno-stack-protector \
+-          -static -fPIE -ffreestanding
++          -static -fPIE -ffreestanding -mno-red-zone -mno-sse -mno-sse2 -mno-mmx
+ LDFLAGS = -Wl,-gc-sections
+ 
+ # ── kexec blob lists ──────────────────────────────────────────────────────────
+@@ -69,7 +68,7 @@ kexec-bins: $(KEXEC_BINS)
+ 
+ # ── Library ───────────────────────────────────────────────────────────────────
+ 
+-../lib/lib.a:
++../lib/lib.a: ../lib/Makefile ../lib/crt.asm ../lib/dl.c ../lib/syscalls.asm
+ 	cd ../lib && $(MAKE)
+ 
+ # ── Shared kexec builds ───────────────────────────────────────────────────────
+@@ -91,14 +90,13 @@ $(KEXEC_BUILD_DIR)/%/kexec.bin:
+ 	    -O binary $@
+ 
+ define make-aio-rules
+-payloads/linux-$(1)mb.elf: ../lib/lib.a main-aio.c fw_detect.c fw_offsets.h fw_detect.h sb_detect.h $(KEXEC_BINS)
++payloads/linux-$(1)mb.elf: ../lib/lib.a main-aio.c fw_detect.c fw_offsets.h fw_detect.h sb_detect.h guards-1402.h sysctl-subid.h $(KEXEC_BINS)
+ 	@mkdir -p payloads
+ 	$(CC) $(CFLAGS) ../lib/lib.a \
+ 	    -DVRAM_MB_DEFAULT=$(1) \
+ 	    -DVRAM_MB_MIN=32 \
+ 	    -DVRAM_MB_MAX=4096 \
+ 	    main-aio.c fw_detect.c \
+-		sb_detect.h \
+ 	    $(LDFLAGS) -o $$@
+ endef
+ 
+diff --git a/linux/main-aio.c b/linux/main-aio.c
+index 7bd9261..0b3447b 100644
+--- a/linux/main-aio.c
++++ b/linux/main-aio.c
+@@ -22,6 +22,22 @@
+ #include "aio_types.h"
+ #include "fw_detect.h"
+ #include "fw_offsets.h"
++#include "guards-1402.h"
++#include "sysctl-subid.h"
++
++static volatile int kernel_stage_result = -1;
++static int local_log_fd = -1;
++
++static __attribute__((optimize("O2"))) unsigned int boot_crc32(const char *data, unsigned long long size)
++{
++    unsigned int crc = 0xffffffffU;
++    for (unsigned long long i = 0; i < size; ++i) {
++        crc ^= (unsigned char)data[i];
++        for (int bit = 0; bit < 8; ++bit)
++            crc = (crc >> 1) ^ (0xedb88320U & (0U - (crc & 1U)));
++    }
++    return crc ^ 0xffffffffU;
++}
+ 
+ void* dlopen(const char*, int);
+ void* dlsym(void*, const char*);
+@@ -47,53 +63,32 @@ static void log_msg(const char *msg)
+         write(1, msg, len);
+     if (!len || msg[len - 1] != '\n')
+         write(1, "\n", 1);
++    if (local_log_fd >= 0) {
++        unsigned long long written = 0;
++        while (written < len) {
++            long n = write(local_log_fd, msg + written, len - written);
++            if (n <= 0) break;
++            written += (unsigned long long)n;
++        }
++        if (!len || msg[len - 1] != '\n') write(local_log_fd, "\n", 1);
++        fsync(local_log_fd);
++    }
+ }
+ 
+-// Universal kexec blobs
+-asm("kexec_505:\n.incbin \"kexec-build/505/kexec.bin\"\nkexec_505_end:\n");
+-asm("kexec_672:\n.incbin \"kexec-build/672/kexec.bin\"\nkexec_672_end:\n");
+-asm("kexec_700:\n.incbin \"kexec-build/700/kexec.bin\"\nkexec_700_end:\n");
+-asm("kexec_750:\n.incbin \"kexec-build/750/kexec.bin\"\nkexec_750_end:\n");
+-asm("kexec_800:\n.incbin \"kexec-build/800/kexec.bin\"\nkexec_800_end:\n");
+-asm("kexec_850:\n.incbin \"kexec-build/850/kexec.bin\"\nkexec_850_end:\n");
+-asm("kexec_900:\n.incbin \"kexec-build/900/kexec.bin\"\nkexec_900_end:\n");
+-asm("kexec_903:\n.incbin \"kexec-build/903/kexec.bin\"\nkexec_903_end:\n");
+-asm("kexec_960:\n.incbin \"kexec-build/960/kexec.bin\"\nkexec_960_end:\n");
+-asm("kexec_1000:\n.incbin \"kexec-build/1000/kexec.bin\"\nkexec_1000_end:\n");
+-asm("kexec_1050:\n.incbin \"kexec-build/1050/kexec.bin\"\nkexec_1050_end:\n");
+-asm("kexec_1100:\n.incbin \"kexec-build/1100/kexec.bin\"\nkexec_1100_end:\n");
+-asm("kexec_1102:\n.incbin \"kexec-build/1102/kexec.bin\"\nkexec_1102_end:\n");
+-asm("kexec_1150:\n.incbin \"kexec-build/1150/kexec.bin\"\nkexec_1150_end:\n");
+-asm("kexec_1200:\n.incbin \"kexec-build/1200/kexec.bin\"\nkexec_1200_end:\n");
+-asm("kexec_1250:\n.incbin \"kexec-build/1250/kexec.bin\"\nkexec_1250_end:\n");
+-asm("kexec_1300:\n.incbin \"kexec-build/1300/kexec.bin\"\nkexec_1300_end:\n");
+-asm("kexec_1302:\n.incbin \"kexec-build/1302/kexec.bin\"\nkexec_1302_end:\n");
+-asm("kexec_1350:\n.incbin \"kexec-build/1350/kexec.bin\"\nkexec_1350_end:\n");
+-asm("kexec_1352:\n.incbin \"kexec-build/1352/kexec.bin\"\nkexec_1352_end:\n");
+-asm("kexec_1400:\n.incbin \"kexec-build/1400/kexec.bin\"\nkexec_1400_end:\n");
+-
+-/* Forward declarations for all blob symbols */
+-extern char kexec_505[], kexec_505_end[];
+-extern char kexec_672[], kexec_672_end[];
+-extern char kexec_700[], kexec_700_end[];
+-extern char kexec_750[], kexec_750_end[];
+-extern char kexec_800[], kexec_800_end[];
+-extern char kexec_850[], kexec_850_end[];
+-extern char kexec_900[], kexec_900_end[];
+-extern char kexec_903[], kexec_903_end[];
+-extern char kexec_960[], kexec_960_end[];
+-extern char kexec_1000[], kexec_1000_end[];
+-extern char kexec_1050[], kexec_1050_end[];
+-extern char kexec_1100[], kexec_1100_end[];
+-extern char kexec_1102[], kexec_1102_end[];
+-extern char kexec_1150[], kexec_1150_end[];
+-extern char kexec_1200[], kexec_1200_end[];
+-extern char kexec_1250[], kexec_1250_end[];
+-extern char kexec_1300[], kexec_1300_end[];
+-extern char kexec_1302[], kexec_1302_end[];
+-extern char kexec_1350[], kexec_1350_end[];
+-extern char kexec_1352[], kexec_1352_end[];
+-extern char kexec_1400[], kexec_1400_end[];
++static void log_result(const char *label, unsigned long long value)
++{
++    char result[19];
++    const char *digits = "0123456789abcdef";
++    result[0] = '0'; result[1] = 'x'; result[18] = 0;
++    for (int i = 0; i < 16; ++i) result[2+i] = digits[(value >> (60-4*i)) & 15];
++    log_msg(label); log_msg(result);
++}
++
++// This console-specific build embeds only the checked 14.02 kernel payload.
++asm("kexec_1402:\n.incbin \"kexec-build/1402/kexec.bin\"\nkexec_1402_end:\n");
++
++/* Embedded 14.02 entry and end. */
++extern char kexec_1402[], kexec_1402_end[];
+ 
+ // Globals set by main() and used by kernel_main()
+ // kernel_main() runs in kernel context but can still read
+@@ -124,27 +119,7 @@ static fw_offsets_t *find_offsets_by_fw(u16 fw)
+ static void get_kexec_blob(u16 norm_fw, char **start, char **end)
+ {
+     switch (norm_fw) {
+-    case  505: *start = kexec_505;  *end = kexec_505_end;  break;
+-    case  672: *start = kexec_672;  *end = kexec_672_end;  break;
+-    case  700: *start = kexec_700;  *end = kexec_700_end;  break;
+-    case  750: *start = kexec_750;  *end = kexec_750_end;  break;
+-    case  800: *start = kexec_800;  *end = kexec_800_end;  break;
+-    case  850: *start = kexec_850;  *end = kexec_850_end;  break;
+-    case  900: *start = kexec_900;  *end = kexec_900_end;  break;
+-    case  903: *start = kexec_903;  *end = kexec_903_end;  break;
+-    case  960: *start = kexec_960;  *end = kexec_960_end;  break;
+-    case 1000: *start = kexec_1000; *end = kexec_1000_end; break;
+-    case 1050: *start = kexec_1050; *end = kexec_1050_end; break;
+-    case 1100: *start = kexec_1100; *end = kexec_1100_end; break;
+-    case 1102: *start = kexec_1102; *end = kexec_1102_end; break;
+-    case 1150: *start = kexec_1150; *end = kexec_1150_end; break;
+-    case 1200: *start = kexec_1200; *end = kexec_1200_end; break;
+-    case 1250: *start = kexec_1250; *end = kexec_1250_end; break;
+-    case 1300: *start = kexec_1300; *end = kexec_1300_end; break;
+-    case 1302: *start = kexec_1302; *end = kexec_1302_end; break;
+-    case 1350: *start = kexec_1350; *end = kexec_1350_end; break;
+-    case 1352: *start = kexec_1352; *end = kexec_1352_end; break;
+-    case 1400: *start = kexec_1400; *end = kexec_1400_end; break;
++    case 1402: *start = kexec_1402; *end = kexec_1402_end; break;
+     default:   *start = (char *)0;  *end = (char *)0;      break;
+     }
+ }
+@@ -161,19 +136,35 @@ int read_file(char *path, char **ptr, unsigned long long *sz)
+ {
+     int fd = open(path, O_RDONLY);
+     if (fd < 0) return -1;
+-    *sz = lseek(fd, 0, SEEK_END);
+-    *ptr = mmap(NULL, *sz, PROT_READ | PROT_WRITE,
++    long length = lseek(fd, 0, SEEK_END);
++    if (length <= 0 || length > 128 * 1024 * 1024) {
++        close(fd);
++        return -1;
++    }
++    char *buffer = mmap(NULL, (size_t)length + 1, PROT_READ | PROT_WRITE,
+                 MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+-    char *p = *ptr;
+-    unsigned long long l = *sz;
+-    lseek(fd, 0, SEEK_SET);
++    if (buffer == MAP_FAILED) { close(fd); return -1; }
++    char *p = buffer;
++    unsigned long long l = (unsigned long long)length;
++    if (lseek(fd, 0, SEEK_SET) < 0) {
++        munmap(buffer, (size_t)length + 1);
++        close(fd);
++        return -1;
++    }
+     while (l) {
+-        unsigned long long chk = read(fd, p, l);
+-        if (chk <= 0) return -1;
++        long chk = read(fd, p, l);
++        if (chk <= 0) {
++            munmap(buffer, (size_t)length + 1);
++            close(fd);
++            return -1;
++        }
+         p += chk;
+         l -= chk;
+     }
++    buffer[length] = '\0';
+     close(fd);
++    *ptr = buffer;
++    *sz = (unsigned long long)length;
+     return 0;
+ }
+ 
+@@ -185,8 +176,8 @@ void evf_close(int);
+ void reboot_thread(void *_)
+ {
+     // Wait a bit and then reboot
+-    nanosleep((const struct timespec *)
+-              "\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", NULL);
++    const struct timespec delay = { .tv_sec = 8, .tv_nsec = 0 };
++    nanosleep(&delay, NULL);
+     int evf = evf_open("SceSysCoreReboot");
+     evf_cancel(evf, 0x4000, 0);
+     evf_close(evf);
+@@ -200,19 +191,7 @@ void reboot_thread(void *_)
+ 
+ void alert(const char* msg)
+ {
+-    static int(*sceSysUtilSendSystemNotificationWithText)(int, const char*);
+-    if(!sceSysUtilSendSystemNotificationWithText)
+-    {
+-        // Try standard path first, then common path
+-        void* handle = dlopen("/system/common/lib/libSceSysUtil.sprx", 0);
+-        if(!handle) handle = dlopen("libSceSysUtil.sprx", 0);
+-        
+-        if(handle)
+-            sceSysUtilSendSystemNotificationWithText = dlsym(handle, "sceSysUtilSendSystemNotificationWithText");
+-    }
+-    
+-    if(sceSysUtilSendSystemNotificationWithText)
+-        sceSysUtilSendSystemNotificationWithText(222, msg);
++    log_msg(msg);
+ }
+ 
+ int my_atoi(const char *s)
+@@ -220,9 +199,13 @@ int my_atoi(const char *s)
+     int ret = 0, neg = 0;
+     while (*s == ' ') s++;
+     neg = (*s == '-') ? 1 : 0;
++    if (*s == '-' || *s == '+') s++;
+     for (; *s; s++) {
+         char c = *s;
+-        if ('0' <= c && c <= '9') { ret *= 10; ret += c - '0'; }
++        if ('0' <= c && c <= '9') {
++            if (ret > 1000000) return 0;
++            ret *= 10; ret += c - '0';
++        }
+         else break;
+     }
+     return neg ? -ret : ret;
+@@ -257,17 +240,27 @@ void kernel_main(void)
+     // kernel_base calculate
+     unsigned long long kernel_base = get_syscall() - g_fw->xfast_syscall;
+ 
++    if (g_fw->fw_ver != 1402) {
++        kernel_stage_result = 200;
++        return;
++    }
++    kernel_stage_result = guard_1402(kernel_base);
++    if (kernel_stage_result) return;
++
+     // Disable write-protect to patch kernel
+-    asm volatile("cli\nmov %%cr0, %%rax\nbtc $16, %%rax\nmov %%rax, %%cr0"
+-                 : : : "rax");
++    unsigned long long saved_flags, saved_cr0, writable_cr0;
++    asm volatile("pushfq; pop %0; cli; mov %%cr0, %1"
++                 : "=r"(saved_flags), "=r"(saved_cr0) : : "memory");
++    writable_cr0 = saved_cr0 & ~(1ULL << 16);
++    asm volatile("mov %0, %%cr0" : : "r"(writable_cr0) : "memory");
+ 
+     *(char *)(kernel_base + g_fw->patch1) = 0x07;
+     *(char *)(kernel_base + g_fw->patch2) = 0x07;
+     // pstate set before shutdown (needed for PS4 Pro)
+     *(char *)(kernel_base + g_fw->pstate)  = 0x03;
+ 
+-    asm volatile("mov %%cr0, %%rax\nbts $16, %%rax\nmov %%rax, %%cr0\nsti"
+-                 : : : "rax");
++    asm volatile("mov %0, %%cr0; push %1; popfq"
++                 : : "r"(saved_cr0), "r"(saved_flags) : "memory");
+ 
+     unsigned long long early_printf = kernel_base + g_fw->printf_off;
+     unsigned long long kmem_alloc   = kernel_base + g_fw->kmem_alloc;
+@@ -277,11 +270,15 @@ void kernel_main(void)
+     char *new_kexec = ((char *(*)(unsigned long long, unsigned long long))
+                        kmem_alloc)(*(unsigned long long *)kernel_map,
+                                    g_kexec_e - g_kexec_s);
++    if (!new_kexec) {
++        kernel_stage_result = 201;
++        return;
++    }
+     for (int i = 0; g_kexec_s + i != g_kexec_e; i++)
+         new_kexec[i] = g_kexec_s[i];
+ 
+     // Launch kexec blob
+-    ((void (*)(void *, void *))new_kexec)((void *)early_printf, NULL);
++    kernel_stage_result = ((int (*)(void *, void *))new_kexec)((void *)early_printf, NULL);
+ }
+ 
+ // VRAM default values
+@@ -302,26 +299,9 @@ void kernel_main(void)
+ #define HDD_SECOND_BOOT_PATH "/user/system/boot/"
+ #endif
+ 
+-int get_sb_id() {
+-    static t_sysctlbyname p_sysctlbyname = NULL;
+-
+-    if (!p_sysctlbyname) {
+-        // Resolve it from libkernel.sprx which is always loaded
+-        void* handle = dlopen("libkernel.sprx", 0); 
+-        if (!handle) handle = dlopen("/system/common/lib/libkernel.sprx", 0);
+-        
+-        p_sysctlbyname = (t_sysctlbyname)dlsym(handle, "sysctlbyname");
+-    }
+-
+-    if (p_sysctlbyname) {
+-        uint32_t id = 0;
+-        size_t len = sizeof(id);
+-        // Call the resolved function pointer
+-        if (p_sysctlbyname("hw.sce_subsys_subid", &id, &len, NULL, 0) == 0) {
+-            return (int)id;
+-        }
+-    }
+-    return -1;
++int get_sb_id(void)
++{
++    return checked_subid();
+ }
+ 
+ const char* GetSouthbridgeName(int val) {
+@@ -344,14 +324,13 @@ const char* GetSouthbridgeName(int val) {
+ 
+ int main(void)
+ {
+-    // Ignore signals to prevent process termination
+-    struct sigaction sa = { .sa_handler = SIG_IGN, .sa_flags = 0 };
+-    sigaction(SIGSTOP, &sa, NULL);
+-    sigaction(SIGTERM, &sa, NULL);
+-    sigaction(SIGKILL, &sa, NULL);
++    local_log_fd = open("/data/linux/portage-linux/loader.log",
++                        O_CREAT | O_TRUNC | O_WRONLY, 0644);
++    log_msg("PS4_1402_BELIZE2_CHECKED_LOADER_START");
+ 
+     // Firmware detection and blob selection
+     u16 fw_ver = get_firmware();
++    log_result("FIRMWARE", fw_ver);
+     u16 norm   = normalize_fw_ver(fw_ver);
+ 
+     g_fw = find_offsets_by_fw(norm);
+@@ -359,6 +338,10 @@ int main(void)
+         alert("AIO: Unsupported firmware version - no offset table entry.");
+         return 1;
+     }
++    if (norm != 1402) {
++        alert("This checked build requires firmware 14.02.");
++        return 1;
++    }
+ 
+     get_kexec_blob(norm, &g_kexec_s, &g_kexec_e);
+     if (!g_kexec_s || g_kexec_s == g_kexec_e) {
+@@ -367,6 +350,11 @@ int main(void)
+     }
+     // southbridge
+     int sb_val = get_sb_id();
++    log_result("SOUTHBRIDGE", (unsigned int)sb_val);
++    if ((sb_val & 0xffffff) != 0x40100) {
++        alert("This checked build requires Belize2 A0.");
++        return 1;
++    }
+ 
+     // Linux files loading from USB or HDD
+     char *kernel = NULL; unsigned long long kernel_size = 0;
+@@ -376,19 +364,17 @@ int main(void)
+     int vram_mb = 0;
+ 
+ #define L(name, where, wheresz, is_fatal) \
+-    if (read_file("/mnt/usb0/" name, where, wheresz) \
+-     && read_file("/mnt/usb1/" name, where, wheresz) \
+-     && read_file(HDD_BOOT_PATH name, where, wheresz) \
+-     && read_file(HDD_SECOND_BOOT_PATH name, where, wheresz) \
++    if (read_file(HDD_BOOT_PATH name, where, wheresz) \
+      && is_fatal) { \
+         alert("Failed to load file: " name "\nChecked paths:\n" \
+-                "/mnt/usb0/" name "\n/mnt/usb1/" name "\n" \
+-                HDD_BOOT_PATH name "\n" HDD_SECOND_BOOT_PATH name); \
++                HDD_BOOT_PATH name); \
+         return 1; \
+     }
+ 
+     L("bzImage",            &kernel,  &kernel_size,  1);
+     L("initramfs.cpio.gz",  &initrd,  &initrd_size,  1);
++    log_result("KERNEL_SIZE", kernel_size);
++    log_result("INITRAMFS_SIZE", initrd_size);
+     L("bootargs.txt",       &cmdline, &cmdline_size,  0);
+ 
+     if (cmdline && cmdline_size) {
+@@ -410,8 +396,40 @@ int main(void)
+         vram_mb = VRAM_MB_DEFAULT;
+     }
+ 
++    if (kernel_size < 0x240 || kernel[0x1fe] != 0x55 ||
++        (unsigned char)kernel[0x1ff] != 0xaa ||
++        kernel[0x202] != 'H' || kernel[0x203] != 'd' ||
++        kernel[0x204] != 'r' || kernel[0x205] != 'S' ||
++        initrd_size < 2 || (unsigned char)initrd[0] != 0x1f ||
++        (unsigned char)initrd[1] != 0x8b) {
++        alert("Invalid bzImage or gzip initramfs; aborting before kernel changes.");
++        return 1;
++    }
++
++    if (kernel_size != 20718592ULL || initrd_size != 12595590ULL ||
++        boot_crc32(kernel, kernel_size) != 0x7fccbf20U ||
++        boot_crc32(initrd, initrd_size) != 0x7b56d686U) {
++        alert("Boot files differ from the verified Strawberry 7.3.3 pair; aborting before kernel changes.");
++        return 1;
++    }
++    log_msg("BOOT_FILE_CRC32_OK");
++
+     // Launch kernel exploit → kernel_main()
+     kexec(kernel_main, (void *)0);
++    log_result("KERNEL_STAGE_RESULT", (unsigned long long)kernel_stage_result);
++    if (kernel_stage_result != 0) {
++        alert("Kernel compatibility check or kexec initialization failed; no reboot requested.");
++        return 1;
++    }
++
++    int load_result = kexec_load(kernel, kernel_size, initrd, initrd_size, cmdline,
++                                pack_kexec_args(vram_mb, fw_ver, sb_val));
++    log_result("KEXEC_LOAD_RESULT", (unsigned long long)load_result);
++    if (load_result != 0) {
++        alert("kexec_load failed; no reboot requested.");
++        return 1;
++    }
++    log_msg("KEXEC_ARMED; normal shutdown requested in eight seconds");
+ 
+     // Launch reboot watchdog thread, then Linux loader
+     long x, y;
+@@ -428,8 +446,12 @@ int main(void)
+         .flags      = 0,
+         .rtp        = NULL,
+     };
+-    thr_new(&thr, sizeof(thr));
+-    kexec_load(kernel, kernel_size, initrd, initrd_size, cmdline,
+-               pack_kexec_args(vram_mb, fw_ver, sb_val));
+-    for (;;);
++    if (thr.stack_base == MAP_FAILED || thr_new(&thr, sizeof(thr)) != 0) {
++        alert("Linux is armed but automatic shutdown failed; shut down normally to continue.");
++        return 1;
++    }
++    for (;;) {
++        const struct timespec delay = { .tv_sec = 1, .tv_nsec = 0 };
++        nanosleep(&delay, NULL);
++    }
+ }
+diff --git a/linux/ps4-kexec-common/Makefile b/linux/ps4-kexec-common/Makefile
+index 5f9dd1a..916d835 100644
+--- a/linux/ps4-kexec-common/Makefile
++++ b/linux/ps4-kexec-common/Makefile
+@@ -16,7 +16,7 @@ CFLAGS += -march=btver2 -masm=intel -std=gnu11 -ffreestanding -fno-common \
+ 	-fPIE -pie -fno-stack-protector -fomit-frame-pointer -nostdlib -nostdinc \
+ 	-fno-asynchronous-unwind-tables \
+ 	-Os -Wall -Werror -Wl,--no-dynamic-linker,--build-id=none,-T,kexec.ld,--nmagic \
+-	-mcmodel=small -mno-red-zone
++	-mcmodel=small -mno-red-zone -mno-sse -mno-sse2 -mno-mmx
+ 
+ SOURCES := kernel.c kexec.c linux_boot.c linux_thunk.S uart.c firmware.c \
+ 	acpi.c crc32.c
+diff --git a/linux/ps4-kexec-common/kernel.c b/linux/ps4-kexec-common/kernel.c
+index aee9aa2..d6503d7 100644
+--- a/linux/ps4-kexec-common/kernel.c
++++ b/linux/ps4-kexec-common/kernel.c
+@@ -150,26 +150,54 @@ static int resolve_symbols(void)
+ 
+ #define	VM_MEMATTR_DEFAULT		0x06
+ 
++/* Keep the original vm_map address: the returned direct-map alias cannot be
++ * passed to kmem_free. sys_kexec needs four allocations per invocation. */
++static struct {
++    void *alias;
++    vm_offset_t mapped;
++    size_t size;
++} contig_allocations[4];
++
+ void *kernel_alloc_contig(size_t size)
+ {
++    unsigned int slot;
++    for (slot = 0; slot < 4 && contig_allocations[slot].alias; ++slot) {}
++    if (slot == 4 || !size) return NULL;
+     // use kmem_alloc_contig instead of contigalloc to avoid messing with a malloc_type...
+-    vm_offset_t ret = 0;
+-    while(!(ret = kern.kmem_alloc_contig(
++    vm_offset_t ret = kern.kmem_alloc_contig(
+                  *kern.kernel_map, size, M_ZERO | M_WAITOK, (vm_paddr_t)0,
+-                 ~(vm_paddr_t)0, 1, 0, VM_MEMATTR_DEFAULT)));
++                 ~(vm_paddr_t)0, 1, 0, VM_MEMATTR_DEFAULT);
+ 
+-    /*if (!ret) {
++    if (!ret) {
+         kern.printf("Failed to allocate %zud bytes\n", size);
+         return NULL;
+-    }*/
+-    return (void *)PA_TO_DM(kern.pmap_extract(kern.kernel_pmap_store, ret));
++    }
++    vm_paddr_t physical = kern.pmap_extract(kern.kernel_pmap_store, ret);
++    if (!physical) {
++        kern.kmem_free(*kern.kernel_map, ret, size);
++        return NULL;
++    }
++    void *alias = (void *)PA_TO_DM(physical);
++    contig_allocations[slot].alias = alias;
++    contig_allocations[slot].mapped = ret;
++    contig_allocations[slot].size = size;
++    return alias;
+ }
+ 
+ void kernel_free_contig(void *addr, size_t size)
+ {
+     if (!addr)
+         return;
+-    kern.kmem_free(*kern.kernel_map, (vm_offset_t)addr, size);
++    (void)size;
++    for (unsigned int slot = 0; slot < 4; ++slot) {
++        if (contig_allocations[slot].alias == addr) {
++            kern.kmem_free(*kern.kernel_map, contig_allocations[slot].mapped,
++                           contig_allocations[slot].size);
++            contig_allocations[slot].alias = NULL;
++            return;
++        }
++    }
++    kern.printf("Refusing to free an untracked contiguous allocation\n");
+ }
+ 
+ int kernel_hook_install(void *target, void *hook)
+@@ -299,12 +327,12 @@ int kernel_init(void *_early_printf)
+ #ifdef KASLR
+     // use `early_printf` to calculate kernel base
+     if (early_printf == NULL)
+-        return 0;
++        return -1;
+ 
+     kern.kern_base = (u64)(early_printf - kern_off_printf);
+     if ((kern.kern_base & PAGE_MASK) != 0) {
+         eprintf("Kernel base is not aligned\n");
+-        return 0;
++        return -1;
+     } else {
+         eprintf("Kernel base = %llx\n", kern.kern_base);
+     }

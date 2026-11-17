@@ -1,0 +1,24 @@
+[Check_rsa:52] ----- INIT ARMmbed with RSA_PKCS_V15  ---
+[Check_rsa:58] ----- Reading public key from /mnt/sandbox/NPXS39041_000/app0/Media/rsa.pub (rsa.pub) ---
+[Check_rsa:113] ----- Verifying the RSA/SHA-256 signature ---
+[Check_rsa:136] ----- Success the signature is valid  ---
+[Check_rsa:52] ----- INIT ARMmbed with RSA_PKCS_V15  ---
+[Check_rsa:58] ----- Reading public key from /mnt/sandbox/NPXS39041_000/app0/Media/rsa.pub (rsa.pub) ---
+[Check_rsa:113] ----- Verifying the RSA/SHA-256 signature ---
+[Check_rsa:136] ----- Success the signature is valid  ---
+[Check_rsa:52] ----- INIT ARMmbed with RSA_PKCS_V15  ---
+[Check_rsa:58] ----- Reading public key from /mnt/sandbox/NPXS39041_000/app0/Media/rsa.pub (rsa.pub) ---
+[Check_rsa:113] ----- Verifying the RSA/SHA-256 signature ---
+[Check_rsa:136] ----- Success the signature is valid  ---
+[Check_rsa:52] ----- INIT ARMmbed with RSA_PKCS_V15  ---
+[Check_rsa:58] ----- Reading public key from /mnt/sandbox/NPXS39041_000/app0/Media/rsa.pub (rsa.pub) ---
+[Check_rsa:113] ----- Verifying the RSA/SHA-256 signature ---
+[Check_rsa:136] ----- Success the signature is valid  ---
+[Check_rsa:52] ----- INIT ARMmbed with RSA_PKCS_V15  ---
+[Check_rsa:58] ----- Reading public key from /mnt/sandbox/NPXS39041_000/app0/Media/rsa.pub (rsa.pub) ---
+[Check_rsa:113] ----- Verifying the RSA/SHA-256 signature ---
+[Check_rsa:136] ----- Success the signature is valid  ---
+[Check_rsa:52] ----- INIT ARMmbed with RSA_PKCS_V15  ---
+[Check_rsa:58] ----- Reading public key from /mnt/sandbox/NPXS39041_000/app0/Media/rsa.pub (rsa.pub) ---
+[Check_rsa:113] ----- Verifying the RSA/SHA-256 signature ---
+[Check_rsa:136] ----- Success the signature is valid  ---

@@ -1,0 +1,1 @@
+PASS: actual console ACPI tables replayed through fix_acpi_tables with AddressSanitizer; rewritten roots and all tables including IVRS have valid checksums

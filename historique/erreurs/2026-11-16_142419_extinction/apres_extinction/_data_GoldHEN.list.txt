@@ -1,0 +1,8 @@
+drwxrwxrwx 7 0 0 512 Nov 15 2026 .
+drwxrwxrwx 13 0 0 512 Nov 16 2026 ..
+drwxrwxrwx 2 0 0 512 Nov 14 2026 plugins
+-rw-rw-rw- 1 0 0 1127 Nov 14 2026 config.ini
+drwxrwxrwx 2 0 0 512 Nov 14 2026 UPDATE
+drwxrwxrwx 6 0 0 512 Nov 14 2026 cheats
+drwxrwxrwx 2 0 0 512 Nov 15 2026 stats
+drwxrwxrwx 4 0 0 512 Nov 15 2026 patches

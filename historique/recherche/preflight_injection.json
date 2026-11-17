@@ -1,0 +1,10 @@
+{
+  "target": {
+    "name": "fs_cleaner.elf",
+    "pid": 54
+  },
+  "payload": "preflight.elf",
+  "sha256": "826fed639bd7e2085e9f4fef1437e9d34b4b32229b2980cfffbf599e17f7984c",
+  "purpose": "read-only kernel guard and boot-file CRC; no kernel patch or reboot",
+  "transport": "accepted"
+}

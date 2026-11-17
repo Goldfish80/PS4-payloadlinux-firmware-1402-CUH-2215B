@@ -1,0 +1,159 @@
+000573d0 55                       push     rbp                                        
+000573d1 4889e5                   mov      rbp, rsp                                   
+000573d4 4157                     push     r15                                        
+000573d6 4156                     push     r14                                        
+000573d8 53                       push     rbx                                        
+000573d9 50                       push     rax                                        
+000573da 488d15a2ce7200           lea      rdx, [rip + 0x72cea2]                      0x784283 'W:\\Build\\J02700521\\sys\\freebsd\\sys\\amd64\\amd64\\pmap.c'
+000573e1 b9ae080000               mov      ecx, 0x8ae                                 
+000573e6 4989f6                   mov      r14, rsi                                   
+000573e9 31f6                     xor      esi, esi                                   
+000573eb 4989ff                   mov      r15, rdi                                   
+000573ee 31db                     xor      ebx, ebx                                   
+000573f0 e8ab1c3200               call     0x3790a0                                   
+000573f5 498b4720                 mov      rax, qword ptr [r15 + 0x20]                
+000573f9 b927090000               mov      ecx, 0x927                                 
+000573fe c4c2f0f7ce               bextr    rcx, r14, rcx                              
+00057403 488b14c8                 mov      rdx, qword ptr [rax + rcx*8]               
+00057407 f6c201                   test     dl, 1                                      
+0005740a 0f84bb000000             je       0x574cb                                    
+00057410 8b0d7e4fad01             mov      ecx, dword ptr [rip + 0x1ad4f7e]           0x1b2c394 ''
+00057416 8b357c4fad01             mov      esi, dword ptr [rip + 0x1ad4f7c]           0x1b2c398 ''
+0005741c 48b800f0ffffffff0f00     movabs   rax, 0xffffffffff000                       
+00057426 4821c2                   and      rdx, rax                                   
+00057429 48c1e127                 shl      rcx, 0x27                                  
+0005742d 48c1e61e                 shl      rsi, 0x1e                                  
+00057431 4809ce                   or       rsi, rcx                                   
+00057434 48b9000000000080ffff     movabs   rcx, 0xffff800000000000                    
+0005743e 4809f1                   or       rcx, rsi                                   
+00057441 4c89f6                   mov      rsi, r14                                   
+00057444 48c1ee1b                 shr      rsi, 0x1b                                  
+00057448 4801ca                   add      rdx, rcx                                   
+0005744b 81e6f80f0000             and      esi, 0xff8                                 
+00057451 4809d6                   or       rsi, rdx                                   
+00057454 7425                     je       0x5747b                                    
+00057456 488b16                   mov      rdx, qword ptr [rsi]                       
+00057459 f6c201                   test     dl, 1                                      
+0005745c 741d                     je       0x5747b                                    
+0005745e 84d2                     test     dl, dl                                     
+00057460 781d                     js       0x5747f                                    
+00057462 4821c2                   and      rdx, rax                                   
+00057465 be15090000               mov      esi, 0x915                                 
+0005746a 4801ca                   add      rdx, rcx                                   
+0005746d c4c2c8f7f6               bextr    rsi, r14, rsi                              
+00057472 488b14f2                 mov      rdx, qword ptr [rdx + rsi*8]               
+00057476 f6c201                   test     dl, 1                                      
+00057479 7513                     jne      0x5748e                                    
+0005747b 31db                     xor      ebx, ebx                                   
+0005747d eb4c                     jmp      0x574cb                                    
+0005747f 48050010e0ff             add      rax, -0x1ff000                             
+00057485 4181e6ffffff3f           and      r14d, 0x3fffffff                           
+0005748c eb34                     jmp      0x574c2                                    
+0005748e 84d2                     test     dl, dl                                     
+00057490 7823                     js       0x574b5                                    
+00057492 4821c2                   and      rdx, rax                                   
+00057495 4801d1                   add      rcx, rdx                                   
+00057498 4c89f2                   mov      rdx, r14                                   
+0005749b 4181e6ff3f0000           and      r14d, 0x3fff                               
+000574a2 48c1ea09                 shr      rdx, 9                                     
+000574a6 81e2e00f0000             and      edx, 0xfe0                                 
+000574ac 4823040a                 and      rax, qword ptr [rdx + rcx]                 
+000574b0 4909c6                   or       r14, rax                                   
+000574b3 eb13                     jmp      0x574c8                                    
+000574b5 48050010e0ff             add      rax, -0x1ff000                             
+000574bb 4181e6ffff1f00           and      r14d, 0x1fffff                             
+000574c2 4821c2                   and      rdx, rax                                   
+000574c5 4909d6                   or       r14, rdx                                   
+000574c8 4c89f3                   mov      rbx, r14                                   
+000574cb 488d15b1cd7200           lea      rdx, [rip + 0x72cdb1]                      0x784283 'W:\\Build\\J02700521\\sys\\freebsd\\sys\\amd64\\amd64\\pmap.c'
+000574d2 4c89ff                   mov      rdi, r15                                   
+000574d5 b9c1080000               mov      ecx, 0x8c1                                 
+000574da 31f6                     xor      esi, esi                                   
+000574dc e86f1e3200               call     0x379350                                   
+000574e1 4889d8                   mov      rax, rbx                                   
+000574e4 4883c408                 add      rsp, 8                                     
+000574e8 5b                       pop      rbx                                        
+000574e9 415e                     pop      r14                                        
+000574eb 415f                     pop      r15                                        
+000574ed 5d                       pop      rbp                                        
+000574ee c3                       ret                                                 
+000574ef 90                       nop                                                 
+000574f0 55                       push     rbp                                        
+000574f1 4889e5                   mov      rbp, rsp                                   
+000574f4 4157                     push     r15                                        
+000574f6 4156                     push     r14                                        
+000574f8 4155                     push     r13                                        
+000574fa 4154                     push     r12                                        
+000574fc 53                       push     rbx                                        
+000574fd 4883ec38                 sub      rsp, 0x38                                  
+00057501 488d1d98597002           lea      rbx, [rip + 0x2705998]                     0x275cea0 ''
+00057508 8955c4                   mov      dword ptr [rbp - 0x3c], edx                
+0005750b 488d1571cd7200           lea      rdx, [rip + 0x72cd71]                      0x784283 'W:\\Build\\J02700521\\sys\\freebsd\\sys\\amd64\\amd64\\pmap.c'
+00057512 b9d6080000               mov      ecx, 0x8d6                                 
+00057517 4989f6                   mov      r14, rsi                                   
+0005751a 31f6                     xor      esi, esi                                   
+0005751c 4989fc                   mov      r12, rdi                                   
+0005751f 4531ff                   xor      r15d, r15d                                 
+00057522 488b03                   mov      rax, qword ptr [rbx]                       
+00057525 488945d0                 mov      qword ptr [rbp - 0x30], rax                
+00057529 48c745c800000000         mov      qword ptr [rbp - 0x38], 0                  
+00057531 e86a1b3200               call     0x3790a0                                   
+00057536 498b442420               mov      rax, qword ptr [r12 + 0x20]                
+0005753b b927090000               mov      ecx, 0x927                                 
+00057540 c4c2f0f7ce               bextr    rcx, r14, rcx                              
+00057545 48894da0                 mov      qword ptr [rbp - 0x60], rcx                
+00057549 488b04c8                 mov      rax, qword ptr [rax + rcx*8]               
+0005754d a801                     test     al, 1                                      
+0005754f 0f844f010000             je       0x576a4                                    
+00057555 b91e090000               mov      ecx, 0x91e                                 
+0005755a be15090000               mov      esi, 0x915                                 
+0005755f 49bf00f0ffffffff0f00     movabs   r15, 0xffffffffff000                       
+00057569 c4c2f0f7d6               bextr    rdx, r14, rcx                              
+0005756e c4c248f7ce               bextr    ecx, r14d, esi                             
+00057573 4c89f6                   mov      rsi, r14                                   
+00057576 4181e6ffff1f00           and      r14d, 0x1fffff                             
+0005757d 48c1ee0c                 shr      rsi, 0xc                                   
+00057581 48c1e203                 shl      rdx, 3                                     
+00057585 48c1e103                 shl      rcx, 3                                     
+00057589 81e6fc010000             and      esi, 0x1fc                                 
+0005758f 488955a8                 mov      qword ptr [rbp - 0x58], rdx                
+00057593 48894db0                 mov      qword ptr [rbp - 0x50], rcx                
+00057597 488975b8                 mov      qword ptr [rbp - 0x48], rsi                
+0005759b eb32                     jmp      0x575cf                                    
+0005759d 0f1f00                   nop      dword ptr [rax]                            
+000575a0 4c21fb                   and      rbx, r15                                   
+000575a3 4c89e7                   mov      rdi, r12                                   
+000575a6 488d55c8                 lea      rdx, [rbp - 0x38]                          
+000575aa 4889de                   mov      rsi, rbx                                   
+000575ad e82e840800               call     0xdf9e0                                    
+000575b2 85c0                     test     eax, eax                                   
+000575b4 0f8450010000             je       0x5770a                                    
+000575ba 498b442420               mov      rax, qword ptr [r12 + 0x20]                
+000575bf 488b4da0                 mov      rcx, qword ptr [rbp - 0x60]                
+000575c3 488b04c8                 mov      rax, qword ptr [rax + rcx*8]               
+000575c7 a801                     test     al, 1                                      
+000575c9 0f84cb000000             je       0x5769a                                    
+000575cf 8b15bf4dad01             mov      edx, dword ptr [rip + 0x1ad4dbf]           0x1b2c394 ''
+000575d5 8b0dbd4dad01             mov      ecx, dword ptr [rip + 0x1ad4dbd]           0x1b2c398 ''
+000575db 48be000000000080ffff     movabs   rsi, 0xffff800000000000                    
+000575e5 4c21f8                   and      rax, r15                                   
+000575e8 48c1e227                 shl      rdx, 0x27                                  
+000575ec 48c1e11e                 shl      rcx, 0x1e                                  
+000575f0 4809d1                   or       rcx, rdx                                   
+000575f3 4809f1                   or       rcx, rsi                                   
+000575f6 4801c8                   add      rax, rcx                                   
+000575f9 480345a8                 add      rax, qword ptr [rbp - 0x58]                
+000575fd 0f8497000000             je       0x5769a                                    
+00057603 488b00                   mov      rax, qword ptr [rax]                       
+00057606 a801                     test     al, 1                                      
+00057608 0f848c000000             je       0x5769a                                    
+0005760e 4c21f8                   and      rax, r15                                   
+00057611 4801c8                   add      rax, rcx                                   
+00057614 480345b0                 add      rax, qword ptr [rbp - 0x50]                
+00057618 0f847c000000             je       0x5769a                                    
+0005761e 4c8b28                   mov      r13, qword ptr [rax]                       
+00057621 4d85ed                   test     r13, r13                                   
+00057624 7474                     je       0x5769a                                    
+00057626 4584ed                   test     r13b, r13b                                 
+00057629 7835                     js       0x57660                                    
+0005762b 488b45b8                 mov      rax, qword ptr [rbp - 0x48]                

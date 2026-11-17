@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=PS4 Wayland display setup
+Comment=Set HDMI to 1080p and draw the XFCE wallpaper under labwc
+Exec=/home/debian/.local/bin/ps4-wayland-display.sh
+OnlyShowIn=XFCE;
+X-GNOME-Autostart-enabled=true

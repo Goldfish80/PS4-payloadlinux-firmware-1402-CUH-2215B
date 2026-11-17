@@ -1,0 +1,34 @@
+name	rva	status	matches_dump	dump_backed	address	source_attribution
+printf	0x2e0b20	read_live	True	True	0xffffffffc73f4b20	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+snprintf	0x2e0e20	read_live	True	True	0xffffffffc73f4e20	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+copyin	0x2bdd40	read_live	True	True	0xffffffffc73d1d40	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+copyout	0x2bdc50	read_live	True	True	0xffffffffc73d1c50	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+copyinstr	0x2be1f0	read_live	True	True	0xffffffffc73d21f0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+kmem_alloc_contig	0x24dbe0	read_live	True	True	0xffffffffc7361be0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+kmem_free	0x466af0	read_live	True	True	0xffffffffc757aaf0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+pmap_extract	0x573d0	read_live	True	True	0xffffffffc716b3d0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+pmap_protect	0x58570	read_live	True	True	0xffffffffc716c570	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+sched_pin	0x231e10	read_live	True	True	0xffffffffc7345e10	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+sched_unpin	0x231e30	read_live	True	True	0xffffffffc7345e30	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+smp_rendezvous	0x1adaa0	read_live	True	True	0xffffffffc72c1aa0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+smp_no_rendevous_barrier	0x1ad8b0	read_live	True	True	0xffffffffc72c18b0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+icc_query_nowait	0x448a10	read_live	True	True	0xffffffffc755ca10	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+kernel_map	0x22d1d50	read_live		False	0xffffffffc93e5d50	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+sysent	0x1102b70	read_live	True	True	0xffffffffc8216b70	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+kernel_pmap_store	0x1b2c3a0	read_live		False	0xffffffffc8c403a0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+Starsha_UcodeInfo	0x0	optional_absent_in_upstream			0xffffffffc7114000	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+gpu_devid_is_9924	0x4ad480	read_live	True	True	0xffffffffc75c1480	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+gc_get_fw_info	0x4bbe30	read_live	True	True	0xffffffffc75cfe30	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+pml4pml4i	0x1b2c390	read_live		False	0xffffffffc8c40390	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+dmpml4i	0x1b2c394	read_live		False	0xffffffffc8c40394	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+dmpdpi	0x1b2c398	read_live		False	0xffffffffc8c40398	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+eap_hdd_key	0x26c4cf0	not_read_personal_disk_key_not_required_for_USB_boot			0xffffffffc97d8cf0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+edid	0x275e148	read_live		False	0xffffffffc9872148	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+wlanbt	0x479930	read_live	True	True	0xffffffffc758d930	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+kern_reboot	0x3a2bc0	read_live	True	True	0xffffffffc74b6bc0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+set_gpu_freq	0x4ba970	read_live	True	True	0xffffffffc75ce970	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+set_pstate	0x4bcd40	read_live	True	True	0xffffffffc75d0d40	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+update_vddnp	0x4baf10	read_live	True	True	0xffffffffc75cef10	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+set_cu_power_gate	0x4bb320	read_live	True	True	0xffffffffc75cf320	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+pstate_before_shutdown	0x3a31b0	read_live	True	True	0xffffffffc74b71b0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes
+set_nclk_mem_spd	0x4377d0	read_live	True	True	0xffffffffc754b7d0	ArabPixel / PS4_14_02 table; role not proven merely by matching bytes

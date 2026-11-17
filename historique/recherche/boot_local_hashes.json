@@ -1,0 +1,17 @@
+{
+  "bzImage": {
+    "size": 20718592,
+    "crc32": "0x7fccbf20",
+    "sha256": "b451efdde5bc00c7602f9908e97ea84002775253da960e601d0857776eb61f4e"
+  },
+  "initramfs.cpio.gz": {
+    "size": 12595590,
+    "crc32": "0x7b56d686",
+    "sha256": "cc776db2e71b8ad4137c555b249de32f8a2aeb67056094d5ce6097cecb30c2d5"
+  },
+  "bootargs.txt": {
+    "size": 203,
+    "crc32": "0xdde39c97",
+    "sha256": "6ce60e4c87ad8ca4fc0341fc3a0e22a575f3c63be38fccb29978fde48c48d33d"
+  }
+}

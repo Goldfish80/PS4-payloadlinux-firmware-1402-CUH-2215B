@@ -1,0 +1,26 @@
+[
+  {
+    "name": "pthread_attr_init",
+    "address": "0x808dcc010",
+    "bytes": "554889e5e81707ffff8d880000028085c00f45c15dc390909090909090909090",
+    "mapped": true
+  },
+  {
+    "name": "pthread_attr_stacksize",
+    "address": "0x808dcc030",
+    "bytes": "554889e5e80709ffff8d880000028085c00f45c15dc390909090909090909090",
+    "mapped": true
+  },
+  {
+    "name": "pthread_create",
+    "address": "0x808dcc450",
+    "bytes": "554889e5e8b734ffff8d880000028085c00f45c15dc390909090909090909090",
+    "mapped": true
+  },
+  {
+    "name": "thr_initial",
+    "address": "0x808e46830",
+    "bytes": "2040f98008000000",
+    "mapped": true
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "kernel_base": "0xffffffffc7114000",
+  "entry": "0xffffffffc717e410",
+  "elf_type": 2,
+  "machine": 62,
+  "phnum": 6,
+  "segments": [
+    {
+      "index": 0,
+      "type": "PHDR",
+      "flags": "R--",
+      "offset": "0x40",
+      "vaddr": "0xffffffffc7114040",
+      "paddr": "0xffffffffc7114040",
+      "filesz": "0x150",
+      "memsz": "0x150",
+      "align": "0x8"
+    },
+    {
+      "index": 1,
+      "type": "INTERP",
+      "flags": "R--",
+      "offset": "0x190",
+      "vaddr": "0xffffffffc7114190",
+      "paddr": "0xffffffffc7114190",
+      "filesz": "0x7",
+      "memsz": "0x7",
+      "align": "0x1"
+    },
+    {
+      "index": 2,
+      "type": "LOAD",
+      "flags": "R-X",
+      "offset": "0x0",
+      "vaddr": "0xffffffffc7114000",
+      "paddr": "0xffffffffc7114000",
+      "filesz": "0xcfe9a0",
+      "memsz": "0xcfe9a0",
+      "align": "0x200000"
+    },
+    {
+      "index": 3,
+      "type": "0x61000010",
+      "flags": "R--",
+      "offset": "0xcff000",
+      "vaddr": "0xffffffffc8213000",
+      "paddr": "0xffffffffc8213000",
+      "filesz": "0x20cc0",
+      "memsz": "0x200000",
+      "align": "0x200000"
+    },
+    {
+      "index": 4,
+      "type": "LOAD",
+      "flags": "RW-",
+      "offset": "0xd20000",
+      "vaddr": "0xffffffffc8634000",
+      "paddr": "0xffffffffc8634000",
+      "filesz": "0x606690",
+      "memsz": "0x1314af0",
+      "align": "0x200000"
+    },
+    {
+      "index": 5,
+      "type": "DYNAMIC",
+      "flags": "RW-",
+      "offset": "0xcfe890",
+      "vaddr": "0xffffffffc7e12890",
+      "paddr": "0xffffffffc7e12890",
+      "filesz": "0x110",
+      "memsz": "0x110",
+      "align": "0x8"
+    }
+  ],
+  "dump": "/project/PS4/Linux/Scout/reports/kernel_20261115_192141.bin"
+}

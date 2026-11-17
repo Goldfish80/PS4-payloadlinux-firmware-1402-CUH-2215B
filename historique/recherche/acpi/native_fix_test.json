@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "address_sanitizer": "no memory error",
+  "rewritten_tables": [
+    {
+      "signature": "FACP",
+      "physical": "0xe016c",
+      "size": 244,
+      "checksum_valid": true
+    },
+    {
+      "signature": "APIC",
+      "physical": "0xe0298",
+      "size": 108,
+      "checksum_valid": true
+    },
+    {
+      "signature": "MCFG",
+      "physical": "0xe0304",
+      "size": 60,
+      "checksum_valid": true
+    },
+    {
+      "signature": "SSDT",
+      "physical": "0xe0730",
+      "size": 6468,
+      "checksum_valid": true
+    },
+    {
+      "signature": "IVRS",
+      "physical": "0xe2074",
+      "size": 84,
+      "checksum_valid": true
+    }
+  ]
+}

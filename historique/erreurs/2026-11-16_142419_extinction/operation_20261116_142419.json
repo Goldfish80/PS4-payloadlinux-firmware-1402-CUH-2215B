@@ -1,0 +1,92 @@
+{
+  "action": "boot",
+  "started": "2026-11-16T14:24:19.195500+00:00",
+  "ip": "192.0.2.10",
+  "compatibility": {
+    "firmware": 1402,
+    "kernel_base": "0xffffffffc7114000",
+    "southbridge": "Belize2 A0",
+    "subid": "0x40100",
+    "guards": 24,
+    "dmap_base": "0xffffabbb00000000",
+    "syscall_153": "nosys",
+    "timestamp": "2026-11-16T14:24:38.990279+00:00"
+  },
+  "build": {
+    "preflight.elf": {
+      "size": 14320,
+      "sha256": "65f92bbf541613305635da054cb5dd682c82827eda09192cdd5bbaed8ff2b754"
+    },
+    "linux-2048mb.elf": {
+      "size": 37144,
+      "sha256": "5dcb3d2909b1647bc3a343e1a9ee09a4391125bd52758099410eeb97af8c7832"
+    },
+    "linux-2048mb.bin": {
+      "size": 30152,
+      "sha256": "1e42c27c5259c02a5b19230b998c09b1be9ed77b989a2301b6ee6bfc30697987"
+    }
+  },
+  "deployment": {
+    "files": [
+      "/data/payloads/linux-1402-belize2-checked.elf",
+      "/data/payloads/linux-1402-belize2-checked.bin",
+      "/data/linux/portage-linux/preflight.elf",
+      "/data/linux/portage-linux/portage_linux.py",
+      "/data/linux/portage-linux/ps4_transport.py",
+      "/data/linux/portage-linux/guard_manifest.json",
+      "/data/linux/portage-linux/artifacts.json",
+      "/data/linux/portage-linux/RAPPORT_COMPLET.md",
+      "/data/linux/portage-linux/DOSSIER_1402_COMPLET.json",
+      "/data/linux/portage-linux/offsets_linux_1402.tsv"
+    ],
+    "artifacts": {
+      "preflight.elf": {
+        "size": 14320,
+        "sha256": "65f92bbf541613305635da054cb5dd682c82827eda09192cdd5bbaed8ff2b754"
+      },
+      "linux-2048mb.elf": {
+        "size": 37144,
+        "sha256": "5dcb3d2909b1647bc3a343e1a9ee09a4391125bd52758099410eeb97af8c7832"
+      },
+      "linux-2048mb.bin": {
+        "size": 30152,
+        "sha256": "1e42c27c5259c02a5b19230b998c09b1be9ed77b989a2301b6ee6bfc30697987"
+      }
+    },
+    "timestamp": "2026-11-16T14:24:59.491911+00:00"
+  },
+  "bootargs": {
+    "local_backup": "/project/PS4/portage-linux/recherche/bootargs_20261116_142501.original.txt",
+    "remote_backup": "/data/linux/portage-linux/bootargs_20261116_142501.original.txt",
+    "bootargs": "panic=0 clocksource=tsc tsc=reliable consoleblank=0 net.ifnames=0 radeon.dpm=0 amdgpu.dpm=0 drm.debug=0x4 log_buf_len=4M console=ttyS0,115200n8 console=tty0 video=HDMI-A-1:1920x1080@60D ignore_loglevel ps4_rescue loglevel=7 netconsole=6665@192.0.2.10/,6666@192.0.2.10/ac:81:12:af:3c:8d\n"
+  },
+  "preflight": {
+    "target": {
+      "name": "fs_cleaner.elf",
+      "pid": 54,
+      "libkernel_base": "0x808db8000"
+    },
+    "log": "PS4_1402_PREFLIGHT_V1\nUID 0x0000000000000000\nCPUID_SIGNATURE 0x0000000000710fc0\nCPU_BRAND DG1701SNF87IG                                  \nUSER_SUBID 0x0000000000040100\nSELF_FIRMWARE 0x000000000000057a\nKEXEC_SYSCALL_RETURN 0x0000000000000000\nBASE 0xffffffffc7114000\nGUARD_RESULT 0x0000000000000000\nFILE /data/linux/boot/bzImage\nSIZE 0x00000000013c2400 CRC32 0x000000007fccbf20\nFILE /data/linux/boot/initramfs.cpio.gz\nSIZE 0x0000000000c03186 CRC32 0x000000007b56d686\nFILE /data/linux/boot/bootargs.txt\nSIZE 0x0000000000000126 CRC32 0x000000006fe2129e\nPREFLIGHT_OK\n",
+    "timestamp": "2026-11-16T14:25:15.100305+00:00"
+  },
+  "final_compatibility": {
+    "firmware": 1402,
+    "kernel_base": "0xffffffffc7114000",
+    "southbridge": "Belize2 A0",
+    "subid": "0x40100",
+    "guards": 24,
+    "dmap_base": "0xffffabbb00000000",
+    "syscall_153": "nosys",
+    "timestamp": "2026-11-16T14:25:27.737348+00:00"
+  },
+  "launch_target": {
+    "name": "fs_cleaner.elf",
+    "pid": 54,
+    "libkernel_base": "0x808db8000"
+  },
+  "launch": "kexec_armed",
+  "loader_log": "PS4_1402_BELIZE2_CHECKED_LOADER_START\nFIRMWARE\n0x000000000000057a\nSOUTHBRIDGE\n0x0000000000040100\nKERNEL_SIZE\n0x00000000013c2400\nINITRAMFS_SIZE\n0x0000000000c03186\nBOOT_FILE_CRC32_OK\nKERNEL_STAGE_RESULT\n0x0000000000000000\nKEXEC_LOAD_RESULT\n0x0000000000000000\nKEXEC_ARMED; normal shutdown requested in eight seconds\n",
+  "boot_confirmation": "Kexec armed; Linux execution and HDMI output still require independent observation",
+  "status": "done",
+  "finished": "2026-11-16T14:25:31.392325+00:00"
+}

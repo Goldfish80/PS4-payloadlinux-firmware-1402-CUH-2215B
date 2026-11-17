@@ -1,0 +1,9 @@
+Fixing ACPI tables at 0xe0000 (0x7fb9ca884000)
+RSDT at 0xe0024
+XSDT at 0xe0088
+FACP at 0xe016c
+FACS at 0xe012c
+DSDT at 0xe0430
+APIC at 0xe0298
+MCFG at 0xe0304
+SSDT at 0xe0730

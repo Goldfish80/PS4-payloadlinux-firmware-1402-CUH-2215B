@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+    if __name__=='__main__':main()
+                            ~~~~^^
+    if a.publish:publish()
+                 ~~~~~~~^^
+    store('192.0.2.10',2121,REMOTE+'/'+name,(OUT/name).read_bytes())
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    with closing(ftp(ip,port)) as f:
+                 ~~~^^^^^^^^^
+    f=FTP();f.connect(ip,port,timeout=12);f.login();return f
+            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/ftplib.py", line 158, in connect
+    self.sock = socket.create_connection((self.host, self.port), self.timeout,
+                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                         source_address=self.source_address)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host

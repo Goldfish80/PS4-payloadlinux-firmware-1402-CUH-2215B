@@ -1,0 +1,695 @@
+{
+  "timestamp": "20261116_041457",
+  "ps4_ip": "192.0.2.10",
+  "ps4_port": 744,
+  "read_only": true,
+  "local_payload": {
+    "sha256": "a23b2ec5808bb6f051be159750588a0c48518701e3605f5069db34bcbab57cdc",
+    "matches_previous_hash": true
+  },
+  "paths": {
+    "elf": "/project/PS4/Linux/Scout/reports/kernel_20261115_full.elf",
+    "scout_json": "/project/PS4/Linux/Scout/reports/scout_readonly_20261115_190922.json",
+    "small_dump": "/project/PS4/Linux/Scout/reports/kernel_20261115_192141.bin",
+    "source": "/project/PS4/Linux/Scout/upstream/ps4debug-NG",
+    "payload": "/project/PS4/Linux/Scout/upstream/ps4debug-NG/ps4debug-ng.bin",
+    "output_dir": "/project/PS4/Linux/Scout/reports/master_20261116_041457"
+  },
+  "elf_file": {
+    "size": 20080272,
+    "sha256": "bfe5b4efae4f025674dc6346eb327bd4b69edb42dbb15895177a6ea51d2ded39",
+    "matches_previous_hash": true
+  },
+  "small_dump_prefix_match": true,
+  "elf": {
+    "header": {
+      "type": 2,
+      "machine": 62,
+      "entry": "0xffffffffc717e410",
+      "phoff": "0x40",
+      "phentsize": 56,
+      "phnum": 6,
+      "shoff": "0x0",
+      "shnum": 0,
+      "osabi": 9,
+      "flags": 0,
+      "ehsize": 64
+    },
+    "base": "0xffffffffc7114000",
+    "program_headers": [
+      {
+        "index": 0,
+        "type": 6,
+        "flags": 4,
+        "offset": "0x40",
+        "vaddr": "0xffffffffc7114040",
+        "paddr": "0xffffffffc7114040",
+        "filesz": "0x150",
+        "memsz": "0x150",
+        "align": "0x8",
+        "out_of_file": false,
+        "type_name": "PHDR",
+        "flags_text": "R--"
+      },
+      {
+        "index": 1,
+        "type": 3,
+        "flags": 4,
+        "offset": "0x190",
+        "vaddr": "0xffffffffc7114190",
+        "paddr": "0xffffffffc7114190",
+        "filesz": "0x7",
+        "memsz": "0x7",
+        "align": "0x1",
+        "out_of_file": false,
+        "type_name": "INTERP",
+        "flags_text": "R--"
+      },
+      {
+        "index": 2,
+        "type": 1,
+        "flags": 5,
+        "offset": "0x0",
+        "vaddr": "0xffffffffc7114000",
+        "paddr": "0xffffffffc7114000",
+        "filesz": "0xcfe9a0",
+        "memsz": "0xcfe9a0",
+        "align": "0x200000",
+        "out_of_file": false,
+        "type_name": "LOAD",
+        "flags_text": "R-X"
+      },
+      {
+        "index": 3,
+        "type": 1627389968,
+        "flags": 4,
+        "offset": "0xcff000",
+        "vaddr": "0xffffffffc8213000",
+        "paddr": "0xffffffffc8213000",
+        "filesz": "0x20cc0",
+        "memsz": "0x200000",
+        "align": "0x200000",
+        "out_of_file": false,
+        "type_name": "PT_SCE_RELRO",
+        "flags_text": "R--"
+      },
+      {
+        "index": 4,
+        "type": 1,
+        "flags": 6,
+        "offset": "0xd20000",
+        "vaddr": "0xffffffffc8634000",
+        "paddr": "0xffffffffc8634000",
+        "filesz": "0x606690",
+        "memsz": "0x1314af0",
+        "align": "0x200000",
+        "out_of_file": false,
+        "type_name": "LOAD",
+        "flags_text": "RW-"
+      },
+      {
+        "index": 5,
+        "type": 2,
+        "flags": 6,
+        "offset": "0xcfe890",
+        "vaddr": "0xffffffffc7e12890",
+        "paddr": "0xffffffffc7e12890",
+        "filesz": "0x110",
+        "memsz": "0x110",
+        "align": "0x8",
+        "out_of_file": false,
+        "type_name": "DYNAMIC",
+        "flags_text": "RW-"
+      }
+    ]
+  },
+  "dynamic_analysis": {
+    "tags": [
+      {
+        "tag": "0x61000025",
+        "name": "DT_SCE_HASH",
+        "value": "0xffffffff82eeb450"
+      },
+      {
+        "tag": "0x61000035",
+        "name": "DT_SCE_STRTAB",
+        "value": "0xffffffff82d3c000"
+      },
+      {
+        "tag": "0x61000037",
+        "name": "DT_SCE_STRSZ",
+        "value": "0x4ae9a"
+      },
+      {
+        "tag": "0x61000039",
+        "name": "DT_SCE_SYMTAB",
+        "value": "0xffffffff82d86ea0"
+      },
+      {
+        "tag": "0x6100003d",
+        "name": "DT_SCE_HASHSZ",
+        "value": "0x1343c"
+      },
+      {
+        "tag": "0x6100003f",
+        "name": "DT_SCE_SYMTABSZ",
+        "value": "0x5c760"
+      },
+      {
+        "tag": "0xc",
+        "name": "DT_INIT",
+        "value": "0xffffffff82200197"
+      },
+      {
+        "tag": "0x6100002f",
+        "name": "UNKNOWN",
+        "value": "0xffffffff82de3600"
+      },
+      {
+        "tag": "0x61000031",
+        "name": "UNKNOWN",
+        "value": "0x107e50"
+      },
+      {
+        "tag": "0x61000033",
+        "name": "UNKNOWN",
+        "value": "0x18"
+      },
+      {
+        "tag": "0x6100003b",
+        "name": "DT_SCE_SYMENT",
+        "value": "0x18"
+      },
+      {
+        "tag": "0x15",
+        "name": "DT_DEBUG",
+        "value": "0x0"
+      },
+      {
+        "tag": "0x1e",
+        "name": "DT_FLAGS",
+        "value": "0x0"
+      },
+      {
+        "tag": "0x61000009",
+        "name": "UNKNOWN",
+        "value": "0x1"
+      },
+      {
+        "tag": "0x6100000d",
+        "name": "UNKNOWN",
+        "value": "0x10100000077"
+      },
+      {
+        "tag": "0x61000011",
+        "name": "UNKNOWN",
+        "value": "0x0"
+      },
+      {
+        "tag": "0x0",
+        "name": "DT_NULL",
+        "value": "0x0"
+      }
+    ],
+    "symbols_total": 0,
+    "symbols_named": 0,
+    "matches": [],
+    "note": "DT_SYMTAB/DT_STRTAB absent ou pointeurs non mappables.",
+    "symtab_va": "0xffffffff82d86ea0",
+    "strtab_va": "0xffffffff82d3c000"
+  },
+  "entry_bytes": {
+    "file_offset": "0x6a410",
+    "hex": "66c704257204000034126a029d4889e58b7d048b7508488b25e3530b0131ede8ac2610004889c4e834ddfdfff4ebfd90554889e54156530fb74f0a81f9860000"
+  },
+  "interesting_strings": [
+    {
+      "offset": "0x13b1d7",
+      "text": "SCEEVENTM"
+    },
+    {
+      "offset": "0x13b81a",
+      "text": "SCEEVENTL"
+    },
+    {
+      "offset": "0x3b9c84",
+      "text": "sceKerneH"
+    },
+    {
+      "offset": "0x45708a",
+      "text": "SONY COMH"
+    },
+    {
+      "offset": "0x474607",
+      "text": "t-H9ApuUH"
+    },
+    {
+      "offset": "0x63bc09",
+      "text": "SceSysCoH"
+    },
+    {
+      "offset": "0x63bf3c",
+      "text": "SceShellH"
+    },
+    {
+      "offset": "0x64742f",
+      "text": "SCEVTRM"
+    },
+    {
+      "offset": "0x647476",
+      "text": "SCEVTRM"
+    },
+    {
+      "offset": "0x6e1c48",
+      "text": "t*H9Apu@H"
+    },
+    {
+      "offset": "0x770848",
+      "text": "SceSwd"
+    },
+    {
+      "offset": "0x770883",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\orbis_swd.c"
+    },
+    {
+      "offset": "0x7709be",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\geom\\label\\g_label.c"
+    },
+    {
+      "offset": "0x770b0f",
+      "text": "Userland and kernel parts are out of sync."
+    },
+    {
+      "offset": "0x770ca8",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x770d38",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x7715e9",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet6\\ip6_output.c"
+    },
+    {
+      "offset": "0x7716ab",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x7716e4",
+      "text": "Belize Scratch Pad Memory"
+    },
+    {
+      "offset": "0x7717f2",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_malloc.c"
+    },
+    {
+      "offset": "0x771920",
+      "text": "Size of kernel memory"
+    },
+    {
+      "offset": "0x771944",
+      "text": "Minimum size of kernel memory"
+    },
+    {
+      "offset": "0x771970",
+      "text": "Maximum size of kernel memory"
+    },
+    {
+      "offset": "0x7719a1",
+      "text": "Scale factor for kernel memory size"
+    },
+    {
+      "offset": "0x771a71",
+      "text": "Count of kernel malloc types"
+    },
+    {
+      "offset": "0x771ae0",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet\\tcp_offload.c"
+    },
+    {
+      "offset": "0x771b59",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet6\\udp6_usrreq.c"
+    },
+    {
+      "offset": "0x771f08",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\fs\\procfs\\procfs_fpregs.c"
+    },
+    {
+      "offset": "0x771fcd",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x772056",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_proc.c"
+    },
+    {
+      "offset": "0x7720eb",
+      "text": "Kernel stack size in pages"
+    },
+    {
+      "offset": "0x772455",
+      "text": "kern_dynlib_get_libkernel_text_segment"
+    },
+    {
+      "offset": "0x772840",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x772a03",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\fs\\cd9660\\cd9660_vfsops.c"
+    },
+    {
+      "offset": "0x772a9c",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x772c07",
+      "text": "Dump failed (not supported on this kernel)"
+    },
+    {
+      "offset": "0x77af37",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77af7e",
+      "text": "Belize Serial Flash I/F"
+    },
+    {
+      "offset": "0x77b071",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\dev\\scesb\\sflash\\sflash_mvl.c"
+    },
+    {
+      "offset": "0x77b2fd",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77b61d",
+      "text": "ORBIS Board ID"
+    },
+    {
+      "offset": "0x77b6ff",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77b7ff",
+      "text": "?W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet\\ip_id.c"
+    },
+    {
+      "offset": "0x77bbd8",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\net\\netisr.c"
+    },
+    {
+      "offset": "0x77bfae",
+      "text": "SceNetisr"
+    },
+    {
+      "offset": "0x77c0ef",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\vfs_aio.c"
+    },
+    {
+      "offset": "0x77c1a4",
+      "text": "Maximum number of kernel threads to use for handling async IO "
+    },
+    {
+      "offset": "0x77c1f1",
+      "text": "Number of presently active kernel threads for async IO"
+    },
+    {
+      "offset": "0x77c239",
+      "text": "Preferred number of ready kernel threads for async IO"
+    },
+    {
+      "offset": "0x77c4c2",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77c588",
+      "text": "SceAiod"
+    },
+    {
+      "offset": "0x77c85c",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\vfs_cluster.c"
+    },
+    {
+      "offset": "0x77ca1c",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\security\\audit\\audit_pipe.c"
+    },
+    {
+      "offset": "0x77d220",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\dev\\usb\\usb_transfer.c"
+    },
+    {
+      "offset": "0x77d989",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_rwlock.c"
+    },
+    {
+      "offset": "0x77da78",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_environment.c"
+    },
+    {
+      "offset": "0x77db52",
+      "text": "kernel environment"
+    },
+    {
+      "offset": "0x77dbda",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\dev\\scesb\\emc_timer\\timer_common.c"
+    },
+    {
+      "offset": "0x77de43",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77de95",
+      "text": "elf kernel"
+    },
+    {
+      "offset": "0x77dea0",
+      "text": "elf64 kernel"
+    },
+    {
+      "offset": "0x77df01",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77dfcf",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\dev\\acpica\\acpi_acad.c"
+    },
+    {
+      "offset": "0x77e075",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77e1a0",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet\\tcp_timer.c"
+    },
+    {
+      "offset": "0x77e84b",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet6\\nd6.c"
+    },
+    {
+      "offset": "0x77ea58",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\x86\\x86\\mca.c"
+    },
+    {
+      "offset": "0x77eaf7",
+      "text": "hw.mca.amd10h_L1TP"
+    },
+    {
+      "offset": "0x77eb0a",
+      "text": "amd10h_L1TP"
+    },
+    {
+      "offset": "0x77eb69",
+      "text": "Is the workaround for Erratum 383 on AMD Family 10h processors enabled?"
+    },
+    {
+      "offset": "0x77ef9f",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet\\ip_input.c"
+    },
+    {
+      "offset": "0x77f2c0",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x77f3ce",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\dev\\scesb\\sflash\\sflash_mtk.c"
+    },
+    {
+      "offset": "0x780038",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\vm\\vm_glue.c"
+    },
+    {
+      "offset": "0x7800ec",
+      "text": "failed to suspend SceSwapper"
+    },
+    {
+      "offset": "0x780109",
+      "text": "SceSwapper is not kthread"
+    },
+    {
+      "offset": "0x7806d6",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\dev\\usb\\controller\\xhci.c"
+    },
+    {
+      "offset": "0x7828bf",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\init_main.c"
+    },
+    {
+      "offset": "0x782955",
+      "text": "Control the output of verbose kernel messages"
+    },
+    {
+      "offset": "0x78298c",
+      "text": "mDBG: Kernel Build ID = %lx"
+    },
+    {
+      "offset": "0x782a02",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x782a43",
+      "text": "SceSwapper"
+    },
+    {
+      "offset": "0x782a95",
+      "text": "Shutdown timeout of init(8). Unused within kernel, but used to control init(8)"
+    },
+    {
+      "offset": "0x782cd0",
+      "text": ":/orbis_diag.elf"
+    },
+    {
+      "offset": "0x782d21",
+      "text": "Falling back to orbis_diag..."
+    },
+    {
+      "offset": "0x782f88",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_loginclass.c"
+    },
+    {
+      "offset": "0x783178",
+      "text": "kernel"
+    },
+    {
+      "offset": "0x78337d",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_thr.c"
+    },
+    {
+      "offset": "0x7834b2",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_thread.c"
+    },
+    {
+      "offset": "0x783653",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet6\\in6_rmx.c"
+    },
+    {
+      "offset": "0x783c56",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\dev\\usb\\usb_msctest.c"
+    },
+    {
+      "offset": "0x783c8f",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\netinet\\if_ether.c"
+    },
+    {
+      "offset": "0x78400c",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\net\\bnet_eventex.c"
+    },
+    {
+      "offset": "0x784283",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\amd64\\amd64\\pmap.c"
+    },
+    {
+      "offset": "0x784323",
+      "text": "increase sce.page_table.size"
+    },
+    {
+      "offset": "0x784340",
+      "text": "pmap_growkernel: no memory to grow kernel"
+    },
+    {
+      "offset": "0x7845e9",
+      "text": "[KERNEL] bad pte %#lx @ %p, %lx"
+    },
+    {
+      "offset": "0x784609",
+      "text": "pmap_mapdev: Couldn't alloc kernel virtual memory"
+    },
+    {
+      "offset": "0x785054",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\net\\route.c"
+    },
+    {
+      "offset": "0x785353",
+      "text": "W:\\Build\\J02700521\\sys\\freebsd\\sys\\kern\\kern_lock.c"
+    }
+  ],
+  "map_struct_source": {
+    "path": "/project/PS4/Linux/Scout/upstream/ps4debug-NG/kdebugger/include/proc.h",
+    "packed": true,
+    "size": 58,
+    "fields": [
+      {
+        "name": "name",
+        "type": "char",
+        "size": 32,
+        "offset": 0
+      },
+      {
+        "name": "start",
+        "type": "uint64_t",
+        "size": 8,
+        "offset": 32
+      },
+      {
+        "name": "end",
+        "type": "uint64_t",
+        "size": 8,
+        "offset": 40
+      },
+      {
+        "name": "offset",
+        "type": "uint64_t",
+        "size": 8,
+        "offset": 48
+      },
+      {
+        "name": "prot",
+        "type": "uint16_t",
+        "size": 2,
+        "offset": 56
+      }
+    ],
+    "source_text": "struct proc_vm_map_entry {\n    char name[32];\n    uint64_t start;\n    uint64_t end;\n    uint64_t offset;\n    uint16_t prot;\n} __attribute__((packed))"
+  },
+  "previous_scout_metadata": {
+    "protocol_version_raw": {
+      "hex": "312e33",
+      "text": "1.3"
+    },
+    "branding_raw": {
+      "hex": "70733464656275672d4e472062792050686172616f68326b2076312e332e3400312e32",
+      "text": "ps4debug-NG by Pharaoh2k v1.3.4\u00001.2"
+    },
+    "firmware_raw": 1402,
+    "platform_id": 4,
+    "kernel_base": "0xffffffffc7114000",
+    "kernel_base_sample_hex": "7f454c4602010109000000000000000002003e000100000010e417c7ffffffff4000000000000000000000000000000000000000400038000600000000000000"
+  },
+  "previous_map_counts": {
+    "SceSpkService": 1,
+    "SceShellUI": 1632,
+    "SceShellCore": 1011
+  },
+  "live": {
+    "connected": true,
+    "payload_version": "1.3",
+    "firmware_raw_hex": "0x57a",
+    "firmware_bcd": null,
+    "branding": "ps4debug-NG by Pharaoh2k v1.3.4\u00001.2",
+    "kernel_base": "0xffffffffc7114000",
+    "kernel_base_delta_vs_dump": "0x0",
+    "kernel_base_matches_dump": true,
+    "error": "TimeoutError('timed out')"
+  }
+}

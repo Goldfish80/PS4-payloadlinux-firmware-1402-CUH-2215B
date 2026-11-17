@@ -1,0 +1,18 @@
+{
+  "/data/linux/boot/bzImage": {
+    "size": 20718592
+  },
+  "/data/linux/boot/initramfs.cpio.gz": {
+    "size": 12595590
+  },
+  "/data/payloads/linux-2048mb.bin": {
+    "error": "TimeoutError('timed out')"
+  },
+  "/system/common/lib/libc.sprx": {
+    "status": "transfert interrompu, prefixe seulement",
+    "bytes_obtained": 260640,
+    "magic": "7f454c46",
+    "format": "ELF decrypte expose par FTP GoldHEN; pas un conteneur SELF",
+    "firmware_header": "Non disponible via ce prefixe ELF; parsing SELF inapplicable"
+  }
+}

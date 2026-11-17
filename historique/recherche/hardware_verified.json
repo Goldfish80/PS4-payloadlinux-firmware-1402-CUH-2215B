@@ -1,0 +1,28 @@
+{
+  "southbridge_subid": {
+    "rva": "0x21d279c",
+    "hex": "00010400",
+    "uint_le": 262400
+  },
+  "board_id": {
+    "rva": "0x21cc5d4",
+    "hex": "0302060101050501",
+    "uint_le": 73470470791758339
+  },
+  "gpu_identity": {
+    "rva": "0x23889a0",
+    "hex": "c00f7100000000000100000000000000",
+    "uint_le": null
+  },
+  "pstate_patch_window": {
+    "rva": "0x3a31a0",
+    "hex": "fce2018b0083e0803d000f7400751ebf01000000e8879b110085c0741089c6488d3d4883440031c0e853d9f3ff488d3d",
+    "uint_le": null
+  },
+  "kmem_patch1": {
+    "rva": "0x4669e8",
+    "hex": "89fa41b9070000006a00506a07e88626e9ff4883c42085c0",
+    "uint_le": null
+  },
+  "southbridge_mapping_source": "main-aio.c GetSouthbridgeName; hw.sce_subsys_subid OID handler -> 0x1d73a0 -> global 0x21d279c"
+}

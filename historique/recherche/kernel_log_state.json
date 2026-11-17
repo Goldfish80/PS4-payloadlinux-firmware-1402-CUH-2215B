@@ -1,0 +1,6 @@
+{
+  "base": "0xffffffffc7114000",
+  "position": 4909,
+  "state_hex": "1000000000000000010000002d130000",
+  "source": "sysctl msgbuf handler 0x770470 -> log buffer RVA 0x27e0230"
+}

@@ -1,0 +1,4 @@
+drwxrwxr-x 2 0 0 512 Nov 16 2026 .
+drwxrwx--- 5 0 0 512 Nov 14 2026 ..
+-rw-rw-r-- 1 0 0 32768 Nov 16 2026 sl_performance.db
+-rw-rw-r-- 1 0 0 589824 Nov 16 2026 system_log.db

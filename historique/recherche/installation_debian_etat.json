@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-16T15:07:43.640440+00:00",
+  "event": "Debian install screen observed by user",
+  "phase": "create disk image /dev/zero streaming, progress 0-25",
+  "expected_image": "home/debian-ps4.img",
+  "expected_size_default_mib": 16384,
+  "expected_duration": "script says a few minutes",
+  "next": "mke2fs ext4 then unpack rootfs archive",
+  "status": "waiting for user observation; do not interrupt write"
+}

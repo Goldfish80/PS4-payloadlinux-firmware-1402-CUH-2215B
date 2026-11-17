@@ -1,0 +1,18 @@
+{
+  "started": "2026-11-16T14:46:18.899627+00:00",
+  "sha256": "2206a6d8bec05a5fc6100dcb3a4a921536f4f0b58a27b611f0a8e3ca9f777350",
+  "transport": "GoldHEN TCP9090",
+  "bytes": 30152,
+  "sent": false,
+  "error": "ConnectionRefusedError(111, 'Connection refused')",
+  "console_execution_observed": true,
+  "launch_evidence": "Orbis TCP log: GoldHEN launchpad followed by kernel_init and sys_kexec",
+  "hook_readback": "PASS",
+  "relocation_pages": 2040,
+  "linux_kernel_execution_confirmed_by_user": true,
+  "user_screen_lines": [
+    "random: crng init done",
+    "registered with the hwrng core"
+  ],
+  "shell_or_rootfs_confirmed": false
+}

@@ -1,0 +1,9 @@
+cd ../lib && make
+make[1]: Nothing to be done for 'all'.
+gcc -isystem ../freebsd-headers -nostdinc -nostdlib -fno-stack-protector -static -fPIE -ffreestanding -mno-red-zone -mno-sse -mno-sse2 -mno-mmx ../lib/lib.a -DVRAM_MB_DEFAULT=2048 -DVRAM_MB_MIN=32 -DVRAM_MB_MAX=4096 main-aio.c fw_detect.c -Wl,-gc-sections -o payloads/linux-2048mb.elf
+objcopy payloads/linux-2048mb.elf \
+    --only-section .text \
+    --only-section .data \
+    --only-section .bss \
+    --only-section .rodata \
+    -O binary payloads/linux-2048mb.bin

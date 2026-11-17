@@ -1,0 +1,12 @@
+{
+  "remote": "/data/linux/portage-linux/portage-linux-complet.zip",
+  "size": 18529085,
+  "sha256_local": "fd83570f8583d7c3e5281f2b7d0e26ee39637ff8efeef5020d29b23c78ac7994",
+  "ftp_size_verified": true,
+  "seconds": 38.92280504700102,
+  "readback_error": "TimeoutError('timed out')",
+  "readback_bytes": 21720,
+  "native_remote_crc32": "0x8b7a252a",
+  "native_remote_size": 18529085,
+  "native_crc_matches": true
+}

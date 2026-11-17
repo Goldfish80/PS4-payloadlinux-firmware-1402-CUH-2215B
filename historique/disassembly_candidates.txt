@@ -1,0 +1,248 @@
+
+kmem_alloc
+
+/tmp/ps4_code.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000000000466920 <.data>:
+  466920:	55                   	push   %rbp
+  466921:	48 89 e5             	mov    %rsp,%rbp
+  466924:	41 57                	push   %r15
+  466926:	41 56                	push   %r14
+  466928:	41 55                	push   %r13
+  46692a:	41 54                	push   %r12
+  46692c:	53                   	push   %rbx
+  46692d:	48 83 ec 18          	sub    $0x18,%rsp
+  466931:	4c 8d 2d 68 65 2f 02 	lea    0x22f6568(%rip),%r13        # 0x275cea0
+  466938:	48 81 fe ff 7f ff ff 	cmp    $0xffffffffffff7fff,%rsi
+  46693f:	49 8b 45 00          	mov    0x0(%r13),%rax
+  466943:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+  466947:	0f 87 d5 00 00 00    	ja     0x466a22
+  46694d:	48 89 f3             	mov    %rsi,%rbx
+  466950:	48 8d 35 3d 0c 3a 00 	lea    0x3a0c3d(%rip),%rsi        # 0x807594
+  466957:	ba c8 00 00 00       	mov    $0xc8,%edx
+  46695c:	49 89 fe             	mov    %rdi,%r14
+  46695f:	48 81 c3 ff 3f 00 00 	add    $0x3fff,%rbx
+  466966:	48 81 e3 00 c0 ff ff 	and    $0xffffffffffffc000,%rbx
+  46696d:	e8 be 13 e9 ff       	call   0x2f7d30
+  466972:	4c 39 35 d7 b3 e6 01 	cmp    %r14,0x1e6b3d7(%rip)        # 0x22d1d50
+  466979:	49 8b 76 20          	mov    0x20(%r14),%rsi
+  46697d:	48 8d 93 00 40 00 00 	lea    0x4000(%rbx),%rdx
+  466984:	48 8d 4d c8          	lea    -0x38(%rbp),%rcx
+  466988:	4c 89 f7             	mov    %r14,%rdi
+  46698b:	48 0f 45 d3          	cmovne %rbx,%rdx
+  46698f:	e8 ac 45 e9 ff       	call   0x2faf40
+  466994:	85 c0                	test   %eax,%eax
+  466996:	74 11                	je     0x4669a9
+  466998:	48 8d 35 f5 0b 3a 00 	lea    0x3a0bf5(%rip),%rsi        # 0x807594
+  46699f:	4c 89 f7             	mov    %r14,%rdi
+  4669a2:	ba cb 00 00 00       	mov    $0xcb,%edx
+  4669a7:	eb 74                	jmp    0x466a1d
+  4669a9:	4c 8d 25 48 3d dc 01 	lea    0x1dc3d48(%rip),%r12        # 0x222a6f8
+  4669b0:	49 bf 00 00 00 00 80 	movabs $0x8000000000,%r15
+  4669b7:	00 00 00 
+  4669ba:	4c 03 7d c8          	add    -0x38(%rbp),%r15
+  4669be:	4c 89 e7             	mov    %r12,%rdi
+  4669c1:	e8 9a 65 e3 ff       	call   0x29cf60
+  4669c6:	31 c0                	xor    %eax,%eax
+  4669c8:	4c 39 35 81 b3 e6 01 	cmp    %r14,0x1e6b381(%rip)        # 0x22d1d50
+  4669cf:	48 8b 4d c8          	mov    -0x38(%rbp),%rcx
+  4669d3:	0f 94 c0             	sete   %al
+  4669d6:	c1 e0 12             	shl    $0x12,%eax
+  4669d9:	48 83 ec 08          	sub    $0x8,%rsp
+  4669dd:	4c 8d 04 19          	lea    (%rcx,%rbx,1),%r8
+  4669e1:	4c 89 f7             	mov    %r14,%rdi
+  4669e4:	4c 89 e6             	mov    %r12,%rsi
+  4669e7:	4c 89 fa             	mov    %r15,%rdx
+  4669ea:	41 b9 07 00 00 00    	mov    $0x7,%r9d
+  4669f0:	6a 00                	push   $0x0
+  4669f2:	50                   	push   %rax
+  4669f3:	6a 07                	push   $0x7
+  4669f5:	e8 86 26 e9 ff       	call   0x2f9080
+  4669fa:	48 83 c4 20          	add    $0x20,%rsp
+  4669fe:	85 c0                	test   %eax,%eax
+  466a00:	74 3f                	je     0x466a41
+  466a02:	48 8d 3d ef 3c dc 01 	lea    0x1dc3cef(%rip),%rdi        # 0x222a6f8
+  466a09:	e8 d2 65 e3 ff       	call   0x29cfe0
+  466a0e:	48 8d 35 7f 0b 3a 00 	lea    0x3a0b7f(%rip),%rsi        # 0x807594
+  466a15:	4c 89 f7             	mov    %r14,%rdi
+  466a18:	ba d5 00 00 00       	mov    $0xd5,%edx
+  466a1d:	e8 7e 13 e9 ff       	call   0x2f7da0
+  466a22:	31 c0                	xor    %eax,%eax
+  466a24:	49 8b 4d 00          	mov    0x0(%r13),%rcx
+  466a28:	48 3b 4d d0          	cmp    -0x30(%rbp),%rcx
+  466a2c:	0f 85 b4 00 00 00    	jne    0x466ae6
+  466a32:	48 83 c4 18          	add    $0x18,%rsp
+  466a36:	5b                   	pop    %rbx
+  466a37:	41 5c                	pop    %r12
+  466a39:	41 5d                	pop    %r13
+  466a3b:	41 5e                	pop    %r14
+  466a3d:	41 5f                	pop    %r15
+  466a3f:	5d                   	pop    %rbp
+  466a40:	c3                   	ret
+  466a41:	4c 8d 25 4c 0b 3a 00 	lea    0x3a0b4c(%rip),%r12        # 0x807594
+  466a48:	4c 89 f7             	mov    %r14,%rdi
+  466a4b:	ba d8 00 00 00       	mov    $0xd8,%edx
+  466a50:	4c 89 e6             	mov    %r12,%rsi
+  466a53:	e8 48 13 e9 ff       	call   0x2f7da0
+  466a58:	48 8d 3d 99 3c dc 01 	lea    0x1dc3c99(%rip),%rdi        # 0x222a6f8
+  466a5f:	4c 89 e2             	mov    %r12,%rdx
+  466a62:	b9 eb 00 00 00       	mov    $0xeb,%ecx
+  466a67:	31 f6                	xor    %esi,%esi
+  466a69:	e8 32 26 f1 ff       	call   0x3790a0
+  466a6e:	48 85 db             	test   %rbx,%rbx
+  466a71:	74 35                	je     0x466aa8
+  466a73:	4c 8d 25 7e 3c dc 01 	lea    0x1dc3c7e(%rip),%r12        # 0x222a6f8
+  466a7a:	45 31 ed             	xor    %r13d,%r13d
+  466a7d:	0f 1f 00             	nopl   (%rax)
+  466a80:	4b 8d 34 2f          	lea    (%r15,%r13,1),%rsi
+  466a84:	4c 89 e7             	mov    %r12,%rdi
+  466a87:	ba c0 02 00 00       	mov    $0x2c0,%edx
+  466a8c:	48 c1 fe 0e          	sar    $0xe,%rsi
+  466a90:	e8 7b ca c7 ff       	call   0xe3510
+  466a95:	49 81 c5 00 40 00 00 	add    $0x4000,%r13
+  466a9c:	c7                   	.byte 0xc7
+  466a9d:	40 74 ff             	rex je 0x466a9f
+
+gpu_devid_shift_candidate
+
+/tmp/ps4_code.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000004ad460 <.data>:
+  4ad460:	55                   	push   %rbp
+  4ad461:	48 89 e5             	mov    %rsp,%rbp
+  4ad464:	0f b6 05 39 b5 ed 01 	movzbl 0x1edb539(%rip),%eax        # 0x23889a4
+  4ad46b:	5d                   	pop    %rbp
+  4ad46c:	c3                   	ret
+  4ad46d:	90                   	nop
+  4ad46e:	90                   	nop
+  4ad46f:	90                   	nop
+  4ad470:	55                   	push   %rbp
+  4ad471:	48 89 e5             	mov    %rsp,%rbp
+  4ad474:	0f b6 05 2d b5 ed 01 	movzbl 0x1edb52d(%rip),%eax        # 0x23889a8
+  4ad47b:	5d                   	pop    %rbp
+  4ad47c:	c3                   	ret
+  4ad47d:	90                   	nop
+  4ad47e:	90                   	nop
+  4ad47f:	90                   	nop
+  4ad480:	55                   	push   %rbp
+  4ad481:	48 89 e5             	mov    %rsp,%rbp
+  4ad484:	0f b6 05 21 b5 ed 01 	movzbl 0x1edb521(%rip),%eax        # 0x23889ac
+  4ad48b:	5d                   	pop    %rbp
+  4ad48c:	c3                   	ret
+  4ad48d:	90                   	nop
+  4ad48e:	90                   	nop
+  4ad48f:	90                   	nop
+  4ad490:	55                   	push   %rbp
+  4ad491:	48 89 e5             	mov    %rsp,%rbp
+  4ad494:	b9 00 f1 8b ff       	mov    $0xff8bf100,%ecx
+  4ad499:	03 0d 01 b5 ed 01    	add    0x1edb501(%rip),%ecx        # 0x23889a0
+  4ad49f:	83 f9 10             	cmp    $0x10,%ecx
+  4ad4a2:	77 11                	ja     0x4ad4b5
+  4ad4a4:	ba 03 00 01 00       	mov    $0x10003,%edx
+  4ad4a9:	b8 01 00 00 00       	mov    $0x1,%eax
+  4ad4ae:	0f a3 ca             	bt     %ecx,%edx
+  4ad4b1:	73 02                	jae    0x4ad4b5
+  4ad4b3:	5d                   	pop    %rbp
+  4ad4b4:	c3                   	ret
+  4ad4b5:	31 c0                	xor    %eax,%eax
+  4ad4b7:	5d                   	pop    %rbp
+  4ad4b8:	c3                   	ret
+  4ad4b9:	90                   	nop
+  4ad4ba:	90                   	nop
+  4ad4bb:	90                   	nop
+  4ad4bc:	90                   	nop
+  4ad4bd:	90                   	nop
+  4ad4be:	90                   	nop
+  4ad4bf:	90                   	nop
+
+copyin_shift_candidate
+
+/tmp/ps4_code.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000002bdda0 <.data>:
+  2bdda0:	7f 00                	jg     0x2bdda2
+  2bdda2:	00 90 90 90 48 87    	add    %dl,-0x78b76f70(%rax)
+  2bdda8:	fe 48 89             	decb   -0x77(%rax)
+  2bddab:	d1 88 c8 48 c1 e9    	rorl   $1,-0x163eb738(%rax)
+  2bddb1:	03 fc                	add    %esp,%edi
+  2bddb3:	f3 48 a5             	rep movsq (%rsi),(%rdi)
+  2bddb6:	88 c1                	mov    %al,%cl
+  2bddb8:	80 e1 07             	and    $0x7,%cl
+  2bddbb:	f3 a4                	rep movsb (%rsi),(%rdi)
+  2bddbd:	31 c0                	xor    %eax,%eax
+  2bddbf:	65 48 8b 14 25 20 00 	mov    %gs:0x20,%rdx
+  2bddc6:	00 00 
+  2bddc8:	48 89 82 d0 00 00 00 	mov    %rax,0xd0(%rdx)
+  2bddcf:	5d                   	pop    %rbp
+  2bddd0:	c3                   	ret
+  2bddd1:	66 66 66 66 66 66 2e 	data16 data16 data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+  2bddd8:	0f 1f 84 00 00 00 00 
+  2bdddf:	00 
+  2bdde0:	65 48 8b 14 25 20 00 	mov    %gs:0x20,%rdx
+  2bdde7:	00 00 
+  2bdde9:	48 c7 82 d0 00 00 00 	movq   $0x0,0xd0(%rdx)
+  2bddf0:	00 00 00 00 
+  2bddf4:	48 c7 c0 0e 00 00 00 	mov    $0xe,%rax
+  2bddfb:	5d                   	pop    %rbp
+  2bddfc:	c3                   	ret
+  2bddfd:	0f 1f 00             	nopl   (%rax)
+  2bde00:	65 48 8b 0c 25 20 00 	mov    %gs:0x20,%rcx
+  2bde07:	00 00 
+  2bde09:	4c 8b 05 98 1b e6 00 	mov    0xe61b98(%rip),%r8        # 0x111f9a8
+  2bde10:	4c 89 81 d0 00 00 00 	mov    %r8,0xd0(%rcx)
+  2bde17:	65 48 8b 0c 25 00 00 	mov    %gs:0x0,%rcx
+  2bde1e:	00 00 
+  2bde20:	48 8b 41 08          	mov    0x8(%rcx),%rax
+  2bde24:	48 8b 88 30 04 00 00 	mov    0x430(%rax),%rcx
+  2bde2b:	48                   	rex.W
+  2bde2c:	f7                   	.byte 0xf7
+  2bde2d:	c1 00 00             	roll   $0x0,(%rax)
+
+shutdown_shift_candidate
+
+/tmp/ps4_code.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000003a3200 <.data>:
+  3a3200:	44 00 eb             	add    %r13b,%bl
+  3a3203:	14 66                	adc    $0x66,%al
+  3a3205:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+  3a320c:	00 00 00 00 
+  3a3210:	48 8b 1b             	mov    (%rbx),%rbx
+  3a3213:	48 85 db             	test   %rbx,%rbx
+  3a3216:	74 36                	je     0x3a324e
+  3a3218:	83 7b 10 ff          	cmpl   $0xffffffff,0x10(%rbx)
+  3a321c:	74 f2                	je     0x3a3210
+  3a321e:	4c 89 f7             	mov    %r14,%rdi
+  3a3221:	4c 89 e2             	mov    %r12,%rdx
+  3a3224:	b9 b2 01 00 00       	mov    $0x1b2,%ecx
+  3a3229:	31 f6                	xor    %esi,%esi
+  3a322b:	e8 20 61 fd ff       	call   0x379350
+  3a3230:	48 8b 7b 18          	mov    0x18(%rbx),%rdi
+  3a3234:	44 89 ee             	mov    %r13d,%esi
+  3a3237:	ff 53 28             	call   *0x28(%rbx)
+  3a323a:	4c 89 f7             	mov    %r14,%rdi
+  3a323d:	4c 89 e2             	mov    %r12,%rdx
+  3a3240:	b9 b2 01 00 00       	mov    $0x1b2,%ecx
+  3a3245:	31 f6                	xor    %esi,%esi
+  3a3247:	e8 54 5e fd ff       	call   0x3790a0
+  3a324c:	eb c2                	jmp    0x3a3210
+  3a324e:	41 8b 47 0c          	mov    0xc(%r15),%eax
+  3a3252:	ff c8                	dec    %eax
+  3a3254:	41 89 47 0c          	mov    %eax,0xc(%r15)
+  3a3258:	75 08                	jne    0x3a3262
+  3a325a:	4c 89 ff             	mov    %r15,%rdi
+  3a325d:	e8                   	.byte 0xe8
+  3a325e:	de                   	.byte 0xde
+  3a325f:	1c                   	.byte 0x1c

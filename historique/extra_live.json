@@ -1,0 +1,18 @@
+{
+  "dmap_indices": {
+    "rva": "0x1b2c390",
+    "bytes": "b101000057010000ec000000"
+  },
+  "kernel_map": {
+    "rva": "0x22d1d50",
+    "bytes": "00000014bbabffff"
+  },
+  "gpu_candidate": {
+    "rva": "0x4ad460",
+    "bytes": "554889e50fb60539b5ed015dc3909090554889e50fb6052db5ed015dc3909090554889e50fb60521b5ed015dc3909090554889e5b900f18bff030d01b5ed0183"
+  },
+  "kmem_alloc_patch_region": {
+    "rva": "0x4669d0",
+    "bytes": "8b4dc80f94c0c1e0124883ec084c8d04194c89f74c89e64c89fa41b9070000006a00506a07e88626e9ff4883c42085c0743f488d3def3cdc01e8d265e3ff488d"
+  }
+}

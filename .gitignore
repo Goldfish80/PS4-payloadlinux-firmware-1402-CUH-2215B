@@ -1,0 +1,6 @@
+/linux/bzImage
+/linux/initramfs.cpio.gz
+/linux/*.tar.xz
+/linux/debian-download/
+**/__pycache__/
+*.pyc

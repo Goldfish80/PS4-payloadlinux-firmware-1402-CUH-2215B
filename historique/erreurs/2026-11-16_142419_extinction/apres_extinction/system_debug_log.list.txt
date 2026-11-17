@@ -1,0 +1,5 @@
+drwxrwxrwx 2 0 0 512 Nov 16 2026 .
+drwxrwxrwx 3 0 0 512 Nov 14 2026 ..
+-rwxrwxrwx 1 0 0 1048529 Nov 16 2026 0022.txt
+-rwxrwxrwx 1 0 0 1027409 Nov 16 2026 0023.txt
+-rwxrwxrwx 1 0 0 1048318 Nov 16 2026 0021.txt

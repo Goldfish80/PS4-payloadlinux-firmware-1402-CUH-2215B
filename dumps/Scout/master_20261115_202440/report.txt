@@ -1,0 +1,339 @@
+
+================== PS4 SCOUT MASTER - MODE LECTURE SEULE ==================
+Cible réseau : 00000000000000:744
+Dossier rapports : /project/PS4/Linux/Scout/reports
+Commandes: VERSION, FW_VERSION, BRANDING, PROTOCOL_ID, KERN_BASE, KERN_READ, PROC_LIST, PROC_MAPS.
+Aucun KERN_WRITE / PROC_WRITE / ATTACH / REBOOT.
+
+================== FICHIERS LOCAUX ==================
+ELF complet : /project/PS4/Linux/Scout/reports/kernel_20261115_full.elf | existe=True
+JSON Scout : /project/PS4/Linux/Scout/reports/scout_readonly_20261115_190922.json | existe=True
+Ancien dump 4K : /project/PS4/Linux/Scout/reports/kernel_20261115_192141.bin | existe=True
+Sources ps4debug-NG : /project/PS4/Linux/Scout/upstream/ps4debug-NG | existe=True
+Payload local : /project/PS4/Linux/Scout/upstream/ps4debug-NG/ps4debug-ng.bin | existe=True
+SHA256 payload local : a23b2ec5808bb6f051be159750588a0c48518701e3605f5069db34bcbab57cdc
+Identique au hash précédent : True
+
+================== HASH ET INTEGRITE DU DUMP ==================
+Taille : 20080272 octets (19.15 MiB)
+SHA256 : bfe5b4efae4f025674dc6346eb327bd4b69edb42dbb15895177a6ea51d2ded39
+Hash identique au résultat précédent : True
+Ancien dump 4096 octets = préfixe du dump complet : True
+SHA256 ancien 4K : 75a66eab81d0aa17a9960bcb33f39032e438810946fbf539cf972f6c5e754555
+
+================== EN-TETE ELF ET PROGRAM HEADERS ==================
+ELF64 little-endian | OSABI=9 | type=2 | machine=62
+Entry : 0xffffffffc717e410
+Base PT_LOAD : 0xffffffffc7114000
+Entry - base : 0x6a410
+PHDR: offset=0x40, taille=56, nombre=6
+Section headers: offset=0x0, nombre=0
+[0] PHDR           flags=R-- off=0x40 va=0xffffffffc7114040 RVA=+0x40 filesz=0x150 memsz=0x150 align=0x8
+[1] INTERP         flags=R-- off=0x190 va=0xffffffffc7114190 RVA=+0x190 filesz=0x7 memsz=0x7 align=0x1
+[2] LOAD           flags=R-X off=0x0 va=0xffffffffc7114000 RVA=+0x0 filesz=0xcfe9a0 memsz=0xcfe9a0 align=0x200000
+[3] PT_SCE_RELRO   flags=R-- off=0xcff000 va=0xffffffffc8213000 RVA=+0x10ff000 filesz=0x20cc0 memsz=0x200000 align=0x200000
+    Mémoire non présente dans le fichier : 0x1df340 octets ; fin mémoire=0xffffffffc8413000
+[4] LOAD           flags=RW- off=0xd20000 va=0xffffffffc8634000 RVA=+0x1520000 filesz=0x606690 memsz=0x1314af0 align=0x200000
+    Mémoire non présente dans le fichier : 0xd0e460 octets ; fin mémoire=0xffffffffc9948af0
+[5] DYNAMIC        flags=RW- off=0xcfe890 va=0xffffffffc7e12890 RVA=+0xcfe890 filesz=0x110 memsz=0x110 align=0x8
+
+================== SEGMENT DYNAMIC ET SYMBOLS ==================
+DT_SCE_HASH            0x61000025 = 0xffffffff82eeb450
+DT_SCE_STRTAB          0x61000035 = 0xffffffff82d3c000
+DT_SCE_STRSZ           0x61000037 = 0x4ae9a
+DT_SCE_SYMTAB          0x61000039 = 0xffffffff82d86ea0
+DT_SCE_HASHSZ          0x6100003d = 0x1343c
+DT_SCE_SYMTABSZ        0x6100003f = 0x5c760
+DT_INIT                       0xc = 0xffffffff82200197
+UNKNOWN                0x6100002f = 0xffffffff82de3600
+UNKNOWN                0x61000031 = 0x107e50
+UNKNOWN                0x61000033 = 0x18
+DT_SCE_SYMENT          0x6100003b = 0x18
+DT_DEBUG                     0x15 = 0x0
+DT_FLAGS                     0x1e = 0x0
+UNKNOWN                0x61000009 = 0x1
+UNKNOWN                0x6100000d = 0x10100000077
+UNKNOWN                0x61000011 = 0x0
+DT_NULL                       0x0 = 0x0
+Symboles dynamiques comptés : 0
+Symboles avec nom : 0
+Diagnostic symboles : DT_SYMTAB/DT_STRTAB absent ou pointeurs non mappables.
+
+================== POINT D'ENTREE ET CHAINES ASCII ==================
+Entry file offset : 0x6a410
+64 octets au point d'entrée : 66 c7 04 25 72 04 00 00 34 12 6a 02 9d 48 89 e5 8b 7d 04 8b 75 08 48 8b 25 e3 53 0b 01 31 ed e8 ac 26 10 00 48 89 c4 e8 34 dd fd ff f4 eb fd 90 55 48 89 e5 41 56 53 0f b7 4f 0a 81 f9 86 00 00
+STRING 0x13b1d7: SCEEVENTM
+STRING 0x13b81a: SCEEVENTL
+STRING 0x3b9c84: sceKerneH
+STRING 0x45708a: SONY COMH
+STRING 0x474607: t-H9ApuUH
+STRING 0x63bc09: SceSysCoH
+STRING 0x63bf3c: SceShellH
+STRING 0x64742f: SCEVTRM
+STRING 0x647476: SCEVTRM
+STRING 0x6e1c48: t*H9Apu@H
+STRING 0x770848: SceSwd
+STRING 0x770883: W:\Build\J02700521\sys\freebsd\sys\kern\orbis_swd.c
+STRING 0x7709be: W:\Build\J02700521\sys\freebsd\sys\geom\label\g_label.c
+STRING 0x770b0f: Userland and kernel parts are out of sync.
+STRING 0x770ca8: kernel
+STRING 0x770d38: kernel
+STRING 0x7715e9: W:\Build\J02700521\sys\freebsd\sys\netinet6\ip6_output.c
+STRING 0x7716ab: kernel
+STRING 0x7716e4: Belize Scratch Pad Memory
+STRING 0x7717f2: W:\Build\J02700521\sys\freebsd\sys\kern\kern_malloc.c
+STRING 0x771920: Size of kernel memory
+STRING 0x771944: Minimum size of kernel memory
+STRING 0x771970: Maximum size of kernel memory
+STRING 0x7719a1: Scale factor for kernel memory size
+STRING 0x771a71: Count of kernel malloc types
+STRING 0x771ae0: W:\Build\J02700521\sys\freebsd\sys\netinet\tcp_offload.c
+STRING 0x771b59: W:\Build\J02700521\sys\freebsd\sys\netinet6\udp6_usrreq.c
+STRING 0x771f08: W:\Build\J02700521\sys\freebsd\sys\fs\procfs\procfs_fpregs.c
+STRING 0x771fcd: kernel
+STRING 0x772056: W:\Build\J02700521\sys\freebsd\sys\kern\kern_proc.c
+STRING 0x7720eb: Kernel stack size in pages
+STRING 0x772455: kern_dynlib_get_libkernel_text_segment
+STRING 0x772840: kernel
+STRING 0x772a03: W:\Build\J02700521\sys\freebsd\sys\fs\cd9660\cd9660_vfsops.c
+STRING 0x772a9c: kernel
+STRING 0x772c07: Dump failed (not supported on this kernel)
+STRING 0x77af37: kernel
+STRING 0x77af7e: Belize Serial Flash I/F
+STRING 0x77b071: W:\Build\J02700521\sys\freebsd\sys\dev\scesb\sflash\sflash_mvl.c
+STRING 0x77b2fd: kernel
+STRING 0x77b61d: ORBIS Board ID
+STRING 0x77b6ff: kernel
+STRING 0x77b7ff: ?W:\Build\J02700521\sys\freebsd\sys\netinet\ip_id.c
+STRING 0x77bbd8: W:\Build\J02700521\sys\freebsd\sys\net\netisr.c
+STRING 0x77bfae: SceNetisr
+STRING 0x77c0ef: W:\Build\J02700521\sys\freebsd\sys\kern\vfs_aio.c
+STRING 0x77c1a4: Maximum number of kernel threads to use for handling async IO 
+STRING 0x77c1f1: Number of presently active kernel threads for async IO
+STRING 0x77c239: Preferred number of ready kernel threads for async IO
+STRING 0x77c4c2: kernel
+STRING 0x77c588: SceAiod
+STRING 0x77c85c: W:\Build\J02700521\sys\freebsd\sys\kern\vfs_cluster.c
+STRING 0x77ca1c: W:\Build\J02700521\sys\freebsd\sys\security\audit\audit_pipe.c
+STRING 0x77d220: W:\Build\J02700521\sys\freebsd\sys\dev\usb\usb_transfer.c
+STRING 0x77d989: W:\Build\J02700521\sys\freebsd\sys\kern\kern_rwlock.c
+STRING 0x77da78: W:\Build\J02700521\sys\freebsd\sys\kern\kern_environment.c
+STRING 0x77db52: kernel environment
+STRING 0x77dbda: W:\Build\J02700521\sys\freebsd\sys\dev\scesb\emc_timer\timer_common.c
+STRING 0x77de43: kernel
+STRING 0x77de95: elf kernel
+STRING 0x77dea0: elf64 kernel
+STRING 0x77df01: kernel
+STRING 0x77dfcf: W:\Build\J02700521\sys\freebsd\sys\dev\acpica\acpi_acad.c
+STRING 0x77e075: kernel
+STRING 0x77e1a0: W:\Build\J02700521\sys\freebsd\sys\netinet\tcp_timer.c
+STRING 0x77e84b: W:\Build\J02700521\sys\freebsd\sys\netinet6\nd6.c
+STRING 0x77ea58: W:\Build\J02700521\sys\freebsd\sys\x86\x86\mca.c
+STRING 0x77eaf7: hw.mca.amd10h_L1TP
+STRING 0x77eb0a: amd10h_L1TP
+STRING 0x77eb69: Is the workaround for Erratum 383 on AMD Family 10h processors enabled?
+STRING 0x77ef9f: W:\Build\J02700521\sys\freebsd\sys\netinet\ip_input.c
+STRING 0x77f2c0: kernel
+STRING 0x77f3ce: W:\Build\J02700521\sys\freebsd\sys\dev\scesb\sflash\sflash_mtk.c
+STRING 0x780038: W:\Build\J02700521\sys\freebsd\sys\vm\vm_glue.c
+STRING 0x7800ec: failed to suspend SceSwapper
+STRING 0x780109: SceSwapper is not kthread
+STRING 0x7806d6: W:\Build\J02700521\sys\freebsd\sys\dev\usb\controller\xhci.c
+STRING 0x7828bf: W:\Build\J02700521\sys\freebsd\sys\kern\init_main.c
+STRING 0x782955: Control the output of verbose kernel messages
+STRING 0x78298c: mDBG: Kernel Build ID = %lx
+STRING 0x782a02: kernel
+STRING 0x782a43: SceSwapper
+STRING 0x782a95: Shutdown timeout of init(8). Unused within kernel, but used to control init(8)
+STRING 0x782cd0: :/orbis_diag.elf
+STRING 0x782d21: Falling back to orbis_diag...
+STRING 0x782f88: W:\Build\J02700521\sys\freebsd\sys\kern\kern_loginclass.c
+STRING 0x783178: kernel
+STRING 0x78337d: W:\Build\J02700521\sys\freebsd\sys\kern\kern_thr.c
+STRING 0x7834b2: W:\Build\J02700521\sys\freebsd\sys\kern\kern_thread.c
+STRING 0x783653: W:\Build\J02700521\sys\freebsd\sys\netinet6\in6_rmx.c
+STRING 0x783c56: W:\Build\J02700521\sys\freebsd\sys\dev\usb\usb_msctest.c
+STRING 0x783c8f: W:\Build\J02700521\sys\freebsd\sys\netinet\if_ether.c
+STRING 0x78400c: W:\Build\J02700521\sys\freebsd\sys\net\bnet_eventex.c
+STRING 0x784283: W:\Build\J02700521\sys\freebsd\sys\amd64\amd64\pmap.c
+STRING 0x784323: increase sce.page_table.size
+STRING 0x784340: pmap_growkernel: no memory to grow kernel
+STRING 0x7845e9: [KERNEL] bad pte %#lx @ %p, %lx
+STRING 0x784609: pmap_mapdev: Couldn't alloc kernel virtual memory
+STRING 0x785054: W:\Build\J02700521\sys\freebsd\sys\net\route.c
+STRING 0x785353: W:\Build\J02700521\sys\freebsd\sys\kern\kern_lock.c
+Chaînes ASCII pertinentes : 100 (limite 100)
+
+================== SORTIES READELF / NM ==================
+--- readelf -lW ---
+Elf file type is EXEC (Executable file)
+Entry point 0xffffffffc717e410
+There are 6 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0xffffffffc7114040 0xffffffffc7114040 0x000150 0x000150 R   0x8
+  INTERP         0x000190 0xffffffffc7114190 0xffffffffc7114190 0x000007 0x000007 R   0x1
+      [Requesting program interpreter: /DUMMY]
+  LOAD           0x000000 0xffffffffc7114000 0xffffffffc7114000 0xcfe9a0 0xcfe9a0 R E 0x200000
+  LOOS+0x1000010 0xcff000 0xffffffffc8213000 0xffffffffc8213000 0x020cc0 0x200000 R   0x200000
+  LOAD           0xd20000 0xffffffffc8634000 0xffffffffc8634000 0x606690 0x1314af0 RW  0x200000
+  DYNAMIC        0xcfe890 0xffffffffc7e12890 0xffffffffc7e12890 0x000110 0x000110 RW  0x8
+--- readelf -dW ---
+Dynamic section at offset 0xcfe890 contains 17 entries:
+  Tag        Type                         Name/Value
+ 0x0000000061000025 (Operating System specific: 61000025)                0xffffffff82eeb450
+ 0x0000000061000035 (Operating System specific: 61000035)                0xffffffff82d3c000
+ 0x0000000061000037 (Operating System specific: 61000037)                0x4ae9a
+ 0x0000000061000039 (Operating System specific: 61000039)                0xffffffff82d86ea0
+ 0x000000006100003d (Operating System specific: 6100003d)                0x1343c
+ 0x000000006100003f (Operating System specific: 6100003f)                0x5c760
+ 0x000000000000000c (INIT)               0xffffffff82200197
+ 0x000000006100002f (Operating System specific: 6100002f)                0xffffffff82de3600
+ 0x0000000061000031 (Operating System specific: 61000031)                0x107e50
+ 0x0000000061000033 (Operating System specific: 61000033)                0x18
+ 0x000000006100003b (Operating System specific: 6100003b)                0x18
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x000000000000001e (FLAGS)              
+ 0x0000000061000009 (Operating System specific: 61000009)                0x1
+ 0x000000006100000d (Operating System specific: 6100000d)                0x10100000077
+ 0x0000000061000011 (Operating System specific: 61000011)                0x0
+ 0x0000000000000000 (NULL)               0x0
+--- readelf --dyn-syms ---
+--- nm -D ---
+nm: /project/PS4/Linux/Scout/reports/kernel_20261115_full.elf: file format not recognized
+
+================== VERSION DU CODE SOURCE / STRUCTURE MAPS ==================
+Git remote : origin	https://github.com/Pharaoh2k/ps4debug-NG.git (fetch) | origin	https://github.com/Pharaoh2k/ps4debug-NG.git (push)
+Git commit : 5a9845af5881e650ce804c83b594453b4604638d
+Git status : 
+Header utilisé : /project/PS4/Linux/Scout/upstream/ps4debug-NG/kdebugger/include/proc.h
+packed=True ; taille C calculée=58 octets
+Champs et offsets :
+  name         type=char         offset=0   size=32
+  start        type=uint64_t     offset=32  size=8
+  end          type=uint64_t     offset=40  size=8
+  offset       type=uint64_t     offset=48  size=8
+  prot         type=uint16_t     offset=56  size=2
+Déclaration source : struct proc_vm_map_entry {     char name[32];     uint64_t start;     uint64_t end;     uint64_t offset;     uint16_t prot; } __attribute__((packed))
+
+================== ANCIEN RAPPORT SCOUT JSON ==================
+protocol_version_raw: {'hex': '312e33', 'text': '1.3'}
+branding_raw: {'hex': '70733464656275672d4e472062792050686172616f68326b2076312e332e3400312e32', 'text': 'ps4debug-NG by Pharaoh2k v1.3.4\x001.2'}
+firmware_raw: 1402
+platform_id: 4
+kernel_base: '0xffffffffc7114000'
+kernel_base_sample_hex: '7f454c4602010109000000000000000002003e000100000010e417c7ffffffff4000000000000000000000000000000000000000400038000600000000000000'
+Ancien rapport maps SceSpkService: 1 régions
+Ancien rapport maps SceShellUI: 1632 régions
+Ancien rapport maps SceShellCore: 1011 régions
+
+================== INTERROGATION EN DIRECT - LECTURE SEULE ==================
+Connecté à 00000000000000:744
+Payload : 1.3
+Branding : ps4debug-NG by Pharaoh2k v1.3.4 1.2
+Firmware brut : 0x57a ; BCD : None
+CMD 0xBD000502 uint16 : 4
+Base noyau actuelle : 0xffffffffc7114000
+Delta par rapport au dump : 0x0 (base identique=True)
+SHA256 première page noyau : 75a66eab81d0aa17a9960bcb33f39032e438810946fbf539cf972f6c5e754555
+Premiers 4K identiques au dump local : True
+Processus présents : 60
+  PID    63  SceSpkService
+  PID    59  orbis-jsc-compiler.self
+  PID    58  SecureWebProcess.self
+  PID    57  SecureUIProcess.self
+  PID    56  SceVencProxy.elf
+  PID    55  SceVdecProxy.elf
+  PID    54  fs_cleaner.elf
+  PID    53  SceVoiceAndAgent
+  PID    52  SceMusicCoreServer
+  PID    51  webrtc_daemon.self
+  PID    50  SceSocialScreenMgr
+  PID    49  SceSpZeroConf
+  PID    48  SceCloudClientDaemon
+  PID    47  SceRemotePlay
+  PID    46  SceVideoCoreServer
+  PID    45  ScePartyDaemon
+  PID    44  SceGameLiveStreaming
+  PID    43  SceAvCapture
+  PID    42  SceShellUI
+  PID    41  SceShellCore
+  PID    40  GnmCompositor.elf
+  PID    39  orbis_audiod.elf
+  PID    38  SceSysCore.elf
+  PID    36  SceSysAvControl.elf
+  PID    35  usb
+  PID    34  SceSwd
+  PID    33  SceVnlru
+  PID    32  SceSyncer
+  PID    31  SceBufdaemon2
+  PID    30  SceBufdaemon1
+  PID    29  SceBufdaemon0
+  PID    28  SceVmdaemon
+  PID    27  ScePagedaemonX
+  PID    26  ScePagedaemonX
+  PID    25  SceBtDriver
+  PID    24  SceTrpwCtrl
+  PID    23  SceTrpwReq
+  PID    22  SceTrpwIntr
+  PID    21  SceSbram
+  PID    20  SceDaAtcev
+  PID    19  SceDaThrd
+  PID    18  SceIccThermal
+  PID    17  SceMd0
+  PID    16  SceIccnvs
+  PID    15  SceXptThrd
+  PID     9  SceGbeMskCtrl
+  PID     8  SceSflash
+  PID     7  SceIccNotification
+  PID     6  SceHdmiEvent
+  PID     5  SceCameraSdma
+  PID     4  SceCameraDriverMain
+  PID     3  SceHidMain
+  PID     2  SceHidAuth
+  PID    14  SceYarrow
+  PID    13  geom
+  PID    12  intr
+  PID    11  idle
+  PID     1  mini-syscore.elf
+  PID    10  SceAudit
+  PID     0  kernel
+SceSpkService: PID 63
+  Maps: 1 régions; exécutables=0
+  Noms dominants : [sans nom]=1
+SceShellUI: PID 42
+  Maps: 1632 régions; exécutables=292
+  Noms dominants : stack guard=179, anon:00004e081755=114, mono local heap=81, SceLibSsl=44, app.exe.sprx=43, SceLibHttp=42, __vm_gc_heap=30, anon:000802393cc9=18, WebCore Heap (WTF::FastMalloc)=17, ScePsmResourceHeap=16, anon:000819864fe5=14, ScePsmFontPagein=14
+  EXEC 0x4df5c000..0x4ea54000 prot=0x7 executable
+  EXEC 0x200d84000..0x200d88000 prot=0x7 anon:0009a0004e80
+  EXEC 0x200fa8000..0x200fac000 prot=0x7 anon:0009a000b643
+  EXEC 0x200fac000..0x200fb0000 prot=0x7 anon:0009a0004d1d
+  EXEC 0x200fb4000..0x200fcc000 prot=0x7 anon:0009a0004d1d
+  EXEC 0x2097d4000..0x2097d8000 prot=0x7 anon:0009a0004d1d
+  EXEC 0x20ea2c000..0x20ea30000 prot=0x7 anon:0009a0004e80
+  EXEC 0x20ea30000..0x20ea34000 prot=0x7 anon:0009a0004d1d
+  EXEC 0x20ee1c000..0x20ee24000 prot=0x7 anon:0009a0004d1d
+  EXEC 0x20ee28000..0x20ee2c000 prot=0x7 anon:0009a0004d1d
+  EXEC 0x20eff8000..0x20effc000 prot=0x7 anon:0009a0004d1d
+  EXEC 0x20effc000..0x20f000000 prot=0x7 anon:0009a0004e80
+SceShellCore: PID 41
+  Maps: 1019 régions; exécutables=43
+  Noms dominants : stack guard=342, clienthandler=65, SceLibSsl=41, SceLibHttp=39, SceAppInstallerJobQueue=32, SceNpWebApi2_AsmNet=9, SceLibHttp2=8, SceBgftWorkerThread=6, executable=4, libScePad.sprx=4, libSceSystemService.sprx=4, libSceSysmodule.sprx=4
+  EXEC 0x6c2e4000..0x6d680000 prot=0x5 executable
+  EXEC 0x206704000..0x206a04000 prot=0x7 
+  EXEC 0x7ef3b8000..0x7ef3bc000 prot=0x5 (NoName)SceSysCore.elf
+  EXEC 0x8018b8000..0x8018bc000 prot=0x5 libSceSysUtil.sprx
+  EXEC 0x80195c000..0x8019b0000 prot=0x5 libkernel_sys.sprx
+  EXEC 0x802c70000..0x802db8000 prot=0x5 libSceSsl2.sprx
+  EXEC 0x80507c000..0x8050a4000 prot=0x5 libSceNpTrophy.sprx
+  EXEC 0x805330000..0x80533c000 prot=0x5 libScePad.sprx
+  EXEC 0x80ea60000..0x80ea68000 prot=0x5 libSceRtc.sprx
+  EXEC 0x80ec74000..0x80ec78000 prot=0x5 libSceRegMgr.sprx
+  EXEC 0x810244000..0x810248000 prot=0x5 libSceHidControl.sprx
+  EXEC 0x810d4c000..0x810d84000 prot=0x5 libSceNet.sprx
+
+================== RAPPORTS CREES ==================
+Rapport texte : /project/PS4/Linux/Scout/reports/master_20261115_202440/report.txt
+Rapport JSON  : /project/PS4/Linux/Scout/reports/master_20261115_202440/report.json
+Dossier      : /project/PS4/Linux/Scout/reports/master_20261115_202440

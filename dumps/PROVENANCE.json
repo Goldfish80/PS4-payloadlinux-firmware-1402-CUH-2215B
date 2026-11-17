@@ -1,0 +1,163 @@
+{
+  "offsets/offsets_1402.tsv": {
+    "source": "/project/PS4/portage-linux/offsets_1402.tsv",
+    "size": 5169,
+    "sha256": "4a59b549eca0284ec270ed02be2737ca216cd6821fd0d8616f4a47663056fc71"
+  },
+  "offsets/offsets_linux_1402.tsv": {
+    "source": "/project/PS4/portage-linux/offsets_linux_1402.tsv",
+    "size": 4441,
+    "sha256": "92110c992f1af37834ef07c5d1c95110a9ce1ec70165f706430f15c933edc5dc"
+  },
+  "offsets/linux1402_verification.json": {
+    "source": "/project/PS4/portage-linux/recherche/linux1402_verification.json",
+    "size": 105174,
+    "sha256": "b63484a3a32a990fc5ac43ad22f8f112e653af00c698e43fdd7dc90f8a8e0ded"
+  },
+  "dumps/live_kernel_head.bin": {
+    "source": "/project/PS4/portage-linux/live_kernel_head.bin",
+    "size": 4096,
+    "sha256": "75a66eab81d0aa17a9960bcb33f39032e438810946fbf539cf972f6c5e754555"
+  },
+  "dumps/kernel_20261115_192141.json": {
+    "source": "/project/PS4/Linux/Scout/reports/kernel_20261115_192141.json",
+    "size": 1725,
+    "sha256": "7432b0ce6c4398db02d2ae5a8bc621265aa6f9aa2a989d9d9abd6f65e2307284"
+  },
+  "dumps/analysis/catalog_20261116_040009/README.md": {
+    "source": "/project/PS4/Linux/Scout/reports/catalog_20261116_040009/README.md",
+    "size": 1459,
+    "sha256": "efb2c7d4e5240f1a95e223365c1d9c3aba8b351b6c596e66afeac72cbca114ad"
+  },
+  "dumps/analysis/catalog_20261116_040009/code_pointer_candidates.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/catalog_20261116_040009/code_pointer_candidates.tsv",
+    "size": 1533381,
+    "sha256": "dd907ce1c9f2c5700f4d50a52128cd0db1b35b2fe3c71e49b053c694d013bd99"
+  },
+  "dumps/analysis/catalog_20261116_040009/protocol_constants.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/catalog_20261116_040009/protocol_constants.tsv",
+    "size": 2063,
+    "sha256": "6e01f6fee7c94507f4d7a058a2709aa39291293f6aa2caf4b2c7ec0d9985b534"
+  },
+  "dumps/analysis/catalog_20261116_040009/relocations.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/catalog_20261116_040009/relocations.tsv",
+    "size": 2939533,
+    "sha256": "2d162e934146ddb7878d222e3672a6853459131d5801f4bdb8dfdc7f911b3071"
+  },
+  "dumps/analysis/catalog_20261116_040009/string_references.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/catalog_20261116_040009/string_references.tsv",
+    "size": 1052586,
+    "sha256": "561a26529d0e996d2073537c8730c0ef2472b3cabf5cd6bbcde7624a23cc7ae3"
+  },
+  "dumps/analysis/catalog_20261116_040009/strings.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/catalog_20261116_040009/strings.tsv",
+    "size": 1093695,
+    "sha256": "b8fec6e08836a5bf647e7f6d6765ae224f002d694cf0f3aa98af60e8545af404"
+  },
+  "dumps/analysis/catalog_20261116_040009/summary.json": {
+    "source": "/project/PS4/Linux/Scout/reports/catalog_20261116_040009/summary.json",
+    "size": 1635,
+    "sha256": "45f967ea45435ee5649b6378b4a2422832b21bb78d6600622cb8c9c72565ea8d"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/candidates.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/candidates.tsv",
+    "size": 95,
+    "sha256": "f44ca5b20164aeb413c5ed6140e6ce6875c934952b83c5913c25214770864f8f"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/hash_local.bin": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/hash_local.bin",
+    "size": 78908,
+    "sha256": "75f58d4453380963f4876b91e3c861987da9f3de7bc67e8008d8e0c3bdb9a6af"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/rela_local.bin": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/rela_local.bin",
+    "size": 1080912,
+    "sha256": "257c3347a6551596e07949542ce5a7e44d2450771f6cf7a6cdcc36b05970e5e3"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/strings.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/strings.tsv",
+    "size": 14,
+    "sha256": "52c61504619d0e6bb815e8dd3fab8e68fe42885d4abfc65a3b1070f19ca8620e"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/strtab_local.bin": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/strtab_local.bin",
+    "size": 306842,
+    "sha256": "c8e9b97cf5ae661e324d6a2ed8d342eb237a2f71766f9c1016bc7b084c2ab61c"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/summary.json": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/summary.json",
+    "size": 3934,
+    "sha256": "15770aa731215bb3c2f81e11ae7ee78450f715e60fffa1ac5183826f6f1d3269"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/summary.txt": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/summary.txt",
+    "size": 4258,
+    "sha256": "855758778f94a02cc82f730326944ba72ac2d548a997a04c5a4be9cce2821f0f"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/symbols.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/symbols.tsv",
+    "size": 1645885,
+    "sha256": "5b38f6c8a2084d39b835c91154254ace096530e6b570479e5530ab2b77ecabe2"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/symtab_local.bin": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/symtab_local.bin",
+    "size": 378720,
+    "sha256": "985ea644437ad5e718622d3983dda4bad350a19dc02c9e206668079a5d9e87b8"
+  },
+  "dumps/analysis/sce_audit_20261116_035920/validation.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920/validation.tsv",
+    "size": 47,
+    "sha256": "0fed52e3f8984a269de0c7222fd62a6357d4a17cfdb52765c17f894ae992c1c8"
+  },
+  "dumps/analysis/symbols_20261116_032259/symbols_all.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/symbols_20261116_032259/symbols_all.tsv",
+    "size": 667539,
+    "sha256": "a85166a51b14aba1062f042158e311d05f9f2e2c175037f5bdbdb3a099a3cd8b"
+  },
+  "dumps/analysis/symbols_20261116_032259/symbols_candidates.tsv": {
+    "source": "/project/PS4/Linux/Scout/reports/symbols_20261116_032259/symbols_candidates.tsv",
+    "size": 121,
+    "sha256": "27a3076344835e6713381be7f95cc30eda515791ef45d4f55a0a7f3193cd0b6a"
+  },
+  "dumps/analysis/master_20261116_041457/report.json": {
+    "source": "/project/PS4/Linux/Scout/reports/master_20261116_041457/report.json",
+    "size": 16941,
+    "sha256": "4c07177a172142ee68930e12cdbd07cb8e1697baf13108bd3cacb7bf1b6f2bb1"
+  },
+  "dumps/analysis/master_20261116_041457/report.txt": {
+    "source": "/project/PS4/Linux/Scout/reports/master_20261116_041457/report.txt",
+    "size": 13630,
+    "sha256": "5236baeeb18fa034ac463365377f96453f06eda2ed1455644954cce5a024a366"
+  },
+  "offsets/fw_offsets.h": {
+    "source": "/project/PS4/portage-linux/travail/Portage/loader/linux/fw_offsets.h",
+    "size": 3307,
+    "sha256": "194f6fc9654c11d2eb824bcc7d2b79bc98813a4521ca3f55d7b3e230ec0434a6"
+  },
+  "offsets/guards-1402.h": {
+    "source": "/project/PS4/portage-linux/travail/Portage/loader/linux/guards-1402.h",
+    "size": 5196,
+    "sha256": "26856c2be1b87f8ea0108df7eca14614780c0b149ab0824cce67ec2ccd6ddb64"
+  },
+  "offsets/guard_manifest.json": {
+    "source": "/project/PS4/portage-linux/travail/Portage/guard_manifest.json",
+    "size": 2589,
+    "sha256": "cf1954f21508b160cfd1c915237e9438e9d28a2395024f992a4539756f3e1254"
+  },
+  "offsets/1402.h": {
+    "source": "/project/PS4/portage-linux/travail/Portage/loader/freebsd-headers/ps4-offsets/1402.h",
+    "size": 519,
+    "sha256": "62e40c67a9094a5801c11796a626c9f17d809f12c5996afe7ad353970a725674"
+  },
+  "offsets/history/besoins_kexec.tsv": {
+    "source": "/project/PS4/portage-linux/besoins_kexec.tsv",
+    "size": 2914,
+    "sha256": "2ba1e3142537754c9ade4bba29148f42345f65491e9aad973d8be85c7e05cb7c"
+  },
+  "offsets/ps4_14_02_loader.h": {
+    "source": "/project/PS4/portage-linux/travail/Portage/loader/linux/magic.h",
+    "extraction": "PS4_14_02 conditional block",
+    "size": 1407,
+    "sha256": "57db567f016c54412a1c2a8802d305ed212bb35b0a6b4c20b5767afcaf96f19d"
+  }
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Suppress repetitive MT76x8 RLM warnings without hiding other kernel warnings
+Before=NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo N > /sys/module/printk/parameters/ignore_loglevel && dmesg -n 7 && echo 0x0e:0x01 > /proc/net/wlan/dbg_level'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

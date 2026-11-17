@@ -1,0 +1,3 @@
+PASS: 2042-page high-PA copies/cycle and 4096-page cycle; 20000 randomized page-copy plans, overlaps, cycles, duplicate/unaligned/out-of-range pages, scratch conflicts and output bounds
+Build: -g -O1 -fsanitize=address,undefined -fno-omit-frame-pointer
+Execution: ASAN_OPTIONS=detect_leaks=0; exit 0

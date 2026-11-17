@@ -1,0 +1,3 @@
+/tmp/ccjLpkvx.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler

@@ -1,0 +1,154 @@
+{
+  "ESSAI_MATERIEL_SG.md": {
+    "size": 1718,
+    "sha256": "7506124eb4cb6a342943a7410d833e387667a2b6cf0abaaa8ec0f13cf1afe349"
+  },
+  "ECOUTE_DISTANTE.md": {
+    "size": 1112,
+    "sha256": "3dee23cb5f8d0eaf22567563129efff6ef5a21681146a04a2461b32e4486385e"
+  },
+  "operation_20261116_142419.json": {
+    "size": 4147,
+    "sha256": "85a4b0444a1be3b81078ef64a6ffa5f4039dd45df8f3295c911644a92cef2706"
+  },
+  "loader_runtime.log": {
+    "size": 313,
+    "sha256": "d2a1f6924bdc7ba04f26f466fbe4c8f60fe33414449a35ba8f85cad89004c1a1"
+  },
+  "preflight_runtime.log": {
+    "size": 562,
+    "sha256": "eac5f60db6ce5a666b868e336d04c7eebbd6bf492896a903206c06f41ad4487f"
+  },
+  "orbis_tcp3232.log": {
+    "size": 33785,
+    "sha256": "55edca8a3bf67a0a7f7de8b8e8f439ceabced914260779aebff6501d50fb262b"
+  },
+  "linux_netconsole.log": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "TESTS_SIMULTANES.md": {
+    "size": 1267,
+    "sha256": "91ab54ffcf4e066c9a8a54358afc586865ff01366de040bb7c008fb64f5776df"
+  },
+  "virtual-pair-probe.log": {
+    "size": 88252,
+    "sha256": "2b29c0b6cfc46f3a7d583b92120099bbc92f7b3fd972afcc8f3982bb702b0492"
+  },
+  "ps4_sg_hardware_boot.log": {
+    "size": 1420,
+    "sha256": "a90796040cc079f9844e0101e004a42902d11245998d96be358a28025b37bf06"
+  },
+  "ps4_netconsole_boot.log": {
+    "size": 38,
+    "sha256": "8d2ab8eb091464497f6ebd9310463fdeacac60f9bb277564c9ee6e1631a6c60c"
+  },
+  "payload_utilise.elf": {
+    "size": 37144,
+    "sha256": "5dcb3d2909b1647bc3a343e1a9ee09a4391125bd52758099410eeb97af8c7832"
+  },
+  "payload_utilise.bin": {
+    "size": 30152,
+    "sha256": "1e42c27c5259c02a5b19230b998c09b1be9ed77b989a2301b6ee6bfc30697987"
+  },
+  "empreintes_deployees.json": {
+    "size": 386,
+    "sha256": "1ddea0cbcce6a098c402176cf3a5ad86f9f3dd25f149626c5b9502d0f8aeede3"
+  },
+  "LIRE_MOI.md": {
+    "size": 1199,
+    "sha256": "5c2f3d8781a9da3a05f8d47c994ea9a303341d5347c9437f975c7188fcbcf1c3"
+  },
+  "apres_extinction/rpi_nextgen_boot.txt": {
+    "size": 536,
+    "sha256": "d3af3554d945d55680898ccb36292a41f8a269c538a3ec646623457b37e93cbe"
+  },
+  "apres_extinction/rpi_nextgen_crash.txt": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "apres_extinction/Loader_Logs.txt": {
+    "size": 1692,
+    "sha256": "1de16fe1f9d2041768d912befdfaeb7f852f2ef42ceb4a05f0514ef723211f8c"
+  },
+  "apres_extinction/memory.log": {
+    "size": 1050,
+    "sha256": "4ce43cc43ac5fcdc0fcd972d83282645aebf011a4aa589de048b0c3590a6c308"
+  },
+  "apres_extinction/loader.log": {
+    "size": 313,
+    "sha256": "d2a1f6924bdc7ba04f26f466fbe4c8f60fe33414449a35ba8f85cad89004c1a1"
+  },
+  "apres_extinction/_data_sce_coredumps.list.txt": {
+    "size": 71,
+    "sha256": "f7d4c57c9106fd71c9633ddf41899861646c996203d28608a387ef8046bf91f6"
+  },
+  "apres_extinction/_data_sce_logs.list.txt": {
+    "size": 117,
+    "sha256": "accf0d849a9dd96d791bc12ef8f49b38cee247943b8b256d653133f841836a56"
+  },
+  "apres_extinction/_system_data_priv_system_log.list.txt": {
+    "size": 203,
+    "sha256": "ce16d272156ffe9b7f9f5e01eb3d30cab6464fb2d9960f67cce98dbb8e4dc30e"
+  },
+  "apres_extinction/_system_data_priv_error.list.txt": {
+    "size": 113,
+    "sha256": "59a844fa578826d9bcf68b8d054826637f8a85feb06e969b6bbd35ef1fdb30e9"
+  },
+  "apres_extinction/_system_data_priv_becore.list.txt": {
+    "size": 72,
+    "sha256": "69689f9babe605023cc3547342218fc68d8cc43c9099a793d6698b0676adc73b"
+  },
+  "apres_extinction/_data_GoldHEN.list.txt": {
+    "size": 317,
+    "sha256": "f15a786a6e8f6c2dd63f8d88b0d5b26f1e4a066d37afb6f19859d91a685b91ed"
+  },
+  "apres_extinction/_system_data_priv_system_log_debug.list.txt": {
+    "size": 107,
+    "sha256": "560b512a45f42f02e8762db00416697445a8268a1dd0c55626eccbe2ff4ada93"
+  },
+  "apres_extinction/_system_data_priv_system_log_database.list.txt": {
+    "size": 173,
+    "sha256": "fc58475bda439a8cb676bb56ab3d2eb45c85a5a1a2b6a1e3da8f61b65c7d3435"
+  },
+  "apres_extinction/_system_data_priv_error_history.list.txt": {
+    "size": 595,
+    "sha256": "9f49986571ce2e6ddd7639c6ae4117012239c3bc41ffd727e591e50670d4f64f"
+  },
+  "apres_extinction/sce_log.bin": {
+    "size": 16777216,
+    "sha256": "72dbc6bfe332eed460edd6d81542249dcfa49e5b6c1ca4f88abda5ef637fcdf3"
+  },
+  "apres_extinction/sce_log_extraits_techniques.txt": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "apres_extinction/system_debug_log.list.txt": {
+    "size": 208,
+    "sha256": "c7cb3f5736ed056fc0b323127ea4dc6cd698388189b326bd61bd2e62106245f9"
+  },
+  "apres_extinction/system_debug_0021.txt": {
+    "size": 1048318,
+    "sha256": "6b7a5fc9097ca8dae6078ab67ad2b464b5d8502b5ccef80fbc8ff5230dc9f887"
+  },
+  "apres_extinction/system_debug_0021_extraits.txt": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "apres_extinction/system_debug_0022.txt": {
+    "size": 1048529,
+    "sha256": "23b8d15c8137a59f69bfbed9dbd66aedb5843b521d4ca0869372b3df0f01e52b"
+  },
+  "apres_extinction/system_debug_0022_extraits.txt": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "apres_extinction/system_debug_0023.txt": {
+    "size": 1037180,
+    "sha256": "686dd1e60486315725acedb7983d998d4a8d2102b344c7ad1238bcca43deb80d"
+  },
+  "apres_extinction/system_debug_0023_extraits.txt": {
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

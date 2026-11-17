@@ -1,0 +1,20 @@
+PS4 Debian WLAN warning baseline
+
+Kernel: Linux debian-ps4 7.3.3-Strawberry-General-ThinLTO+ #4 SMP PREEMPT_DYNAMIC x86_64
+Relevant boot options: loglevel=7, ignore_loglevel, console=tty0, log_buf_len=4M
+Runtime printk values (/proc/sys/kernel/printk): 1 5 1 7
+Runtime ignore_loglevel (/sys/module/printk/parameters/ignore_loglevel): Y
+
+Network state:
+- NetworkManager: active
+- wlan0: UP, LOWER_UP; NetworkManager state: connected
+- eth0: NO-CARRIER/unavailable
+- iw, rfkill, and lspci utilities are not installed in this Debian image.
+
+Repeated kernel messages (sample):
+[wlan][138]rlmModifyVhtBwPara:(RLM WARN) S1=42, S2=50
+[wlan][138]rlmModifyVhtBwPara:(RLM WARN) [BW160][new spec] S1 change to 50
+
+Other nearby WLAN startup messages included `wlanProcessCommandQueue:(INIT WARN) NO Res CMD`, mailbox/debug-register warnings, and `mtk_cfg80211_connect:(SEC WARN) [wapi] set wapi assoc info error`. The exact reason and impact are not yet confirmed.
+
+Initial diagnosis: `ignore_loglevel=Y` bypasses the printk console threshold. This is why console-level filtering alone did not silence warning output. The WLAN messages remain available in the kernel log for diagnosis.

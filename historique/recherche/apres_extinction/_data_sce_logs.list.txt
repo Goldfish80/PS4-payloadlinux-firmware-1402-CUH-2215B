@@ -1,0 +1,3 @@
+drwxrwxrwx 2 0 0 512 Nov 14 2026 .
+drwxrwxrwx 13 0 0 512 Nov 16 2026 ..
+-rwxrwxr-x 1 0 0 16777216 Nov 16 2026 log.bin

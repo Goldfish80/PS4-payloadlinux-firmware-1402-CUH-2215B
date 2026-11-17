@@ -1,0 +1,4 @@
+Premier démarrage : terminal uniquement, sans interface graphique.
+Je branche Ethernet pour installer NetworkManager, puis je configure le réseau avec nmtui.
+Pour XFCE, je suis docs/XFCE.md : Wayland avec labwc, wlr-randr et swaybg.
+La session X11 seule donnait un écran noir dans mon essai.

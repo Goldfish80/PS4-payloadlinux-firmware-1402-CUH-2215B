@@ -1,0 +1,102 @@
+{
+  "table_rva": "0x1a81698",
+  "selection_evidence": "gpu_devid_is_9924 returns false, gc_get_fw_info LEA at 0x4bbe5d",
+  "engines": [
+    {
+      "name": "rlc",
+      "header_rva": "0x1a81558",
+      "expected_bytes": 6144,
+      "size_words": 1536,
+      "size_bytes": 6144,
+      "blob": "0xffffffffc8b969e0",
+      "blob_rva": "0x1a829e0",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "0006000000000000233d92c7ffffffff0100000000000000e069b9c8ffffffff0000000000000000"
+    },
+    {
+      "name": "sdma0",
+      "header_rva": "0x1a81580",
+      "expected_bytes": 4200,
+      "size_words": 1050,
+      "size_bytes": 4200,
+      "blob": "0xffffffffc8b981e0",
+      "blob_rva": "0x1a841e0",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "1a04000000000000273d92c7ffffffff0900000000000000e081b9c8ffffffff000400001a000000"
+    },
+    {
+      "name": "sdma1",
+      "header_rva": "0x1a815a8",
+      "expected_bytes": 4200,
+      "size_words": 1050,
+      "size_bytes": 4200,
+      "blob": "0xffffffffc8b99250",
+      "blob_rva": "0x1a85250",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "1a04000000000000273d92c7ffffffff09000000000000005092b9c8ffffffff000400001a000000"
+    },
+    {
+      "name": "ce",
+      "header_rva": "0x1a815d0",
+      "expected_bytes": 8576,
+      "size_words": 2144,
+      "size_bytes": 8576,
+      "blob": "0xffffffffc8b9a2c0",
+      "blob_rva": "0x1a862c0",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "60080000000000002c3d92c7ffffffff1000000000000000c0a2b9c8ffffffff0008000060000000"
+    },
+    {
+      "name": "pfp",
+      "header_rva": "0x1a815f8",
+      "expected_bytes": 16768,
+      "size_words": 4192,
+      "size_bytes": 16768,
+      "blob": "0xffffffffc8b9c440",
+      "blob_rva": "0x1a88440",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "6010000000000000303d92c7ffffffff100000000000000040c4b9c8ffffffff0010000060000000"
+    },
+    {
+      "name": "me",
+      "header_rva": "0x1a81620",
+      "expected_bytes": 16768,
+      "size_words": 4192,
+      "size_bytes": 16768,
+      "blob": "0xffffffffc8ba05c0",
+      "blob_rva": "0x1a8c5c0",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "6010000000000000343d92c7ffffffff1000000000000000c005bac8ffffffff0010000060000000"
+    },
+    {
+      "name": "mec1",
+      "header_rva": "0x1a81648",
+      "expected_bytes": 16768,
+      "size_words": 4192,
+      "size_bytes": 16768,
+      "blob": "0xffffffffc8ba4740",
+      "blob_rva": "0x1a90740",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "6010000000000000383d92c7ffffffff10000000000000004047bac8ffffffff0010000060000000"
+    },
+    {
+      "name": "mec2",
+      "header_rva": "0x1a81670",
+      "expected_bytes": 16768,
+      "size_words": 4192,
+      "size_bytes": 16768,
+      "blob": "0xffffffffc8ba4740",
+      "blob_rva": "0x1a90740",
+      "size_matches": true,
+      "blob_canonical": true,
+      "header_hex": "6010000000000000383d92c7ffffffff10000000000000004047bac8ffffffff0010000060000000"
+    }
+  ]
+}

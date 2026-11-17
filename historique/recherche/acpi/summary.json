@@ -1,0 +1,81 @@
+{
+  "dmap_base": "0xffffabbb00000000",
+  "l4": 343,
+  "l3": 236,
+  "tables": [
+    {
+      "signature": "XSDT",
+      "physical": "0xe0088",
+      "size": 68,
+      "revision": 1,
+      "checksum_valid": true,
+      "oemid": "SIE   ",
+      "oem_table_id": "ORBIS   ",
+      "file": "XSDT_e0088.bin",
+      "sha256": "3870d08b314ff515e607cf562270572c3febe093c3d5dd3c43c23c046a1f6c1c"
+    },
+    {
+      "signature": "FACP",
+      "physical": "0xe016c",
+      "size": 244,
+      "revision": 4,
+      "checksum_valid": true,
+      "oemid": "SIE   ",
+      "oem_table_id": "ORBIS   ",
+      "file": "FACP_e016c.bin",
+      "sha256": "a0c8b5bc0e2bab9e325bc482b85aec5cd94d25b82fa5b54c4d781eb1b8dc4358"
+    },
+    {
+      "signature": "DSDT",
+      "physical": "0xe0430",
+      "size": 396,
+      "revision": 2,
+      "checksum_valid": true,
+      "oemid": "SIE   ",
+      "oem_table_id": "ORBIS   ",
+      "file": "DSDT_e0430.bin",
+      "sha256": "85f86d5141cbe65a2377478d69342c8cf9c1ec7bf758c89cf211ee6710e91751"
+    },
+    {
+      "signature": "APIC",
+      "physical": "0xe0298",
+      "size": 108,
+      "revision": 2,
+      "checksum_valid": true,
+      "oemid": "SIE   ",
+      "oem_table_id": "ORBIS   ",
+      "file": "APIC_e0298.bin",
+      "sha256": "2cb0f5afe43fd9683c63e85ad142c42d6018efa3c2c6732ec7e92e6c1b1e1bb3"
+    },
+    {
+      "signature": "MCFG",
+      "physical": "0xe0304",
+      "size": 60,
+      "revision": 1,
+      "checksum_valid": true,
+      "oemid": "SIE   ",
+      "oem_table_id": "ORBIS   ",
+      "file": "MCFG_e0304.bin",
+      "sha256": "c966c79e46116079bcb048f7a97fd5694bd59270a6fda9fda52835cbcaf99247"
+    },
+    {
+      "signature": "SSDT",
+      "physical": "0xe0730",
+      "size": 6468,
+      "revision": 1,
+      "checksum_valid": true,
+      "oemid": "AMD   ",
+      "oem_table_id": "POWERNOW",
+      "file": "SSDT_e0730.bin",
+      "sha256": "64795e8a480d2f6bbf3ecf5f8b66fbe0828b7491e8baeb75e267731531d045ac"
+    }
+  ],
+  "errors": [],
+  "rsdp": {
+    "physical": "0xe0000",
+    "hex": "52534420505452206c5349452020200224000e002400000088000e000000000046000000",
+    "checksum_v1_valid": true,
+    "checksum_extended_valid": true,
+    "revision": 2
+  }
+}

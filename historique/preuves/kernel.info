@@ -1,0 +1,11 @@
+kernel_repo=https://gitlab.com/rmuxnet/linux.git
+kernel_branch=ps4/7.3.3
+kernel_commit=4025a70665daa096374a9fec8ade87435547d0e8
+kernel_build=use=General lto=ThinLTO with the kernel's own build.sh and Dockerfile (make kernel), config in kernel.config
+kernel_patches=none (Strawberry PS4 Linux, unmodified source)
+kernel_extra=config/ps4.config: USB Wi-Fi, USB Ethernet, Bluetooth and USB serial drivers as modules
+kernel_release=7.3.3-Strawberry-General-ThinLTO+
+kernel_credits=Strawberry PS4 Linux by rmuxnet and contributors, https://gitlab.com/rmuxnet/linux
+bootargs=tsc=reliable added: on Aeolia and Belize the kernel needs it for high resolution timers
+initramfs=v1.4.0 boot menu and installer with the 7.3.3 kernel modules, plus the PS4 drive IV offset fallback (ps4-multiboot issue 3)
+mesa=26.2.5 (patches/mesa/0001, 0002), unchanged from v1.2.0

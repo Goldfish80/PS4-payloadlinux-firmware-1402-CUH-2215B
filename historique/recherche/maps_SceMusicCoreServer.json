@@ -1,0 +1,506 @@
+[
+  {
+    "name": "",
+    "start": 0,
+    "end": 0,
+    "offset": 0,
+    "prot": 0
+  },
+  {
+    "name": "executable",
+    "start": 91127808,
+    "end": 91652096,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "executable",
+    "start": 91652096,
+    "end": 91701248,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "executable",
+    "start": 91701248,
+    "end": 91717632,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "MusicCoreServerIpmiHeap",
+    "start": 8592277504,
+    "end": 8592310272,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "SceShellCoreUtil",
+    "start": 8592310272,
+    "end": 8592326656,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "anon:000819f3c008",
+    "start": 8592326656,
+    "end": 8592343040,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "MusicCoreServerSystemLoggerHeap",
+    "start": 8592343040,
+    "end": 8592359424,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "anon:0000057410f9",
+    "start": 8592359424,
+    "end": 8592375808,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "stack guard",
+    "start": 34077523968,
+    "end": 34077540352,
+    "offset": 0,
+    "prot": 0
+  },
+  {
+    "name": "SceMusicCoreServerIpmiSvr",
+    "start": 34077540352,
+    "end": 34077556736,
+    "offset": 16384,
+    "prot": 3
+  },
+  {
+    "name": "stack guard",
+    "start": 34077556736,
+    "end": 34077573120,
+    "offset": 0,
+    "prot": 0
+  },
+  {
+    "name": "SceSystemLoggerStorageLight",
+    "start": 34077573120,
+    "end": 34077605888,
+    "offset": 16384,
+    "prot": 3
+  },
+  {
+    "name": "(NoName)eboot.bin",
+    "start": 34077605888,
+    "end": 34077622272,
+    "offset": 0,
+    "prot": 0
+  },
+  {
+    "name": "main stack",
+    "start": 34077622272,
+    "end": 34079719424,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "(NoName)SceSysCore.elf",
+    "start": 34079719424,
+    "end": 34079735808,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceAppInstUtil.sprx",
+    "start": 34407317504,
+    "end": 34407366656,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceAppInstUtil.sprx",
+    "start": 34407366656,
+    "end": 34407383040,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceAppInstUtil.sprx",
+    "start": 34407383040,
+    "end": 34407415808,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceNet.sprx",
+    "start": 34446704640,
+    "end": 34446934016,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceNet.sprx",
+    "start": 34446934016,
+    "end": 34446950400,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceNet.sprx",
+    "start": 34446950400,
+    "end": 34448080896,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceRtc.sprx",
+    "start": 34533113856,
+    "end": 34533146624,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceRtc.sprx",
+    "start": 34533146624,
+    "end": 34533163008,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceRtc.sprx",
+    "start": 34533163008,
+    "end": 34533179392,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceIpmi.sprx",
+    "start": 34544812032,
+    "end": 34544861184,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceIpmi.sprx",
+    "start": 34544861184,
+    "end": 34544877568,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceIpmi.sprx",
+    "start": 34544877568,
+    "end": 34544959488,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSystemService.sprx",
+    "start": 34633924608,
+    "end": 34634170368,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceSystemService.sprx",
+    "start": 34634170368,
+    "end": 34634186752,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceSystemService.sprx",
+    "start": 34634186752,
+    "end": 34634203136,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSystemService.sprx",
+    "start": 34634203136,
+    "end": 34634235904,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libkernel_sys.sprx",
+    "start": 34655830016,
+    "end": 34656174080,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libkernel_sys.sprx",
+    "start": 34656174080,
+    "end": 34656190464,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libkernel_sys.sprx",
+    "start": 34656190464,
+    "end": 34656419840,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceRegMgr.sprx",
+    "start": 34660401152,
+    "end": 34660417536,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceRegMgr.sprx",
+    "start": 34660417536,
+    "end": 34660433920,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceRegMgr.sprx",
+    "start": 34660433920,
+    "end": 34660450304,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSysCore.sprx",
+    "start": 34773581824,
+    "end": 34773614592,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceSysCore.sprx",
+    "start": 34773614592,
+    "end": 34773630976,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceSysCore.sprx",
+    "start": 34773630976,
+    "end": 34773647360,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceAudioOut.sprx",
+    "start": 34795126784,
+    "end": 34795225088,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceAudioOut.sprx",
+    "start": 34795225088,
+    "end": 34795241472,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceAudioOut.sprx",
+    "start": 34795241472,
+    "end": 34795257856,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceMbus.sprx",
+    "start": 34932424704,
+    "end": 34932473856,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceMbus.sprx",
+    "start": 34932473856,
+    "end": 34932490240,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceMbus.sprx",
+    "start": 34932490240,
+    "end": 34932506624,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35073703936,
+    "end": 35073753088,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35073753088,
+    "end": 35073769472,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35073769472,
+    "end": 35073802240,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSysmodule.sprx",
+    "start": 35073802240,
+    "end": 35073818624,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSsl2.sprx",
+    "start": 35157458944,
+    "end": 35158802432,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceSsl2.sprx",
+    "start": 35158802432,
+    "end": 35158917120,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceSsl2.sprx",
+    "start": 35158917120,
+    "end": 35158933504,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35167485952,
+    "end": 35168747520,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35168747520,
+    "end": 35168780288,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35168780288,
+    "end": 35168813056,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceLibcInternal.sprx",
+    "start": 35168813056,
+    "end": 35168894976,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceHttp.sprx",
+    "start": 35267887104,
+    "end": 35268116480,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceHttp.sprx",
+    "start": 35268116480,
+    "end": 35268132864,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceHttp.sprx",
+    "start": 35268132864,
+    "end": 35268165632,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceNetCtl.sprx",
+    "start": 35334651904,
+    "end": 35334684672,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceNetCtl.sprx",
+    "start": 35334684672,
+    "end": 35334701056,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceNetCtl.sprx",
+    "start": 35334701056,
+    "end": 35334717440,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceAvSetting.sprx",
+    "start": 35334782976,
+    "end": 35334832128,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceAvSetting.sprx",
+    "start": 35334832128,
+    "end": 35334848512,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceAvSetting.sprx",
+    "start": 35334848512,
+    "end": 35334864896,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "libSceSysUtil.sprx",
+    "start": 35412787200,
+    "end": 35412803584,
+    "offset": 0,
+    "prot": 5
+  },
+  {
+    "name": "libSceSysUtil.sprx",
+    "start": 35412803584,
+    "end": 35412819968,
+    "offset": 0,
+    "prot": 1
+  },
+  {
+    "name": "libSceSysUtil.sprx",
+    "start": 35412819968,
+    "end": 35412836352,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "SceLibcInternalHeap",
+    "start": 36511268864,
+    "end": 36512317440,
+    "offset": 0,
+    "prot": 3
+  },
+  {
+    "name": "SceKernelPrimaryTcbTls",
+    "start": 36512317440,
+    "end": 36512333824,
+    "offset": 1048576,
+    "prot": 3
+  }
+]

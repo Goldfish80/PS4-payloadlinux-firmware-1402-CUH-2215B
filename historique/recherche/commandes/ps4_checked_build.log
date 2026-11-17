@@ -1,0 +1,117 @@
+cd ../lib && make
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_6_72 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_5_05 \
+yasm -f elf64 crt.asm
+gcc -c -isystem ../freebsd-headers -nostdinc -fno-stack-protector dl.c -o dl.o -fPIE -ffreestanding
+python3 syscalls.py > syscalls.asm
+/tmp/ccBS4Eii.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccqclFOv.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_7_00 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_7_50 \
+/tmp/cczVZvFg.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccmrL9Ck.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_8_00 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_8_50 \
+/tmp/ccyTfmpY.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_9_00 \
+/tmp/ccUYlYie.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccCWNNC3.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_9_03 \
+yasm -f elf64 syscalls.asm
+ld -r crt.o dl.o syscalls.o -o lib.a
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_9_60 \
+/tmp/cctivsE2.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_10_00 \
+/tmp/ccB6PZFx.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_10_50 \
+/tmp/ccLg5Vnc.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_11_00 \
+/tmp/cc0Wh7qM.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/cc8dr9oT.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_11_02 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_11_50 \
+/tmp/cctJZRyG.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_12_00 \
+/tmp/cc4Lc0Wz.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_12_50 \
+/tmp/ccKmqKC1.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccNBGsIQ.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_13_00 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_13_02 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_13_50 \
+/tmp/ccjPKncw.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccxwmUvr.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccSLM4Ug.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_13_52 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_14_00 \
+make -C ps4-kexec-common \
+    FW_DEFINE=PS4_14_02 \
+/tmp/ccH3y8Jh.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccGBObdV.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+/tmp/ccV2eiGL.s: Assembler messages:
+linux_thunk.S:82: Warning: mnemonic suffix used with `lret'
+linux_thunk.S:82: Warning: NOTE: Such forms are deprecated and will be rejected by a future version of the assembler
+gcc -isystem ../freebsd-headers -nostdinc -nostdlib -fno-stack-protector -static -fPIE -ffreestanding ../lib/lib.a -DVRAM_MB_DEFAULT=2048 -DVRAM_MB_MIN=32 -DVRAM_MB_MAX=4096 main-aio.c fw_detect.c sb_detect.h -Wl,-gc-sections -o payloads/linux-2048mb.elf

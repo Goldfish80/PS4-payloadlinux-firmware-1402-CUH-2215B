@@ -1,0 +1,8 @@
+{
+  "base": "0xffffffffc7114000",
+  "handler": "0xffffffffc72d47a0",
+  "owned_blob": "0x0",
+  "blob_size": 15364,
+  "restore_to": "0000000000000000a0472dc7ffffffff0000000000000000000000000000000000000000000000000000000004000000",
+  "no_reboot": true
+}

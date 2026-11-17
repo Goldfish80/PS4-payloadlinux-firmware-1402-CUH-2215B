@@ -1,0 +1,8 @@
+{
+  "action": "build",
+  "started": "2026-11-16T14:19:49.039789+00:00",
+  "ip": "192.0.2.10",
+  "status": "error",
+  "error": "CalledProcessError(2, ['make', '-C', '/project/PS4/Linux/Portage/loader/linux/ps4-kexec-common', 'FW_DEFINE=PS4_14_02', 'BUILD_DIR=/project/PS4/Linux/Portage/loader/linux/kexec-build/1402'])",
+  "finished": "2026-11-16T14:19:49.441937+00:00"
+}

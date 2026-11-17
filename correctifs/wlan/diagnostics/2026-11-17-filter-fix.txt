@@ -1,0 +1,30 @@
+PS4 WLAN console-noise fix — 2026-11-17 UTC
+
+Applied on the running Debian 13 system:
+- `/sys/module/printk/parameters/ignore_loglevel` changed from `Y` to `N`.
+- The RLM WLAN debug mask changed from `0x03` (ERROR + WARN) to `0x01` (ERROR only) through `/proc/net/wlan/dbg_level`, module index `0x0e`.
+- Installed and enabled `/etc/systemd/system/ps4-console-logfilter.service`; it neutralizes `ignore_loglevel`, restores console log level 7, and reapplies the RLM-only mask before NetworkManager on each Debian boot.
+- Service state verified as `active` and `enabled`; ordering verified before NetworkManager.
+
+Verification:
+- The module parameter reads `N`, the printk console level is `7`, and the RLM mask reads `0x01`.
+- The `rlmModifyVhtBwPara` count stayed at 844 over a 15-second observation; it remained 844 for 30 seconds after restarting the persistent service with normal console level 7.
+- `wlan0` remained `connected` in NetworkManager during the observation. The repeated messages stopped being generated in that interval, rather than merely being hidden from the console.
+- A later check showed kernel uptime 6269 seconds and the newest `[wlan]` entry at 5745 seconds; there were no new WLAN messages for about 8 minutes 44 seconds after the change. The 844 earlier RLM lines remain in `dmesg` as history.
+- A live-only `dmesg --follow-new` check returned zero WLAN lines over 20 seconds. A prior `dmesg --follow` command replayed the historical ring buffer; those lines were not new live output.
+- A new 30-second `dmesg --follow-new` capture yielded zero WLAN/RLM lines (grep had no matches); the shared tmux pane contained only the Debian shell prompt. This separates the persistent historical ring-buffer entries from live console output.
+
+Driver identification:
+- `/sys/class/net/wlan0/device/driver` resolves to `mt76x8-mt6632_sdio`.
+- The interface was UP/LOWER_UP and NetworkManager reported it connected.
+- The public driver source puts the repetitive messages in `DBGLOG(RLM, WARN, ...)`; its 160 MHz branch accepts S1=42/S2=50 and normalizes S1 to 50.
+
+Reversal:
+```sh
+sudo systemctl disable --now ps4-console-logfilter.service
+sudo rm /etc/systemd/system/ps4-console-logfilter.service
+sudo systemctl daemon-reload
+sudo sh -c 'echo 0x0e:0x03 > /proc/net/wlan/dbg_level; echo Y > /sys/module/printk/parameters/ignore_loglevel; dmesg -n 7'
+```
+
+The boot command line still contains the diagnostic `ignore_loglevel` option. The Debian service counteracts it once systemd starts; the original Orbis boot-arguments file has not been changed from the active Linux session.

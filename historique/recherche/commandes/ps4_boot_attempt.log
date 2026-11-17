@@ -1,0 +1,37 @@
+Compatibilité confirmée : FW 1402, Belize2 A0, 24 gardes, EDID et RSDP valides.
+Compilation terminée et empreintes enregistrées.
+Déposé : /data/payloads/linux-1402-belize2-checked.elf
+Déposé : /data/payloads/linux-1402-belize2-checked.bin
+Déposé : /data/linux/portage-linux/preflight.elf
+Déposé : /data/linux/portage-linux/portage_linux.py
+Déposé : /data/linux/portage-linux/ps4_transport.py
+Déposé : /data/linux/portage-linux/guard_manifest.json
+Déposé : /data/linux/portage-linux/artifacts.json
+Déposé : /data/linux/portage-linux/RAPPORT_COMPLET.md
+Déposé : /data/linux/portage-linux/DOSSIER_1402_COMPLET.json
+Déposé : /data/linux/portage-linux/offsets_linux_1402.tsv
+Exécution du diagnostic sans patch du noyau et sans redémarrage...
+PREFLIGHT_OK : contrôles kernel et CRC complets des trois fichiers conformes.
+Compatibilité confirmée : FW 1402, Belize2 A0, 24 gardes, EDID et RSDP valides.
+Envoi du chargeur ; arrêt normal puis tentative de démarrage Linux après armement réussi.
+Traceback (most recent call last):
+    if __name__=='__main__':main()
+                            ~~~~^^
+    if b'failed' in data.lower() or b'abort' in data.lower() or b'requires' in data.lower():raise RuntimeError(state['loader_log'])
+                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: PS4_1402_BELIZE2_CHECKED_LOADER_START
+FIRMWARE
+0x000000000000057a
+SOUTHBRIDGE
+0x0000000000040100
+KERNEL_SIZE
+0x00000000013c2400
+INITRAMFS_SIZE
+0x0000000000c03186
+BOOT_FILE_CRC32_OK
+KERNEL_STAGE_RESULT
+0x0000000000000000
+KEXEC_LOAD_RESULT
+0x000000000000000c
+kexec_load failed; no reboot requested.
+

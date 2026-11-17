@@ -1,0 +1,122 @@
+[
+  {
+    "name": "printf",
+    "rva": "0x2e0b20",
+    "bytes": "554889e5534883ec58488d1d70c34702"
+  },
+  {
+    "name": "snprintf",
+    "rva": "0x2e0e20",
+    "bytes": "554889e5534883ec68488d1d70c04702"
+  },
+  {
+    "name": "copyin",
+    "rva": "0x2bdd40",
+    "bytes": "554889e54989f24901d24939e2eb1749"
+  },
+  {
+    "name": "copyout",
+    "rva": "0x2bdc50",
+    "bytes": "554889e565488b0425200000004c8b05"
+  },
+  {
+    "name": "copyinstr",
+    "rva": "0x2be1f0",
+    "bytes": "554889e54989f24901d24939e2eb1749"
+  },
+  {
+    "name": "kmem_alloc_contig",
+    "rva": "0x24dbe0",
+    "bytes": "554889e50fbe45184d89ca4d89c14989"
+  },
+  {
+    "name": "kmem_free",
+    "rva": "0x466af0",
+    "bytes": "554889e5488d9416ff3f00004881e600"
+  },
+  {
+    "name": "pmap_extract",
+    "rva": "0x573d0",
+    "bytes": "554889e5415741565350488d15a2ce72"
+  },
+  {
+    "name": "pmap_protect",
+    "rva": "0x58570",
+    "bytes": "554889e54157415641554154534883ec"
+  },
+  {
+    "name": "sched_pin",
+    "rva": "0x231e10",
+    "bytes": "554889e565488b042500000000ff802c"
+  },
+  {
+    "name": "sched_unpin",
+    "rva": "0x231e30",
+    "bytes": "554889e565488b042500000000ff882c"
+  },
+  {
+    "name": "smp_rendezvous",
+    "rva": "0x1adaa0",
+    "bytes": "554889e54989c84889d14889f24889fe"
+  },
+  {
+    "name": "smp_no_rendevous_barrier",
+    "rva": "0x1ad8b0",
+    "bytes": "554889e55dc390909090909090909090"
+  },
+  {
+    "name": "icc_query_nowait",
+    "rva": "0x448a10",
+    "bytes": "554889e541574156415453807f01040f"
+  },
+  {
+    "name": "gpu_devid_is_9924",
+    "rva": "0x4ad480",
+    "bytes": "554889e50fb60521b5ed015dc3909090"
+  },
+  {
+    "name": "gc_get_fw_info",
+    "rva": "0x4bbe30",
+    "bytes": "554889e5e84716ffff85c07420e83e16"
+  },
+  {
+    "name": "wlanbt",
+    "rva": "0x479930",
+    "bytes": "554889e5534883ec18488d1d60352e02"
+  },
+  {
+    "name": "kern_reboot",
+    "rva": "0x3a2bc0",
+    "bytes": "554889e54157415641554154534883ec"
+  },
+  {
+    "name": "set_gpu_freq",
+    "rva": "0x4ba970",
+    "bytes": "554889e54157415641554154534883ec"
+  },
+  {
+    "name": "set_pstate",
+    "rva": "0x4bcd40",
+    "bytes": "554889e55350488d053361d10189fb31"
+  },
+  {
+    "name": "update_vddnp",
+    "rva": "0x4baf10",
+    "bytes": "554889e54157415641554154534883ec"
+  },
+  {
+    "name": "set_cu_power_gate",
+    "rva": "0x4bb320",
+    "bytes": "554889e54157415641554154534883ec"
+  },
+  {
+    "name": "set_nclk_mem_spd",
+    "rva": "0x4377d0",
+    "bytes": "554889e5415741565350488b3da769e9"
+  },
+  {
+    "name": "kmem_alloc",
+    "rva": "0x466920",
+    "bytes": "554889e54157415641554154534883ec"
+  }
+]

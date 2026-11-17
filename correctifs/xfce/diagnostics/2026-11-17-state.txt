@@ -1,0 +1,34 @@
+PS4 Debian XFCE black-screen troubleshooting
+Date: 2026-11-17 UTC
+
+Host: debian-ps4
+Debian: 13.7
+Kernel: Linux 7.3.3-Strawberry-General-ThinLTO+ #4 SMP PREEMPT_DYNAMIC Fri Nov 13 17:22:15 UTC 2026 x86_64
+Session: XFCE on Wayland with labwc
+Running processes verified: labwc, xfce4-session, xfce4-panel, swaybg
+LightDM unit: enabled for boot; inactive during this snapshot. Existing graphical session remained alive.
+Output: HDMI-A-1 enabled; 1920x1080 at 60 Hz current; 1280x720 at 60 Hz preferred.
+Wayland screenshot: 1920x1080; XFCE panel, desktop icons and blue wallpaper rendered.
+
+Installed package versions:
+  grim 1.4.0+ds-2+b1
+  labwc 0.8.3-1
+  swaybg 1.2.1-1
+  wlr-randr 0.4.1-1
+  xwayland 2:24.1.6-1
+
+Baseline findings:
+- X11 xrandr could not switch to 1920x1080: Configure crtc 0 failed.
+- Wayland wlr-randr successfully selected 1920x1080@60Hz.
+- XFCE rendered under labwc; before swaybg was started, the desktop wallpaper area was black. Starting swaybg with /usr/share/backgrounds/xfce/xfce-blue.jpg rendered the blue wallpaper.
+- light-locker crashed in libX11.so.6.4.0 during this Wayland/Xwayland attempt. Its user autostart entry has been disabled.
+- apt and dpkg were not running at the final snapshot.
+
+Changes on the console:
+- /etc/lightdm/lightdm.conf.d/50-xfce-wayland.conf selects autologin to xfce-wayland.
+- systemd lightdm.service is enabled. No reboot was performed; the session remained open.
+- /home/debian/.local/bin/ps4-wayland-display.sh selects 1080p60 and starts swaybg.
+- /home/debian/.config/autostart/ps4-wayland-display.desktop runs that helper at XFCE login.
+- /home/debian/.config/autostart/light-locker.desktop masks the system light-locker autostart for this user.
+
+Limit: a screenshot proves compositor rendering but cannot prove that the HDMI bridge is displaying those pixels on the physical monitor. If the physical screen stays black, inspect kernel DRM/HDMI bridge behavior separately. Public report aday1/ps4-hdmi-blackscreen describes a related modeset issue on CUH-12xx; do not assume its kernel change applies to this CUH-2215B/Belize2 A0.

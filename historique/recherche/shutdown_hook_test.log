@@ -1,0 +1,1 @@
+PASS: shutdown absolute jump readback; corruption rejected and original bytes restored; pin/unpin balanced

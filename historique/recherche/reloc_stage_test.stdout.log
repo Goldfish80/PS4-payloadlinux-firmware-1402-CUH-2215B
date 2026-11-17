@@ -1,0 +1,1 @@
+PASS: real-size staging (2042 high-PA pages), allocation failures 1/2/3, mapping failure cleanup, repeated cancel, decompression and initrd bounds

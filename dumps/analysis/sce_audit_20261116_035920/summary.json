@@ -1,0 +1,106 @@
+{
+  "target_firmware": "14.02",
+  "output": "/project/PS4/Linux/Scout/reports/sce_audit_20261116_035920",
+  "tables": {
+    "STRTAB": {
+      "link_address": "0xffffffff82d3c000",
+      "runtime_address_dump": "0xffffffffc7c50000",
+      "file_offset": "0xb3c000",
+      "size": "0x4ae9a",
+      "local_stats": {
+        "length": 306842,
+        "nonzero": 0,
+        "zeros": 306842,
+        "nonzero_blocks": 0,
+        "blocks": 75,
+        "sha256": "c8e9b97cf5ae661e324d6a2ed8d342eb237a2f71766f9c1016bc7b084c2ab61c",
+        "first64": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+        "last32": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      }
+    },
+    "SYMTAB": {
+      "link_address": "0xffffffff82d86ea0",
+      "runtime_address_dump": "0xffffffffc7c9aea0",
+      "file_offset": "0xb86ea0",
+      "size": "0x5c760",
+      "local_stats": {
+        "length": 378720,
+        "nonzero": 0,
+        "zeros": 378720,
+        "nonzero_blocks": 0,
+        "blocks": 93,
+        "sha256": "985ea644437ad5e718622d3983dda4bad350a19dc02c9e206668079a5d9e87b8",
+        "first64": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+        "last32": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      }
+    },
+    "RELA": {
+      "link_address": "0xffffffff82de3600",
+      "runtime_address_dump": "0xffffffffc7cf7600",
+      "file_offset": "0xbe3600",
+      "size": "0x107e50",
+      "local_stats": {
+        "length": 1080912,
+        "nonzero": 762739,
+        "zeros": 318173,
+        "nonzero_blocks": 264,
+        "blocks": 264,
+        "sha256": "257c3347a6551596e07949542ce5a7e44d2450771f6cf7a6cdcc36b05970e5e3",
+        "first64": "c8 01 72 83 ff ff ff ff 08 00 00 00 00 00 00 00 30 10 20 82 ff ff ff ff 80 43 d2 83 ff ff ff ff 08 00 00 00 00 00 00 00 c0 01 72 83 ff ff ff ff 80 6d d0 83 ff ff ff ff 08 00 00 00 00 00 00 00",
+        "last32": "a0 06 97 82 ff ff ff ff 88 66 d2 83 ff ff ff ff 08 00 00 00 00 00 00 00 68 f7 cf 83 ff ff ff ff"
+      }
+    },
+    "HASH": {
+      "link_address": "0xffffffff82eeb450",
+      "runtime_address_dump": "0xffffffffc7dff450",
+      "file_offset": "0xceb450",
+      "size": "0x1343c",
+      "local_stats": {
+        "length": 78908,
+        "nonzero": 31246,
+        "zeros": 47662,
+        "nonzero_blocks": 20,
+        "blocks": 20,
+        "sha256": "75f58d4453380963f4876b91e3c861987da9f3de7bc67e8008d8e0c3bdb9a6af",
+        "first64": "69 0f 00 00 a4 3d 00 00 99 0e 00 00 06 25 00 00 92 0a 00 00 4e 1a 00 00 57 04 00 00 e6 00 00 00 d6 08 00 00 15 00 00 00 97 16 00 00 50 0e 00 00 f9 12 00 00 68 0b 00 00 eb 03 00 00 a4 07 00 00",
+        "last32": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      }
+    }
+  },
+  "elf": {
+    "path": "/project/PS4/Linux/Scout/reports/kernel_20261115_full.elf",
+    "length": 20080272,
+    "sha256": "bfe5b4efae4f025674dc6346eb327bd4b69edb42dbb15895177a6ea51d2ded39"
+  },
+  "bases": {
+    "preferred": "0xffffffff82200000",
+    "dump": "0xffffffffc7114000",
+    "slide": "0x44f14000",
+    "entry_rva": "0x6a410"
+  },
+  "analyzed": true,
+  "sources": {
+    "STRTAB": "dump",
+    "SYMTAB": "dump",
+    "HASH": "dump",
+    "RELA": "dump"
+  },
+  "symbols": {
+    "records": 15780,
+    "nonzero_records": 0,
+    "valid_name_indices": 15780,
+    "invalid_name_indices": 0,
+    "named": 0,
+    "defined_functions": 0,
+    "candidates": 0
+  },
+  "relocations": {
+    "records": 45038,
+    "nonzero_records": 45038,
+    "types": {
+      "8": 45038
+    }
+  },
+  "validation": [],
+  "live": null
+}
