@@ -1,0 +1,23 @@
+diff --git a/drivers/gpu/drm/amd/amdgpu/ps4_bridge.c b/drivers/gpu/drm/amd/amdgpu/ps4_bridge.c
+index 2ac6f1489..b71173332 100644
+--- a/drivers/gpu/drm/amd/amdgpu/ps4_bridge.c
++++ b/drivers/gpu/drm/amd/amdgpu/ps4_bridge.c
+@@ -589,9 +589,8 @@ static int ps4_bridge_enable_mn864729_video(struct ps4_bridge *mn_bridge,
+ 
+ 	cq_mask(&mn_bridge->cq, 0x1e00, 0x00, 0x21);
+ 	cq_mask(&mn_bridge->cq, 0x1e02, 0x00, 0x70);
+-	cq_delay(&mn_bridge->cq, 300);
++	/* Keep the ICC command queue short; long waits can strand HDMI unmute. */
+ 	cq_writereg(&mn_bridge->cq, 0x6020, 0x00);
+-	cq_delay(&mn_bridge->cq, 50);
+ 
+ 	cq_writereg(&mn_bridge->cq, 0x7402, 0x1c);
+ 	cq_writereg(&mn_bridge->cq, 0x6020, 0x04);
+@@ -666,7 +665,6 @@ static int ps4_bridge_enable_mn864729_video(struct ps4_bridge *mn_bridge,
+ 	cq_mask(&mn_bridge->cq, 0x1034, 0x02, 0x02);
+ 	cq_mask(&mn_bridge->cq, 0x1e00, 0x01, 0x01);
+ 	cq_writereg(&mn_bridge->cq, VMUTECNT, VMUTECNT_LINEWIDTH_90);
+-	cq_delay(&mn_bridge->cq, scramble ? 700 : 500);
+ 	cq_writereg(&mn_bridge->cq, HDCPEN, 0x00);
+ 	ret = cq_exec(&mn_bridge->cq);
+ 	if (ret < 0)

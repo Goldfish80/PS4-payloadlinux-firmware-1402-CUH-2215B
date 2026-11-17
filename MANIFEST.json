@@ -8,6 +8,14 @@
       "size": 4923,
       "sha256": "71fa534d266fc659daa077cde5b556cb480ddd2a1279e3a1fb0599362234fa9d"
     },
+    "correctifs/noyau/ps4-bridge-experimental.patch": {
+      "size": 1085,
+      "sha256": "7f123e6c0cc164fd43f658ba9eac64b7833fbd9ed8c5351c4e03b005af57d982"
+    },
+    "correctifs/noyau/ps4_bridge.c": {
+      "size": 43878,
+      "sha256": "6bf39f0848d41658061ba3a04ec2015abb9f0f7c899f71e5b0c9dab1b3b9cf0e"
+    },
     "correctifs/wlan/README.md": {
       "size": 3890,
       "sha256": "d00c48bbf706ba71239747b7c38e1f9412b869682350a70f73c85987b30acf3f"
