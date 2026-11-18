@@ -4,7 +4,7 @@
 
 J’ai ajouté **[DebianPS4V2 dans les releases](https://github.com/Goldfish80/PS4-payloadlinux-firmware-1402-CUH-2215B/releases/tag/DebianPS4V2)**, avec les payloads **DebianPS4V2.elf** et **DebianPS4V2.bin**, ainsi que tous les fichiers nécessaires au démarrage.
 
-**NetworkManager est inclus et démarre automatiquement.** Je n’ai plus besoin d’un câble Ethernet pour installer NetworkManager ou XFCE : les paquets sont fournis pour une installation hors ligne. **Debian démarre avec un bureau XFCE**, avec ouverture automatique de ma session.
+**NetworkManager est inclus** Je n’ai plus besoin d’un câble Ethernet pour installer NetworkManager ou XFCE : les paquets sont fournis pour une installation hors ligne. **Debian démarre avec un bureau XFCE**, avec ouverture automatique de ma session.
 
 **J’ai essayé cette V2 sur ma PS4 Slim CUH-2215B en firmware 14.02 et tout fonctionne pour moi.**
 
