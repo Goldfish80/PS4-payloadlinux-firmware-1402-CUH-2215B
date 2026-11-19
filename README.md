@@ -8,7 +8,7 @@ J’ai ajouté **[DebianPS4V2 dans les releases](https://github.com/Goldfish80/P
 
 **J’ai essayé cette V2 sur ma PS4 Slim CUH-2215B en firmware 14.02 et tout fonctionne pour moi.**
 
-Je télécharge **[DebianPS4V2-complet.zip](https://github.com/Goldfish80/PS4-payloadlinux-firmware-1402-CUH-2215B/releases/download/DebianPS4V2/DebianPS4V2-complet.zip)** pour récupérer les payloads, les fichiers de boot, les paquets hors ligne, Debian et Mesa PS4. Les chemins de copie et le premier lancement sont détaillés dans **[Installation de DebianPS4V2](docs/DebianPS4V2.md)**.
+**[DebianPS4V2-complet.zip](https://github.com/Goldfish80/PS4-payloadlinux-firmware-1402-CUH-2215B/releases/download/DebianPS4V2/DebianPS4V2-complet.zip)** pour récupérer les payloads, les fichiers de boot, les paquets hors ligne, Debian et Mesa PS4. Les chemins de copie et le premier lancement sont détaillés dans **[Installation de DebianPS4V2](docs/DebianPS4V2.md)**.
 
 ---
 
